@@ -58,11 +58,15 @@
 6 / 지금오세요! 같은 느낌..???  
 푸터 / 공식홈페이지 연결. 크리스탈샵 연결. 주소는 액토즈인가?
 
+[런처다운로드패이지](https://www.ff14.co.kr/download)  
+[공식홈페이지](https://www.ff14.co.kr/main)  
+[크리스탈샵](https://www.ff14.co.kr/shop)  
+[공식가이드](http://guide.ff14.co.kr/)
+
 [제7재해 트레일러](https://www.youtube.com/watch?v=sGBu37ZDXbI)  
 [신생 오프닝_한국어](https://www.youtube.com/watch?v=3vJgfHXaFw0)  
 [크리스탈의 부름_더빙](https://www.youtube.com/watch?v=Am-qPLZcf4k)  
 [홍련 트레일러](https://www.youtube.com/watch?v=HpQzM--PjOQ)  
-
 [창천의 이슈가르드 오프닝테마_영어](https://www.youtube.com/watch?v=FtuwltmTp9I)  
 [창천의 이슈가르드 오프닝테마_한국어](https://www.youtube.com/watch?v=zaVkKzP3HWE)  
 [칠흑의 반역자 트레일러_일어](https://www.youtube.com/watch?v=pBuUkd5uakk)  
