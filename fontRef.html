@@ -9,6 +9,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
     </style>
+    <script>
+        $(document).ready(function(){
+            $('p').each(function(){
+                var size = parseInt($(this).css("font-size"));
+                size = size + 1 + "px";
+                $(this).css({
+                    'font-size': size
+                })
+            })
+        })
+    </script>
 </head>
 <body>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. abo ipsa!</p>
