@@ -1,0 +1,13 @@
+/* * {margin: 0; padding: 0;} */
+
+ul {list-style-image: url(../images/bul_li.gif); width: 110px; list-style-position: inside;}
+ul li.circle {list-style: circle;}
+ul li.disc {list-style: disc;}
+ul li.square {list-style: square;}
+
+ol li.decimal {list-style: decimal;}
+ol li.lower-alpha {list-style: lower-alpha;}
+ol li.upper-alpha {list-style-type: upper-alpha;}
+ol li.lower-roman {list-style: lower-roman;}
+ol li.upper-roman {list-style-type: upper-roman;}
+ol li.none {list-style: none;}

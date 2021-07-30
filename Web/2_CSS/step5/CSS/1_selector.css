@@ -1,0 +1,99 @@
+* {margin: 0; padding: 0;}
+html body {width: 100%; height: 2000px;}
+
+div.TagSelector h1 {width: 800px; color: cornflowerblue; border: 1px solid springgreen; text-align: center;}
+div.TagSelector p {height: 200px; color: white; background-color: black; line-height: 200px; text-align: right;}
+div.TagSelector span {background-color: brown; color: cornsilk; font-size: 20px; word-spacing: 10px;}
+
+div.IdSelector::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.IdSelector p#paragraph1 {width: 400px; border: 3px double crimson; font-size: 15px; float: right;}
+div.IdSelector p#paragraph2 {color: darkblue; text-align: right; font-size: 10px; display: inline-block; background-color: dodgerblue;}
+div.IdSelector p#paragraph3 {width: 100px; height: 100px; background-color: darkgray; font-size: 5px;}
+
+div.ClassSelector p.f_size {font-size: 30px;}
+div.ClassSelector p.f_weight {font-weight: 900;}
+div.ClassSelector p.f_color {color: firebrick;}
+
+div.AttrSelector fieldset ul li {padding: 10px;}
+div.AttrSelector fieldset ul li label:nth-of-type(1) {width: 200px; display: inline-block;}
+div.AttrSelector fieldset {background-color: cornflowerblue; font-size: 20px;}
+div.AttrSelector fieldset legend {border: 1px solid black; background-color: black; color: white; font-size: 30px; font-weight: 900; margin-left: 10px; padding: 0 10px;}
+div.AttrSelector fieldset ul li input + label {padding: 0 10px;}
+
+div.AttrSelector fieldset ul li input[type='text'] {border: 2px double fuchsia;}
+div.AttrSelector fieldset ul li input[type='password'] {border: 1px dotted gold;}
+div.AttrSelector fieldset ul li input[type='radio'] {width: 10px;}
+/* 같은 태그라도 타입에 따라 선택 할 수 있다. */
+
+div.DirectSelector > h1 {color: brown; font-size: 40px; font-weight: bold; text-decoration: line-through;}
+div.DirectSelector > span {font-size: 20px; background-color: cadetblue;}
+/* 구조적으로 다른 동일 태그를 제외하고, 직계 자손 객체 태그에 동일한 스타일을 적용할 수 있다. */
+
+div.SameSelector h1 ~ h2 {background-color: darkcyan; margin: 10px 0;}
+div.SameSelector h1 + h2 {font-size: 50px; color: darkorchid;}
+/* 동위 선택지에서 A + B 는 A 바로 뒤에 위치하는 B 를 지목하고, A ~ B 는 A 뒤에 있는 B 모두를 지목한다. */
+
+div.ActiveSelector h1:hover {color: darkred; font-size: 90px; cursor: crosshair;}
+/* 반응 선택자 */
+
+div.StatusSelector input[type='checkbox'] + label {background-color: white; color: black; height: 50px; display: inline-block;}
+div.StatusSelector input[type='checkbox']:checked + label {background-color: black; color: white; transition-duration: 5s; height: 0px;}
+
+div.NormalSelector {margin: 20px;}
+div.NormalSelector ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.NormalSelector ul li {padding: 10px; float: left; list-style: none;}
+div.NormalSelector ul li:nth-child(2n-1) {background-color: cadetblue;}
+div.NormalSelector ul li:nth-child(2n) {background-color: darkgoldenrod;}
+div.NormalSelector ul li:nth-child(1) {border-radius: 10px 0 0 10px;}
+div.NormalSelector ul li:nth-child(7) {border-radius: 0 10px 10px 0;}
+
+div.EX table {width: 100%; border: 5px solid slateblue; background-color: skyblue; text-align: center;}
+div.EX table thead td {background-color: skyblue; padding: 10px 20px; border: 1px solid white;}
+div.EX table tbody td {background-color: white; padding: 10px 20px;}
+div.EX table tbody tr td:nth-child(2)::after {content: calc(2*0+1);}
+
+div.ShapeSelector h1:nth-child(6) {color: red;}
+div.ShapeSelector h2:nth-child(5) {color: springgreen}
+div.ShapeSelector h3:nth-child(4) {color: teal;}
+/* 
+div.ShapeSelector h3:nth-of-type(2) {color: royalblue;}
+div.ShapeSelector h2:nth-of-type(2) {color: violet;}
+div.ShapeSelector h1:nth-of-type(2) {color: yellow;}
+>
+div.shapeSelector *:nth-of-type(2) {color: random;}
+ */
+
+div.TextSelector h1::first-letter {color: red; font-size: 40px;}
+div.TextSelector p::first-line {color: blue; text-indent: 50px;}
+
+div.BackandFrontSelector p::after {content: '-' attr(data-test); color: blue;}
+div.BackandFrontSelector p::before {content: counter(name) '.';}
+div.BackandFrontSelector p {counter-increment: name;}
+
+div.BackandFrontSelector ul {padding-left: 20px;}
+div.BackandFrontSelector ul li {counter-increment: licount;}
+div.BackandFrontSelector ul li::before {content: counter(licount) '.';}
+div.BackandFrontSelector ul li:nth-child(4) {counter-reset: licount;}
+
+div.ReactionSelector h1::selection {color: brown; background-color: chartreuse;}
+div.ReactionSelector p::selection {color: darkblue; background-color: darkred;}
+
+div.NotSelector ul li input[type='password'] {width: 200px; height: 50px; border: 5px solid black;}
+/* :Not 은 부정 선택자로써 대상을 제외한 나머지에게 해당 CSS를 적용시킨다. */
+
+div.SameAttrSelector input[class='button'] {background-color: blueviolet;}
+div.SameAttrSelector input[value='리셋타입'] {height: 200px;}
+div.SameAttrSelector h1[title ~='제목'] {color: darkgreen; border: 1px dotted firebrick;}
+div.SameAttrSelector h2[title |='남자'] {color: green;}
+div.SameAttrSelector h2[title ^='휴게소'] {color: hotpink;}
+div.SameAttrSelector h2[title $='화장실'] {background-color: lawngreen;;}
+div.SameAttrSelector h2[title *='휴게소'] {background-color: mediumblue;}
+
+
+
+
+
+
+
+
+

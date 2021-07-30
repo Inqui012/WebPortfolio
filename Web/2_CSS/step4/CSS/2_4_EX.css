@@ -1,0 +1,19 @@
+* {margin: 0; padding: 0;}
+
+html body {width: 100%; height: 2000px;}
+.header {width: 100%; height: 200px; background-color: darkgoldenrod; position: fixed; top: 0; left: 0; z-index: 10;}
+
+/* .main {width: 100%; height: 1800px; background-color: darkgray; position: relative; top: 200px; left: 0;}
+ */
+
+.main {width: 100%; height: 100%; position: relative;}
+.main > div {position: absolute;}
+.left {width: 20%; height: 80%; background-color: darkgreen;  top: 200px; left: 0;}
+.bar {width: 10%; height: 80%;background-color: black; top: 200px; left: 20%;}
+.right {width: 70%; height: 80%;background-color: burlywood; top: 200px; left: 30%;}
+.footer {width: 100%; height: 20%; background-color: cornflowerblue; top: 80%; left: 0;}
+
+/* 
+왜 고정이 안되고 z-0ndex를 써야하지??????
+MAIN 이 있어도 컨텐츠가 넘어가는게 아니라 스크롤이랑 같이 전체 문서가 움직이는거니까 overflow: hidden도 아님.
+*/

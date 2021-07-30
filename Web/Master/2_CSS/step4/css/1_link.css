@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{text-decoration:none; font-size:20px;}
+
+a:link{color:#33F;} /* 평시 상태 */
+a:visited{color:#C00;} /* 방문한 적이 있는 상태 */
+a:hover{color:#3CF; text-decoration:underline;} /* 마우스 오버 상태 */
+a:active{color:#F00;} /* 마우스일경우 버튼을 누르고 있는(활성화된) 상태 */
+
+div:hover ul li.hover02{color: rebeccapurple;}
+div:hover ~ p{color: rebeccapurple;}

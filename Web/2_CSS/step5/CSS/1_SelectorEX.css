@@ -1,0 +1,17 @@
+* {margin: 0; padding: 0;}
+
+div.Box fieldset {font-size: 20px; width: 33.33%; margin: 50px auto; border-radius: 33px; border: 5px solid blue; box-sizing: border-box;}
+div.Box fieldset legend {border: 1px solid white; background-color: blue; color: white; font-weight: 900; margin-left: 10px; padding: 5px 10px; box-sizing: border-box; border-radius: 5px;}
+div.Box ul li > label:not([for='send']) {padding: 5px; width: 30%; display: inline-block;}
+div.Box ul li {list-style: none;}
+div.Box ul li:nth-of-type(3) {word-spacing: -6px;}
+div.Box ul li input {vertical-align: middle;}
+div.Box ul li:nth-of-type(6) {text-align: right;}
+div.Box ul li input[type='checkbox'] + label {background-color: white; color: black; font-size: 15px; display: inline-block; width: fit-content; height: fit-content; margin: 0 10px;}
+div.Box ul li input[type='checkbox']:checked + label {background-color: blue; color: white; display: inline-block; width: fit-content; height: fit-content; font-size: 13px; transition-duration: 5s;}
+div.Box ul li input[type='text']:focus {background-color: gray;}
+
+div.Box ul li:nth-of-type(7)::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.Box ul li:nth-of-type(7) > input {float: left; width: 40%; padding: 10px 0; color: white; border: none; margin-bottom: 10px;}
+div.Box ul li input[type='submit'] {background-color: blue;}
+div.Box ul li input[type='reset'] {background-color: red; margin-left: 10%;}

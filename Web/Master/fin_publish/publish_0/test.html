@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        section{padding: 60px 13.12%; background-color: #e3e3e3;}
+        section:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section > div{
+        float: left;
+    }
+    section > div.textBox{
+        width: 46%; margin-bottom: 50px;
+    }
+    section > div.textBox h2{
+        font-family: 'Raleway'; font-weight: 600;
+        font-size: 22px; line-height: 22px; color: #222;
+        margin-bottom: 25px;
+    }
+    section > div.textBox p{
+        font-family: 'Roboto'; font-weight: 400;
+        font-size: 16px; line-height: 22px; color: #848484;
+        margin-bottom: 30px;
+    }
+    section > div.textBox input{
+        float: left; box-sizing: border-box;
+    }
+    section > div.textBox input[type='email']{
+        width: 60%; font-family: 'Roboto'; font-size: 18px;
+        color: #848484; padding: 15px; border: 1px solid #c8c8c8;
+        border-radius: 10px 0 0 10px;
+    }
+    section > div.textBox input[type='submit']{
+        width: 40%; font-family: 'Raleway'; font-weight: 700;
+        font-size: 22px; color: #fff; padding: 14px 20px;
+        border: none; border-radius: 0 10px 10px 0;
+        background-color: #2ecc71;
+    }
+    section > div.imgBox{
+        width: 42%; margin-left: 12%;
+    }
+    section > div.imgBox img{
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="textBox">
+            <h2>
+                Get Notified Of Any Updates!
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+            </p>
+            <form>
+                <input type="email" placeholder="Email Address">
+                <input type="submit" value="Notify">
+            </form>
+        </div>
+        <div class="imgBox">
+            <img src="images/main_28.png" alt="movArea">
+        </div>
+    </section>
+</body>
+</html>

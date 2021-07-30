@@ -1,0 +1,20 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+body{width:960px; margin:0 auto; background-color:#ffc;}
+
+header{background-color:#cff; margin-bottom: 30px;}
+nav{background-color:#9f9;}
+
+.wrap::after{content: ''; display: block; visibility: hidden; clear: both;}
+.wrap{margin-bottom: 30px;}
+.wrap aside, .wrap section{height:800px;}
+.wrap aside{width:200px; background-color:#f96; float:left;}
+.wrap section{width:760px; background-color:#66f; float:left; }
+.wrap section p{margin-bottom: 30px;}
+.wrap section article{background-color:#CFF;}
+
+
+
+footer{background-color:#f9f;}

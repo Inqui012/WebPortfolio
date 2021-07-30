@@ -1,0 +1,7 @@
+* {margin: 0; padding: 0;}
+
+a {font-size: 100px; text-decoration: none;}
+a:link {color: chartreuse;} /* 평시상태 */
+a:visited {color: deeppink;} /* 방문한경우 */
+a:active {color: forestgreen;} /* 마우스일경우 버튼을 누르고 있을 때 */
+a:hover {color: indigo;} /* 마우스 오버상태 */

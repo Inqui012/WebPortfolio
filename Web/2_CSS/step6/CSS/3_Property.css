@@ -1,0 +1,54 @@
+* {margin: 0; padding: 0;}
+
+div.VisibilityProperty span {display: block; background-color: red;}
+div.VisibilityProperty > span {visibility: visible;}
+div.VisibilityProperty span:nth-child(2) {visibility: hidden;}
+
+
+div.VisibilityProperty input[type='checkbox']:checked ~ table {visibility: collapse;}
+/* 
+visibility 의 속성은 총 3가지
+visibility: visible = 보여주다
+visibility: hidden = 감춘다.(영역보존)
+visibility: collapse = 테이블만 감춘다.
+*/
+
+div.OpacityProperty01 ul {background-color: royalblue; list-style: none;}
+div.OpacityProperty01 ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.OpacityProperty01 ul li {width: 10%; float: left; background-color: white; height: 100px;}
+div.OpacityProperty01 ul li:first-child {opacity: 0.1;}
+div.OpacityProperty01 ul li:nth-child(2) {opacity: 0.2;}
+div.OpacityProperty01 ul li:nth-child(3) {opacity: 0.3;}
+div.OpacityProperty01 ul li:nth-child(4) {opacity: 0.4;}
+div.OpacityProperty01 ul li:nth-child(5) {opacity: 0.5;}
+div.OpacityProperty01 ul li:nth-child(6) {opacity: 0.6;}
+div.OpacityProperty01 ul li:nth-child(7) {opacity: 0.7;}
+div.OpacityProperty01 ul li:nth-child(8) {opacity: 0.8;}
+div.OpacityProperty01 ul li:nth-child(9) {opacity: 0.9;}
+div.OpacityProperty01 ul li:last-child {opacity: 1.0;}
+
+div.OpacityProperty02 ul {list-style: none;}
+div.OpacityProperty02 ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.OpacityProperty02 ul li {width: 10%; float: left; background-color: royalblue; height: 100px;}
+div.OpacityProperty02 ul li:first-child {background-color: rgba(65, 105, 225, 0.1);}
+div.OpacityProperty02 ul li:nth-child(2) {background-color: rgba(65, 105, 225, 0.2);}
+div.OpacityProperty02 ul li:nth-child(3) {background-color: rgba(65, 105, 225, 0.3);}
+div.OpacityProperty02 ul li:nth-child(4) {background-color: rgba(65, 105, 225, 0.4);}
+div.OpacityProperty02 ul li:nth-child(5) {background-color: rgba(65, 105, 225, 0.5);}
+div.OpacityProperty02 ul li:nth-child(6) {background-color: rgba(65, 105, 225, 0.6);}
+div.OpacityProperty02 ul li:nth-child(7) {background-color: rgba(65, 105, 225, 0.7);}
+div.OpacityProperty02 ul li:nth-child(8) {background-color: rgba(65, 105, 225, 0.8);}
+div.OpacityProperty02 ul li:nth-child(9) {background-color: rgba(65, 105, 225, 0.9);}
+div.OpacityProperty02 ul li:last-child {background-color: rgba(65, 105, 225, 1);}
+
+div.ShadowProperty h1 {text-shadow: 5px 10px 10px #666;}
+div.ShadowProperty p {width: 300px; height: 300px; border: 1px solid red; box-shadow: 5px 10px 10px #666;}
+div.ShadowProperty p :last-child {box-shadow: inset 5px 10px 10px #666;}
+
+div.RedG h1 {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dcf55f+0,b4f32d+59,9df200+72,31a5f3+99 */
+    background: rgb(220,245,95); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(220,245,95,1) 0%, rgba(180,243,45,1) 59%, rgba(157,242,0,1) 72%, rgba(49,165,243,1) 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(220,245,95,1) 0%,rgba(180,243,45,1) 59%,rgba(157,242,0,1) 72%,rgba(49,165,243,1) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(220,245,95,1) 0%,rgba(180,243,45,1) 59%,rgba(157,242,0,1) 72%,rgba(49,165,243,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcf55f', endColorstr='#31a5f3',GradientType=0 ); /* IE6-9 */
+    }

@@ -1,0 +1,33 @@
+* {margin: 0; padding: 0;}
+
+div.Delay1 {width: 610px; border: 3px solid blueviolet;}
+div.Delay1 span {display: block; width: 10px; height: 50px; background-color: cadetblue; margin: 5px; transition-duration: 1s;}
+div.Delay1:hover > span {width: 600px;}
+div.Delay1 span:nth-child(1) {transition-delay: 0s;}
+div.Delay1 span:nth-child(2) {transition-delay: 0.5s;}
+div.Delay1 span:nth-child(3) {transition-delay: 1s;}
+div.Delay1 span:nth-child(4) {transition-delay: 1.5s;}
+div.Delay1 span:nth-child(5) {transition-delay: 2s;}
+
+div.Delay2 ul {list-style: none; width: 100%;}
+div.Delay2 ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.Delay2 ul li {width: 33.33%; height: 200px; float: left; transition-duration: 1s;}
+div.Delay2 ul:hover li {width: 50%;}
+div.Delay2 ul:hover li:nth-child(1) {background-color: blueviolet; transition-delay: 0s;}
+div.Delay2 ul:hover li:nth-child(2) {background-color: brown; transition-delay: 0.5s;}
+div.Delay2 ul:hover li:nth-child(3) {background-color: blue; transition-delay: 1s;}
+div.Delay2 ul:hover li:nth-child(4) {background-color: yellow; transition-delay: 1.5s;}
+div.Delay2 ul:hover li:nth-child(5) {background-color: goldenrod; transition-delay: 2s;}
+div.Delay2 ul:hover li:nth-child(6) {background-color: rosybrown; transition-delay: 2.5s;}
+
+div.Delay3 ul {list-style: none; height: 300px; background-color: black;}
+div.Delay3 ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.Delay3 ul li {float: left; width: 20%; height: 0%; background-color: royalblue; transition-duration: 1s;}
+div.Delay3 ul:hover li {height: 150px;}
+
+div.Delay3 ul li:nth-child(1) {transition-delay: 0s; transition-timing-function: In Out · Back;}
+div.Delay3 ul li:nth-child(2) {transition-delay: 0.5s; transition-timing-function: cubic-bezier(1, 0.03, 0.58, 1);}
+div.Delay3 ul li:nth-child(3) {transition-delay: 1s; transition-timing-function: cubic-bezier(1, 0.03, 0, 0.81);}
+div.Delay3 ul li:nth-child(4) {transition-delay: 1.5s;}
+div.Delay3 ul li:nth-child(5) {transition-delay: 2s;}
+

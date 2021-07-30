@@ -1,0 +1,22 @@
+* {margin: 0; padding: 0;}
+body {width: 100%; background-color: black;}
+
+div.wrap {max-width: 70%; margin: 0 auto;}
+div.wrap header {position: relative; margin-bottom: 50px;}
+div.wrap h1 {color: white; font-weight: bold; padding: 20px 0;}
+div.wrap nav {position: absolute; top: 35px; right: 0; width: 40%;}
+div.wrap nav ul {list-style: none; border: 1px solid white; border-radius: 5px;}
+div.wrap nav ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.wrap nav ul li {float: left; min-width: 75px; width: 20%; padding: 5px 0; margin: 5px 0; text-align: center; vertical-align: middle; box-sizing: border-box;}
+div.wrap nav ul li a {text-decoration: none; padding: 0 10px; color: white;}
+div.wrap nav ul li:not(:last-child) {border-right: 1px solid white;}
+/* div.wrap nav ul li a::after {content: '|'; display: inline-block;} */
+
+div.wrap section ul {list-style: none;}
+div.wrap section ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.wrap section ul li {width: 30%; position: relative; float: left;}
+div.wrap section ul li:not(:nth-child(3n)) {margin-right: 5%;}
+div.wrap section ul li:nth-child(n+4) {margin-top: 5%;}
+div.wrap section ul li img {width: 100%; opacity: 0.5; transition-duration: 1s;}
+div.wrap section ul li img:hover {opacity: 1;}
+

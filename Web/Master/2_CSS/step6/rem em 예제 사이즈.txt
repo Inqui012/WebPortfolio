@@ -1,0 +1,80 @@
+rem
+
+.wrap  : 
+	width 1125px
+.wrap  header :
+	height 45px
+.wrap  section aside : 
+	width 300px   height  450px
+.wrap  section article : 
+	width 825px   height  450px
+.wrap footer :
+	height 45px
+
+
+em 
+.wrap :
+	width 1125px
+.wrap header :
+	font-size 12px   padding 7.5px
+.wrap section :
+	font-size 12px
+.wrap section aside :
+	width 180px	height 600px
+.wrap section article :
+	width 472.5px	height 600px	
+.wrap footer :
+	font-size 15px	padding 15px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+em 
+.emLayout :
+	font-size 15px	width 1125px
+
+.emLayout header :
+	font-size 12px	padding 7.5px
+
+.emLayout section :
+	font-size 12px
+
+.emLayout section aside :
+	width 180px
+	height 600px
+
+.emLayout section article :
+
+
+
+.emLayout section article.sub_article :
+
+
+
+.emLayout section footer :
+	font-size 15px  padding 15px

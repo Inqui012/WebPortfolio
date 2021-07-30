@@ -1,0 +1,23 @@
+* {margin: 0; padding: 0;}
+body {position: relative;}
+
+div.Circle {width: 200px; height: 200px; border-radius: 100%; background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,0.597051597051597) 0%, rgba(123,123,224,1) 35%, rgba(0,212,255,1) 100%); position: absolute; top: 0; left: 0; animation-name: MoveCircle; animation-duration: 5s; animation-iteration-count: 1; animation-direction: normal; animation-fill-mode: forwards;}
+div.Circle h1 {text-align: center; line-height: 200px;}
+
+div.Circle:hover {animation-play-state: paused;}
+
+@keyframes MoveCircle 
+{
+    from
+    {
+        left: 0;
+        top: 0;
+        transform: rotate(0deg);
+    }
+    to
+    {
+        left: calc(100% - 200px);
+        top: 0;
+        transform: rotate(360deg);
+    }
+}

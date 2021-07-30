@@ -1,0 +1,5 @@
+
+* {margin} 이 서로 상쇄되는건 {display: block;} 일 때만 적용된다. inline-block 이나 float 일때는 margin이 합산된다.
+
+* CSS에 함수사용가능. {속성: calc(원하는 함수);} 로 넣어줄 수 있음.
+* {display: flex;} 랑 {order: 수치;} 로 순서조정할 수 있는게 있다.

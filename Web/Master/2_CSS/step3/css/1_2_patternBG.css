@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, #wrap{height:100%;}
+
+body{margin:0; padding:0;}
+
+#wrap{background:url(../images/pt.gif);}
+
+#wrap p{background:#0CF; padding:20px; margin:0 0 20px 0;}

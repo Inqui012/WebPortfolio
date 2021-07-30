@@ -1,0 +1,26 @@
+.classEx1{
+    color: red;
+}
+
+.btn{
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.btn.create{
+    background-color: white;
+}
+.btn.modify{
+    background-color: gray;
+}
+
+.btn.delete{
+    background-color:red;
+}
+.btn.confirm{
+    background-color: rebeccapurple;
+}
+.btn.cancel{
+    background-color: blue;
+}
