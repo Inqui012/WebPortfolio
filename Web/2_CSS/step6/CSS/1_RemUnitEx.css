@@ -1,9 +1,0 @@
-* {margin: 0; padding: 0;}
-html, body {width: 100%; font-size: 15px}
-
-.wrap {width: 75rem; margin: 0 auto;}
-.wrap header {width: 100%; height: 3rem; background-color: red;}
-.wrap section::after {content: ''; display: block; visibility: hidden; clear: both;}
-.wrap section aside {width: 20rem; height: 30rem; background-color: aquamarine; float: left;}
-.wrap section article {width: 55rem; height: 30rem; background-color: yellow; float: left;}
-.wrap footer {width: 100%; height: 3rem; background-color: chartreuse;}
