@@ -1,0 +1,12 @@
+.outer{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    padding: 50px;
+    margin: 10px;
+}
+.inner{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}

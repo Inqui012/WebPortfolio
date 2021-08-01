@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0;}
+body{position:relative;}
+.circle{
+	position:absolute;
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	background:linear-gradient(#cb60b3 0%, #db36a4 100%);
+	/* http://www.colorzilla.com/gradient-editor 에서 제작 가능*/
+	text-align:center;
+	/* animation: moveCircle; */
+	/* animation-name:moveCircle; */
+	/* 애니메이션 효과의 이름을 설정함. */
+	animation-duration:2s;
+	/* 애니메이션 효과를 재생할 시간을 설정함. */
+	animation-delay: 0s;
+	/* 애니메이션 효과가 나타나기까지의 지연 시간을 설정함. */
+	animation-timing-function:cubic-bezier(0, 0, 0.95, 0.37);
+	/* 애니메이션 효과의 시간당 속도를 설정함. */
+	animation-iteration-count:infinite;
+	/* 애니메이션 효과가 몇 번 반복될지를 설정함. */
+	animation-direction:alternate;
+	/* 애니메이션의 진행 방향을 설정함. */
+	animation-fill-mode: forwards;
+	/* 애니메이션 효과가 재생 중이 아닐 때 요소의 스타일을 설정함 */
+background: linear-gradient(to right,  rgba(82,242,183,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); 
+	}
+	/* 
+        ? animation
+        * 1. moveCircle이라는 이름의 keyframes를 호출.
+        * 2. duration으로 재생시간을 설정.
+        * 3. timing-function 으로 가속도 설정.
+        * 4. iteration-count 로 무반한복 설정.
+        ! 반복횟수를 숫자로 입력해도 가능.
+        * 5. direction으로 재생 방향 설정.
+        todo normal 표준재생(0-100%)
+        todo alternate 왕복재생 (0-100%,100%-0)
+        todo alternate-reverse alternate역방향재생
+    */
+.circle h1{line-height:200px;}
+
+.circle:hover{animation-play-state:paused;}
+/* 애니메이션 효과의 재생 상태를 설정함. */
+/* 
+    ?play-state
+	* paused 는 중지, running 은 재생.
+	
+*/
+
+@keyframes moveCircle{
+	from{
+		left:0;
+		top: 0;
+		transform:rotate(0deg);
+		}
+		50%{
+			left:500px;
+			}
+			to{
+				left:500px;
+				top: 500px;
+				transform:rotate(360deg);
+				}
+	}
+	
+/* 
+    ?keyframes
+    * 0 ~ 100% 사이 소수점 포함 입력 가능
+    * keyframe start = from, end = to, 나머지는 %
+    ! ex> 0 - 50% - 100% (위 예제)
+	*  rotate는 회전속성, deg는 각도를 뜻한다.
+
+	@keyframes 규칙
+	@keyframes로 어떤 모양에서 어떤 모양으로 변할 지 정합니다.
+	@keyframes 는 CSS 애니메이션에서 구간을 정하고 각 구간별로 어떤 스타일을 적용시킬지 정하는 문법입니다.
+	애니메이션의 중간 상태를 기술해 봅시다. @keyframes 규칙을 이용해서 두개 이상의 중간 상태를 기술합니다. 각 중간 상태는 특정 시점에 엘리먼트가 어떻게 보일지 나타냅니다. 
+	
+	
+@keyframes 를 사용하기 위해선 세 가지가 필요합니다.
+	animation-name : 사용자가 직접 지정한 이름, @keyframes 가 적용될 애니메이션의 이름
+	스테이지 : from - to 로 0~100% 의 구간
+	CSS 스타일 : 각 스테이지(구간)에 적용시킬 스타일
+*/
+
+
+
+/* transition VS animation 차이
+transition 속성과 animation 속성은 플래시의 기술이나 자바스크립트의 도움 없이 요소에 직접 애니메이션 효과를 적용하는 속성이다.
+transition 속성은 요소의 상태가 변해야 애니메이션을 실행한다.
+animation 속성은 요소의 모양과 동작을 키프레임 단위로 변경할 수 있다. 키프레임 동작은 재생 횟수, 재생 방향등 여러 애니메이션 속성으로 제어할 수 있다.
+transition 속성과 animation 속성의 가장 큰 차이는 transition 속성은 요소의 상태가 바뀌어야 바뀌는 상태를 애니메이션으로 표현하지만, animation 속성은 요소의 상태 변화와 상관 없이 애니메이션을 실행한다. 또한 @keyframes 속성으로 프레임을 추가할 수 있다. */

@@ -1,0 +1,20 @@
+/* * {margin: 0; padding: 0;} */
+
+html, body {height: 100%;}
+body {margin: 0; padding: 0; background-image: url('../images/BackgroundFront.png') , url('../images/BackgroundBack.png'); background-size: 100% 250px, 100% 250px; background-repeat: no-repeat; background-position: center; background-attachment: fixed;}
+
+/* 
+background-image 는 대상의 배경 설정, CSS3 부터는 ',' 로 구분하여 2개 이상 설정가능 
+background-size 는 100% 250px 처럼 공백으로 구분하면 width와 height 를 설정 할 수 있다.
+100% 250px, 100% 250px 처럼 ',' 로 두 값을 구분해 서로 다른 배경의 크기를 조절
+100%, 100% 처럼 구분하면 두 이미지 모두 height 는 설정하지 않고 width 만 설정 
+%, px 등의 단위로 사용가능
+cover : cover 무조건 꽉 채움
+contain : contain 은 종횡비로 꽉 채움 (너비 우선)
+background-repeat 은 기본옵션은 repeat, 수직 반복 repeat-y, 수평 반복 repeat-x, 반복하지 않음 no-repeat
+
+축약법
+background : color / url() / repeat / position / size / attachment
+해당 순서로 적으면 모든 속성이 한번에 적용된다.
+*/
+p {height: 2000px;}

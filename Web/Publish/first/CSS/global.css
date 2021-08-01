@@ -1,0 +1,40 @@
+/* ? Tablet Device */
+@media screen and (min-width:768px) and (max-width:1279px)
+{
+    body {max-width: 1600px; width: 100%; margin: 0 auto;}
+
+    header {background: url("../Img/header_img.png") no-repeat center; background-size: cover; border-top: 10px solid red; padding: 175px 0; box-sizing: border-box;}
+    header div {padding-left: 7.8125%; max-width: 1200px; margin: 0 auto;}
+    header div h1 {max-width: 185px; margin-bottom: 35px;}
+    header div h1 img {width: 100%;}
+    header div p {max-width: 455px; margin-bottom: 25px; letter-spacing: -1px; font-family: 'Roboto'; font-weight: 400; line-height: 36px; color: #ffffff; font-size: 24px; vertical-align: middle;}
+    header a {text-decoration: none; width: 52px; height: 52px; display: inline-block;}
+    header a:not(:first-of-type) {margin-left: 10px;}
+
+    section {padding: 60px 13.125%;}
+
+    footer {padding: 60px; background-color: #e3e3e3; text-align: center; vertical-align: middle;}
+    footer a {font-family: 'Roboto'; font-size: 16px; line-height: 26px; text-decoration: none; color: #848484;}
+    footer a:not(:last-child) {margin-right: 15px;}
+}
+
+/* ? Desktop Device */
+@media screen and (min-width:1280px)
+{
+    body {max-width: 1600px; width: 100%; margin: 0 auto;}
+
+    header {background: url("../Img/header_img.png") no-repeat center; background-size: cover; border-top: 10px solid #2ecc71; padding: 175px 0; box-sizing: border-box;}
+    header div {padding-left: 7.8125%; max-width: 1200px; margin: 0 auto;}
+    header div h1 {max-width: 185px; margin-bottom: 35px;}
+    header div h1 img {width: 100%;}
+    header div p {max-width: 455px; margin-bottom: 25px; letter-spacing: -1px; font-family: 'Roboto'; font-weight: 400; line-height: 36px; color: #ffffff; font-size: 24px; vertical-align: middle;}
+    header a {text-decoration: none; width: 52px; height: 52px; display: inline-block;}
+    header a:not(:first-of-type) {margin-left: 10px;}
+
+    section {padding: 60px 13.125%;}
+
+    footer {padding: 60px; background-color: #e3e3e3; text-align: center; vertical-align: middle;}
+    footer a {font-family: 'Roboto'; font-size: 16px; line-height: 26px; text-decoration: none; color: #848484;}
+    footer a:not(:last-child) {margin-right: 15px;}
+}
+

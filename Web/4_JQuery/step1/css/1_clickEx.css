@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 20px;
+    width: 100%;
+    margin: 40px auto;
+}
+section ul{
+    display: flex;
+    margin-bottom: 10px;
+}
+section ul li{
+    list-style: none;
+    background-color: powderblue;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+section ul li.active{
+    background-color: royalblue;
+    color: white;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product .itemBox{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE HTML>
+<html lang="kr">
+<head>
+<meta charset="utf-8">
+<title>semantic Web Tag</title>
+</head>
+
+<body>
+    <header>
+	    페이지 상단 로고, 네비게이션 등이 들어가는 header.
+        혹은 header의 상단부분 (제목, 설명) 역시 들어 갈 수 있다.
+        텍스트로 제목을 넣을 때에는 h태그를 활용하도록 한다.
+        사이트의 로고 등이 이곳에 적합하다. (global요소)
+    </header>
+    <!--hgroup은 html5에서 제거 되었지만, 아직 많은 브라우저에서 사용이 된다. 조건은 두개이상의 h태그를 넣는것이 조건이다. 참고-->
+    <nav>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+        네비게이션이 들어가는 nav.
+        독립적으로 사용하거나 각 시멘틱 안 (header, section, footer, aside)에 넣어 사용도 가능하다.
+    </nav>
+    <section>
+        <h2>section에는 머릿글을 넣어줘야 한다.</h2>
+	    일반적인 컨텐츠 그룹(명확히 내용이 구분되는 그룹) 이 들어가는 section.
+        <article>
+            <h3>
+                그 자체로 이해 될수있고, 독립적으로 취급되는 문서만 들어 갈 수 있는 article. 머릿글을 넣어줘야 한다.
+            </h3>
+            (신문기사, 블로그게시물, 포럼게시물 등)
+        </article>
+    </section>
+
+    <aside>
+	    전체적으로 사용하는 글로벌 요소중 우측 이나 좌측에 있는
+        메뉴, 배너 등의 전반적인 컨텐츠가 들어가는 aside (선택적 global요소)
+    </aside>
+
+    <footer>
+	    저작권정보, 회사주소, 개인정보 취급방침 등의 하단 글로벌 요소
+        가 들어가는 footer (global요소)
+    </footer>
+
+    <main>
+        주요 컨텐츠를 나타냅니다. 주요 컨텐츠 영역은 문서의 핵심 주제나 앱의
+        핵심 기능에 직접적으로 확장하는 컨텐츠
+    </main>
+<!-- 
+    현재 IE12 버전은 지원하는것으로 보이나, 이전의 IE는 지원불가
+    문서내 mainpage에 해당하는 섹션부나 페이지를 감쌀 때 사용 한다.
+    한개 문서에서 1번만 사용할 수 있다. 또한 구조장 최상위에 존재 해야 한다.
+     -->
+  
+</body>
+</html>

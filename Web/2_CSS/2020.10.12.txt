@@ -1,0 +1,27 @@
+
+* 스타일은 body한테 직접 주는것보다는 div 써서 감싸는게 나은듯. 개인차이?
+
+* ul:after{content:''; display:block; visibility:hidden; clear:both;}
+    애프터 캔슬러. 외워두는게 좋다? 자주 쓰는건가.
+
+* {border: 테두리 넓이 / 선 종류 / 선 색;}
+    테두리 주는 속성. 엑셀에서 테두리 사용하는 느낌이랑 같은듯.
+    상하좌우 다른 속성을 주려면 {border-top / bottom / left / right: ;} 사용.
+    {border-width / style / color : ;} 속성을 줄 수도 있음. 축약법이므로 네 면의 속성을 스페이스로 구분하여 한번에 적용 가능
+
+    solid : 직선
+    dotted : 점선
+    dashed : 자르는 선
+    double : 두줄의 선
+    groove : 테두리를 입체감 있게
+    ridge : 볼록한 테두리
+    inset : 들어가 보이는 테두리
+    outset : 튀어나와 보이는 테두리
+
+* 마진 | 보더(테두리) | 패딩 | 콘텐츠 형식으로 순서됨.
+
+* {box-sizing: border-box;}
+    해당 태그에 정해져있는 width, height 값 안에서 패딩과 보더값을 계산하게 만듬. 총 width, height 값의 변화가 없음. 굉장히 많이 쓰임.
+
+* {border-radious: 크기;}
+    테두리를 둥그렇게 깍아냄. 선 스타일이 적용되어있지 않아도 해당 태그의 모양을 잘라내는듯. 축약법으로 네각의 반지름을 다르게 줄 수 있음. 픽셀이나 퍼센트로 많이 쓰는듯? 순서는 여전히 왼쪽위부터 시계방향

@@ -1,0 +1,11 @@
+body {
+    background-color: rosybrown;
+}
+
+/* 
+width 가로크기
+height 세로크기
+color 폰트색상
+background-color 배경색상
+색상입력 : rgba 색상이름 HEX 방식 등으로 적용 가능 
+*/

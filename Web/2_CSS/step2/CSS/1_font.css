@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100&display=swap');
+
+/* body {font-family: Roboto;} */
+/* font-family 폰트명, font-size 폰트 크기, font-weidht 폰트 두께 */
+h1 {font-family: 'Roboto'; font-size: 20px; background-color: seagreen; line-height: 1;}
+h2 {font-family: 'Oswald'; font-size: 40px; background-color: skyblue; line-height: 3;}
+h3 {font-family: 'Courier Prime'; font-size: 60px; background-color: thistle; line-height: 3;}
+
+p.letter {letter-spacing: 1px;}
+/* 자간넓이 설정 */
+p.word {word-spacing: 10px;}
+/* 띄어쓰기, 단어간격 설정 */
+
+p.w_normal {width: 150px; white-space: normal;}
+p.w_nowrap {width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+p.t_indent {text-indent: -9999px;}
+
+/* button.test {background-image: 'http://placeholder.it/100x100';} */
+
+a {display: block;}
+/* 이거하면 br/코드 안써도 각각 태그들이 한줄씩 나오네 */
+a.t_deco_N {text-decoration: none; text-transform: none;}
+a.t_deco_U {text-decoration: underline; text-transform: uppercase ;}
+a.t_deco_O {text-decoration: overline; text-transform: lowercase;}
+a.t_deco_T {text-decoration: line-through; text-transform: capitalize;}
+
+p.p_align {text-align: center;}
+
+div.v_alignTest {font-size: 50px;}
+div.v_alignTest span {font-size: 16px; vertical-align: middle;}

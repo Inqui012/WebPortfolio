@@ -1,0 +1,101 @@
+/* About Section Start */
+header + figure {max-width: 940px; width: 100%; margin: 0 auto; padding: 70px 0;}
+header + figure img {width: 25%; margin-left: 5%;}
+header + figure::after {content: ''; display: block; visibility: hidden; clear: both;}
+header + figure figcaption {float: right; color: #413d4b; width: 60%; margin-left: 10%;}
+header + figure figcaption h2 {font-family: 'Playfair Display'; font-size: 22px; font-weight: 600; margin-bottom: 30px;}
+header + figure figcaption p {font-family: 'Roboto'; letter-spacing: 0.42px; font-size: 14px; line-height: 22px; font-weight: 300; margin-bottom: 30px;}
+header + figure figcaption a {display: inline-block; padding: 9px 14px; font-family: 'Hammersmith One'; color: #00e0d0; border: 1px solid #00e0d0; box-sizing: border-box;}
+
+.VideoArea {background: url(../images/background2.png) no-repeat center center / cover; text-align: center; padding: 200px 0;}
+.VideoArea a {font-size: 45px; color: white; display: inline-block; border-radius: 100%; border: 3px solid white; width: 100px; margin-bottom: 35px; padding: 24px 0 31px 5px;}
+.VideoArea h2 {font-family: 'Roboto'; font-weight: 800; color: white;}
+
+/* Expert Section Satrt */
+.ExpertArea {max-width: 940px; width: 100%; text-align: center; margin: 0 auto; padding: 70px 0;}
+.ExpertArea h2 {font-family: 'Playfair Display'; font-size: 22px; font-weight: 600; color: #413d4b; margin-bottom: 20px;}
+.ExpertArea p {font-family: 'Playfair Display'; font-size: 14px; color: #2f2d35; letter-spacing: 1.2px;}
+.ExpertArea span {width: 50px; border-top: 2px solid #c6c4c9; opacity: 0.2; margin: 20px auto; display: inline-block; margin-bottom: 80px;}
+.ExpertArea ul {list-style: none;}
+.ExpertArea ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+.ExpertArea ul li {float: left; width: 33.33%; padding: 0 30px; box-sizing: border-box;}
+
+.ExpertArea ul li:not(:nth-child(3n)) {border-right: 1px solid #ebebeb;}
+.ExpertArea ul li:nth-child(1) {background: url('../images/Icon1.png') no-repeat 50% 40px; border-bottom: 1px solid #ebebeb;}
+.ExpertArea ul li:nth-child(2) {background: url('../images/Icon2.png') no-repeat 50% 40px; border-bottom: 1px solid #ebebeb;}
+.ExpertArea ul li:nth-child(3) {background: url('../images/Icon3.png') no-repeat 50% 40px; border-bottom: 1px solid #ebebeb;}
+.ExpertArea ul li:nth-child(4) {background: url('../images/Icon4.png') no-repeat 50% 40px; }
+.ExpertArea ul li:nth-child(5) {background: url('../images/Icon5.png') no-repeat 50% 40px; }
+.ExpertArea ul li:nth-child(6) {background: url('../images/Icon6.png') no-repeat 50% 40px; }
+
+.ExpertArea ul li h3 {font-family: 'Roboto'; font-size: 14px; font-weight: 800; padding-top: 115px; margin-bottom: 25px;}
+.ExpertArea ul li p {font-family: 'Roboto'; font-size: 14px; font-weight: 300; line-height: 22px; letter-spacing: 0.7px; margin-bottom: 40px;}
+
+/* Team Section Start */
+.TeamArea {background: url(../images/background3.png) no-repeat center center; background-size: cover; color: #ffffff; padding: 70px 0; text-align: center;}
+.TeamArea h2 {font-family: 'Playfair Display'; font-size: 22px; font-weight: 600;  margin-bottom: 20px;}
+.TeamArea p:nth-of-type(1) {font-family: 'Playfair Display'; font-size: 14px; letter-spacing: 1.2px;}
+.TeamArea span {background-color: #c6c4c9; width: 50px; height: 1px; margin: 20px auto; display: inline-block; margin-bottom: 45px;}
+
+.TeamArea ul {margin-bottom: 70px;}
+.TeamArea ul li {display: inline-block; width: 220px; border: 1px solid white; box-sizing: border-box; text-align: center;}
+.TeamArea ul li:not(:last-child) {margin-right: 2.1276%;}
+.TeamArea ul li figure img {display: block; width: 100%; margin-bottom: 20px;}
+.TeamArea ul li figure figcaption strong {font-family: 'Roboto'; color: #ffffff; font-size: 14px; font-weight: 800;}
+.TeamArea ul li figure figcaption p {font-family: 'Roboto'; color: #ffffff; font-size: 13px; font-weight: 300; padding-top: 10px; margin-bottom: 25px;}
+
+.TeamArea p:nth-of-type(2) {font-family: 'Roboto'; font-size: 14px; font-weight: 300; color: #ffffff; margin-bottom: 30px;}
+.TeamArea a {display: inline-block; padding: 9px 14px; font-family: 'Hammersmith One'; color: #00e0d0; border: 1px solid #00e0d0; box-sizing: border-box;}
+
+/* Work Section Start */
+.WorkArea {padding: 70px 0; max-width: 940px; width: 100%; margin: 0 auto; text-align: center;}
+.WorkArea h2 {font-family: 'Playfair Display'; font-size: 22px; font-weight: 600; color: #413d4b; padding-bottom: 70px; text-align: left;}
+.WorkArea h2::after {content: ''; visibility: hidden; display: block; clear: both;}
+.WorkArea h2 a {font-family: 'Roboto'; font-size: 14px; font-weight: 300; color: #413d4b; float: right;}
+/*
+    h2 를 통채로 가운데 정렬을 하고 a 는 position 으로 맞추는 방법도 좋음. 한줄 줄어드네.
+    두 글자를 수평으로 놓으려면 line-height 생각하면서 top 값을 조금 조절해주면 됨.
+    그렇게 하면 섹션 전체 크기를 가둔게 아니니 아래 ul 을 100% 채우는것도 훨씬 간단하게 되고.
+    img 한테 기본적으로 line-height 가 1이 들어간대.
+*/
+.WorkArea ul {width: 100vw; position: relative; left: 50%; right: 50%; margin: 0 -50vw; margin-bottom: 70px; overflow: hidden;}
+.WorkArea ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+.WorkArea ul li {width: calc(100vw / 6); float: left; line-height: 0;}
+.WorkArea ul li img {width: 100%;}
+.WorkArea > a {display: inline-block; padding: 9px 14px; font-family: 'Hammersmith One'; color: #00e0d0; border: 1px solid #00e0d0; box-sizing: border-box;}
+
+/* Quote Section Start */
+.QuoteArea {background: url(../images/background4.png) no-repeat center center; background-size: cover; padding: 70px 0; text-align: center;}
+.QuoteArea h2 {font-size: 0; background: url(../images/Quotes.png) no-repeat center center; display: inline-block; width: 100%; height: 25px;}
+.QuoteArea q {font-family: 'Playfair Display'; line-height: 26px; padding: 40px 0; color: #ffffff; display: inline-block; width: 48.125%; letter-spacing: 0.4px;}
+.QuoteArea q strong {font-family: 'Roboto'; font-size: 14px; line-height: 22px; font-weight: 600; padding-top: 55px; display: block;}
+.QuoteArea q p {font-family: 'Roboto'; font-size: 13px; line-height: 22px; font-weight: 300;}
+.QuoteArea div {max-width: 340px; margin: 0 auto; position: relative;}
+.QuoteArea div > a {position: absolute; color: #ffffff; font-size: 30px; top: calc(50% - 15px);}
+.QuoteArea div > a:first-child {left: 0;}
+.QuoteArea div > a:nth-of-type(2) {right: 0;}
+
+.QuoteArea div ul {width: 92.5%; list-style: none; margin: 0 auto;}
+.QuoteArea div ul li {width: 12.162%; display: inline-block;}
+.QuoteArea div ul li:not(:last-child) {margin-right: 4.054%;}
+
+.QuoteArea div ul li.Active {width: 18.918%;}
+.QuoteArea div ul li img {width: 100%; vertical-align: middle;}
+
+/* News Section Start */
+.News {max-width: 940px; width: 100%; margin: 0 auto; padding: 70px 0; text-align: left;}
+.News > h2 {display: none;}
+.News::after {content: ''; display: block; visibility: hidden; clear: both;}
+.News form {width: 50%; float: left; margin-right: 95px;}
+.News form legend {font-family: 'Playfair Display'; font-size: 22px; font-weight: 600; color: #413d4b; margin-bottom: 35px;}
+.News form legend ~ *:not([type='submit']) {width: 100%; padding: 15px 20px; border: 1px solid #e5e5e5; margin-bottom: 20px; box-sizing: border-box; font-family: 'Roboto'; font-size: 14px; font-weight: 300; color: #413d3b;}
+.News form textarea {resize: none; height: 200px;}
+.News form input[type='submit'] {padding: 15px 35px; font-family: 'Hammersmith One'; color: #00e0d0; border: 1px solid #00e0d0; background-color: #ffffff; box-sizing: border-box;}
+
+.News div {width: calc(50% - 95px); float: left;}
+.News div h3 {font-family: 'Playfair Display'; font-size: 22px; font-weight: 600; color: #413d4b; margin-bottom: -10px;}
+.News div ul {width: 100%; list-style: none;}
+.News div ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+.News div ul li:nth-child(2n-1) {float: left;}
+.News div ul li:nth-child(2n) {float: right;}
+.News div ul li * {width: 100%;}

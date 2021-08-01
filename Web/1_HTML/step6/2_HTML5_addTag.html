@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5에서 새로 추가 된 Tag</title>
+</head>
+<body>
+    
+    <figure>
+        <img src="http://via.placeholder.com/250x250" alt="">
+        <figcaption>
+            아직 정의되지 않은 이미지 (placeholder 설명)
+        </figcaption>
+        <!--
+            figure 는 이미지와 설명글을 담을 수 있는 태그고, figcaption 은 이미지의 설명글을 담는 역할을 한다.
+        -->
+    </figure>
+
+    <ul>
+        <li>
+            <figure>
+                <img src="http://placehold.it/250x250" alt="">
+                <figcaption>
+                    <h4>상품 이름</h4>
+                    <p>상품 설명</p>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+    <!--
+        구조화 예
+    -->
+
+    <progress max="100" value="50"></progress>
+    <!--
+        progress 는 나타내고픈 진행 상황을 실시간으로 나타낼 때 사용, 값을 value 로 설정하고 최대값을 max로 설정한다. (IE는 10 이상만 지원)
+    -->
+
+    <meter value="50" max="100" min="20"></meter>
+    <!--
+        progress 가 진행중인 상황을 담당한다면, meter 는 현재 사용량이나 소모된 양 등의 정지된 산출값에 적합하다.
+    -->
+
+    <address>
+        by <a href="http://zzangsaem.blogspot.kr" target="_blank">zzangsaem.blogspot.kr</a>
+        mailto: <a href="mailto:kse012040@gmail.com">address</a>
+        <!--
+            address tag 안에는 제작자 및 회사의 연락처 정보(메일, 실제주소, 전화번호) 와 피드백을 보낼 수 있는 정보 등을 담아낼 수 있다.
+            만일 우편번호등 만 기재해야 한다면, p 태그를 사용함.
+        -->
+    </address>
+
+    <details>
+        <summary>요약이나 레이블</summary>
+        <p>본문 내용</p>
+        <!--
+            어떠한 한 키워드(summary) 의 요약 및 요소들을 넣어두고 event(클릭, 오버)로 show / hide 기능이 작동되게 함.
+        -->
+    </details>
+
+    <input list="browsers" type="" name="" id="">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    <!--
+        select 와 유사함. 고를 수 있는, 가능한, 혹은 추천하는 선택지를 나타냄. 동시에 사용자가 입력필드에 해당 옵션 일부를 작성하면 일치되는 결과값 출력(자동완성기능)
+    -->
+    </datalist>
+    
+
+</body>
+</html>

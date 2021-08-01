@@ -1,0 +1,42 @@
+*{margin: 0; padding: 0;}
+        div img{
+            float: left;
+            /* vertical-align: middle; */
+            border-radius: 50%;
+        }
+        ul{
+            width: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        ul li{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            float: left;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        p{
+            background-color: rebeccapurple;
+            /* clear: both; */
+        }
+        .test{float: right;}
+
+        /* 
+        float옵션중 left와 right의 활용도가 제일 높습니다.
+        단, right를 사용할 땐 정렬 역시 우측을 기준으로 정렬 하기 때문에,
+        컨텐츠 배열에 신경써야 합니다.
+        -p.s- float가 적용되게되면 적용된 대상의 부모 객체의 높이값상실주의
+
+        float를 이용하여 레이아웃을 설계 하는 경우, float가 들어간 부분의 밑 객체가 
+        같이 딸려오는 현상이 있는데, 이를 방지 하기 3가지 방법이 있습니다.
+        float 푸는 세가지 
+        clear:both
+        overflow:hidden  
+        캔슬러 ex) 선택자:after{content:''; display:block; visibility:hidden; clear:both;}
+
+        float를 이용하여 레이아웃을 설계 하는 경우, float가 들어간 부분의 밑 객체가 
+        같이 딸려오는 현상이 있는데, 이를 방지 하기 위해서는 float를 사용한 객체의 부모
+        객체에게 overflow:hidden;을 준다. 
+        */

@@ -1,0 +1,27 @@
+* {margin: 0; padding: 0;}
+html, body {height: 100%;}
+
+body > div {width: 100%; height: 100%; background-color: black; position: relative;}
+div > input[type='checkbox'] + label {color: white;}
+div > input[type='checkbox']:checked ~ div {display: block;}
+
+div div {width: 50%; min-width: 500px; height: 50%; position: absolute; left: 25%; top: 25%; display: none;}
+
+div div nav ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+div div nav ul li {width: 25%; background-color: brown; list-style: none; float: left;}
+div div nav ul li a {width: 100%; padding: 5px 15px; text-align: center; vertical-align: middle; color: white; text-decoration: none; display: inherit; box-sizing: border-box;}
+div div nav ul li a:hover {background-color: white; color: brown;}
+
+div div form fieldset {border: none; background-color: gray;}
+div div form fieldset legend {display: none;}
+div div form fieldset h1 {color: white; padding: 10px; display: block; text-align: center;}
+div div form fieldset ul li {width: 90%; margin: 10px auto; list-style: none;}
+
+div div form fieldset ul li label {width: 25%; background-color: brown; color: white; padding: 10px 20px; text-align: center; vertical-align: middle; display: inline-block; box-sizing: border-box;}
+div div form fieldset ul li input:not([type='submit']) {width: 75%; border: none; padding: 10px 20px; vertical-align: middle; box-sizing: border-box;}
+div div form fieldset ul li input:not([type='submit']):focus {outline: none;}
+div div form fieldset ul li input[type='submit'] {width: 100%; padding: 10px 20px; background-color: brown; color: white; text-align: center; vertical-align: middle; border: none;}
+div div form fieldset ul li input[type='submit']:hover {background-color: white; color: brown;}
+
+
+

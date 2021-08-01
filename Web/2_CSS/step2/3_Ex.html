@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VW VH 예제만들기</title>
+    <style>
+        * {margin: 0; padding: 0; word-spacing: -6px;}
+
+        header {width: 100vw; height: 32vh; background-color: springgreen;}
+        header nav {background-color: teal; height: 10vh; margin: 10vh 0 0 0;}
+        section {width: 60%; height: 32vh; display: inline-block; background-color: tomato; margin: 2vh 2% 0 0;}
+        /* vw 값으로 100을 채워줘도 아래로 떨어짐. 퍼센트로 대체하니 잘 됨.*/
+        aside {width: 38%; height: 32vh; display: inline-block; background-color: yellow; margin: 0;}
+        footer {width: 100vw; height: 32vh; background-color: royalblue; margin: 2vh 0 0 0;}
+    </style>
+</head>
+<body>
+
+    <header>
+        header
+        <nav>
+            nav
+        </nav>
+    </header>
+    <section>
+        section
+    </section>
+    <aside>
+        aside
+    </aside>
+    <footer>
+        footer
+    </footer>
+
+</body>
+</html>
