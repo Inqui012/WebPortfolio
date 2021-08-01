@@ -1,8 +1,0 @@
-* {margin: 0; padding: 0;}
-
-.Box {width: 450px; height: 450px; margin: 0 auto; position: relative;}
-/* .box div {width: 300px; height: 300px; position: absolute; border-radius: 300px;} */
-
-.RedCircle {width: 300px; height: 300px; position: absolute; border-radius: 300px; background-color: rgba(255, 0, 0, 50%); top: 0; left: 0;}
-.BlueCircle {width: 300px; height: 300px; position: absolute; border-radius: 300px; background-color: rgba(0, 0, 255, 50%); top: 0; left: 150px;}
-.GreenCircle {width: 300px; height: 300px; position: absolute; border-radius: 300px; background-color: rgba(0, 255, 0, 50%); top: 150px; left: 75px;}

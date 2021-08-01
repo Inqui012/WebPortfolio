@@ -1,5 +1,0 @@
-* {margin: 0; padding: 0;}
-
-html body {width: 100%;}
-.left {width: 20%; height: 100vh; background-color: darkgray; position: fixed;}
-.right {width: 80%; height: 2000px; background-color: steelblue; position: absolute; left: 20%;}
