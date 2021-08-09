@@ -42,10 +42,14 @@ Noto sans KR 미디엄 / 볼드 / 레귤러 중 택
   
 모바일 폰트는 16이 큰편이고 14-12를 위주로 많이 쓰느거 같네
 
-60 / 70 / bold / -50
-20 / 30 / medium / 50
-20 / 30 / regular / 50
-16 / 25 / regular / 50
+60 / 70 / bold / -50  
+40 / 50 / bold / 50  
+40 / 50 / medium / 50  
+24 / 35 / medium / 50  
+20 / 30 / medium / 50  
+20 / 30 / regular / 50  
+16 / 25 / regular / 50  
+16 / 25 / regular / -50  
 
 # 간격
 220  
