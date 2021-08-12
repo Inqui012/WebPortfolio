@@ -1,0 +1,2 @@
+header div nav ul li > ul {display: none;}
+header div nav ul li:hover > ul {display: block;}

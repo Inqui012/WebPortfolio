@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
 </head>
 <body>
     <header>
         <div>
             <h1>
-                <img src="" alt="파이널 판타지14">
+                파이널 판타지14
             </h1>
             <nav>
                 <ul>
                     <li>
-                        트레일러
+                        <a href="">트레일러</a>
                         <ul>
                             <li><a href="">신생 에오르제아</a></li>
                             <li><a href="">창천의 이슈가르드</a></li>
@@ -24,25 +33,25 @@
                         </ul>
                     </li>
                     <li>
-                        직업소개
+                        <a href="">직업소개</a>
                         <ul>
-                            <li>방어</li>
-                            <li>회복</li>
-                            <li>근거리 공격</li>
-                            <li>원거리 물리 공격</li>
-                            <li>원거리 마법 공격</li>
-                            <li>채집</li>
-                            <li>제작</li>
+                            <li><a href="">방어</a></li>
+                            <li><a href="">회복</a></li>
+                            <li><a href="">근거리 공격</a></li>
+                            <li><a href="">원거리 물리 공격</a></li>
+                            <li><a href="">원거리 마법 공격</a></li>
+                            <li><a href="">채집</a></li>
+                            <li><a href="">제작</a></li>
                         </ul>
                     </li>
                     <li>
-                        즐길거리
+                        <a href="">즐길거리</a>
                         <ul>
-                            <li>외전 스토리</li>
-                            <li>골드소서</li>
-                            <li>자유부대</li>
-                            <li>하우징</li>
-                            <li>무료 체험</li>
+                            <li><a href="">외전 스토리</a></li>
+                            <li><a href="">골드소서</a></li>
+                            <li><a href="">자유부대</a></li>
+                            <li><a href="">하우징</a></li>
+                            <li><a href="">무료 체험</a></li>
                         </ul>
                     </li>
                     <li>
@@ -53,18 +62,32 @@
         </div>
     </header>
     <div>
-        <ul>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-        <p></p>
+        <div class="slider">        
+                <div><img src="img\bg_slider (1).png" alt=""></div>
+                <div><img src="img\bg_slider (2).png" alt=""></div>
+                <div><img src="img\bg_slider (3).png" alt=""></div>
+                <div><img src="img\bg_slider (4).png" alt=""></div>
+        </div>
+        <h2>
+            <img src="img\logo\logo_xiv.gif" alt="XIV로고">
+            당신을 기다리는 모험의 세계로!
+        </h2>
     </div>
+    <section>
+        <h2>공식 홈페이지</h2>
+        <a href="">공식 홈페이지 방문하기</a>
+        <a href="">크리스탈 샵 방문하기</a>
+    </section>
     <footer>
-        <img src="" alt="">
-        <address>
-
-        </address>
-        <img src="" alt="">
+        <img src="img\logo\logo_actoz.png" alt="엑토즈 소프트">
+        <p>
+            <address>
+                (주)액토즈소프트 | 서울시 강남구 테헤란로 44길 8 아이콘 역삼(ICON Yeoksam) 11F~15F | ㉾ 06210 | Tel 1800-9602 | Fax 02-732-8621 | Email FFXIV@actoz.com
+            </address>
+            사업자등록번호 201-81-55470 | 통신판매업신고 제 2018-서울강남-03265 | 대표이사 GUO HAIBIN 사업자정보확인
+            © 2010 - 2021 SQUARE ENIX CO., LTD. All Rights Reserved. Published in Korea by Actoz Soft CO., LTD.
+        </p>
+        <img src="img\logo\logo_squar.png" alt="스퀘어 에닉스">
     </footer>
 </body>
 </html>
