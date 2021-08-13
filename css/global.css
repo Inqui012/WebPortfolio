@@ -1,11 +1,12 @@
 @media screen and (min-width:1280px) {
+    * {margin: 0px; padding: 0px;}
     body {max-width: 1596px; width: 100%; margin: 0 auto;}
 
     header {height: 75px;}
     header div h1 {background: url("../img/logo/logo_ff14.png") no-repeat left top; background-size: contain; box-sizing: border-box; float: left; width: 235px; height: 65px; display: block; text-indent: -9999px; margin: 5px 0;}
     header div nav ul {list-style: none; margin: 0; padding: 0; overflow: hidden; float: right;}
     header div nav ul > li {float: left;}
-    header div nav ul li > a {font-family: 'Noto Sans KR'; font-size: 20px; font-weight: bold; line-height: 30px; display: block; text-align: center; text-decoration: none; color: black; padding: 20px 50px;}
-    header div nav ul li > a:last-child {background-color: #8fafff; width: 135px; height: 100%;} 
+    header div nav ul li > a {font-family: 'Noto Sans KR'; font-size: 20px; font-weight: bold; line-height: 30px; display: block; text-align: center; text-decoration: none; color: black; padding: 22px 50px;}
+    header div nav ul li > a:last-child {background-color: #6893ff; width: 135px; height: 100%;} 
 
 }
