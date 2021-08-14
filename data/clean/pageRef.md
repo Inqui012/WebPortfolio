@@ -35,6 +35,8 @@ git
 시작하기 버튼 평행이동이나 사선으로 색채우는거 좋아보인다
 - https://codepen.io/ritchiejacobs/pen/qEJjBM
 
+#6893ff  
+#070a1a
 # 폰트
 Noto sans KR 미디엄 / 볼드 / 레귤러 중 택
 기본 16px lh 25 / 글자간격 50(포토샵).
