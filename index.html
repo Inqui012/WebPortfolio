@@ -18,18 +18,21 @@
 <body>
     <header>
         <div>
+컨텐츠 크기는 다양할수도 있으니까 크기에 맞는 클래스를 만들어서 지정해주는게 편할것 같아
             <h1>
                 <a href="#">
                     <!-- 로고를 background 로 넣는건 접근성 회피용? 여기는 이미지태그 -->
                     <img src="images/FF14MainLogo.png" alt="파이널판타지14 영문 로고">
-                    파이널 판타지14
+          
                 </a>
             </h1>
             <nav>
                 <ul>
-                    <li class="mainMenu">
-                        <a href="">트레일러</a>
+패딩으로 크기 잡으면 후에 글자갯수에 따라서 다르게 나오니까 이런경우는 픽셀로 고정 크기 주기. 파센트가 좋은데 지금은 하위메뉴 위치가 애매해서 픽셀로.
+                    <li class="mainMenu" 클래스 없애고 선택자로>
+                        <a href=""><span>트레일러</span></a>
                         <ul class="subMenu">
+포지션 사용. 기준은 메인메뉴고 바텀기준으로 하면 높이 늘렸을때 위로 늘어나니까 탑 기준으로 메인메뉴 높이만큼 밑으로 밀어놓기
                             <li><a href="">신생 에오르제아</a></li>
                             <li><a href="">창천의 이슈가르드</a></li>
                             <li><a href="">홍련의 해방자</a></li>
@@ -68,7 +71,8 @@
     </header>
     <div class="mainSlider">
         <div class="slider">        
-                <div><img src="images/mainSlider01.png" alt=""></div>
+                Js로 루프 만들면 실시간으로 코드가 바뀌니까 이미지는 배끄라운드로하고 디아이브이에 클래스 주기
+<div><img src="images/mainSlider01.png" alt=""></div>
                 <div><img src="images/mainSlider02.png" alt=""></div>
                 <div><img src="images/mainSlider03.png" alt=""></div>
                 <div><img src="images/mainSlider04.png" alt=""></div>
