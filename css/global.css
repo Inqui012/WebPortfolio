@@ -1,16 +1,29 @@
-@media screen and (min-width:1280px) {
-    * {margin: 0px; padding: 0px;}
-    body {max-width: 1596px; width: 100%; margin: 0 auto; font-family: 'Noto Sans KR';}
-    
-    header {height: 75px;}
+    /* 마진패딩을 리셋Css 에 들어감. body 직접 수정은 추천하지 않음. height 사용 지양할것.
+     * {margin: 0px; padding: 0px;}
+    body {max-width: 1596px; width: 100%; margin: 0 auto; font-family: ;}
+    header {height: 75px;} */
+
+    header div {max-width: 1596px; width: 100%; margin: 0 auto;}
+    header div h1 {float: left; font-size: 0;}
+    header div nav {font-size: 20px; text-align: center; float: right;}
+    header div::after {content: ''; display: block; visibility: hidden; clear: both;}
+    header div nav ul li.mainMenu {float: left;}
+    header div nav ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    header div nav ul li.mainMenu > a {font-weight: bold;  line-height: 75px; padding: 0 50px;}
+    header div nav ul li.mainMenu:last-child {background: blue; padding: 0 50px;}
+
+
+    header div nav ul li ul.subMenu li {background: lightseagreen; padding: 20px 0;}
+    ul.subMenu li a {line-height: 30px;}
+    ul.subMenu li a, li.mainMenu a {color: #000;}
+    ul.subMenu {display: none;}
+
+/* 
     header div h1 {background: url("../img/logo/logo_ff14.png") no-repeat left top; background-size: contain; box-sizing: border-box; float: left; width: 235px; height: 65px; display: block; text-indent: -9999px; margin: 5px 0;}
     header div nav ul {list-style: none; margin: 0; padding: 0; overflow: hidden; float: right;}
     header div nav ul > li {float: left;}
-    header div nav ul li > a {font-size: 20px; font-weight: bold; line-height: 30px; display: block; text-align: center; text-decoration: none; color: #000; padding: 22px 50px;}
-    header div nav ul li > a:last-child {background: linear-gradient(180deg, rgba(117,204,255,1) 0%, rgba(111,189,221,1) 100%); width: 135px; height: 100%; position: relative; overflow: hidden;}
-    header div nav ul li > a:last-child::before {animation: start-btn 3s ease-in-out infinite; position: absolute; content: ''; top: -80px; left: 0; width: 30px; height: 100%; background: rgb(226 244 255 / 50%);}
-    /* header div nav ul li button {background-color: #75CCFF; height: 75px; width: 235px; outline: none; font-size: 20px; font-weight: bold; line-height: 30px; border: none; cursor: pointer;} */
-    /* header div nav ul li button::before {animation: start-btn 3s ease-in-out infinite; } */
+    header div nav ul li > a {font-size: 20px; font-weight: bold; line-height: 30px; display: block; text-align: center; color: #000; padding: 22px 50px;}
+
     
     footer {
         width: 100vw;
@@ -26,12 +39,4 @@
         box-sizing: border-box;
     }
     footer img {position: absolute; top: calc(50% - 100px);}
-    footer p {}
-
-    @keyframes start-btn {
-        0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-        80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-        81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-        100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
-    }
-}
+    footer p {} */

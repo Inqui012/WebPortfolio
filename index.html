@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>파이널 판타지 소개</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
@@ -19,22 +19,26 @@
     <header>
         <div>
             <h1>
-                파이널 판타지14
+                <a href="#">
+                    <!-- 로고를 background 로 넣는건 접근성 회피용? 여기는 이미지태그 -->
+                    <img src="images/FF14MainLogo.png" alt="파이널판타지14 영문 로고">
+                    파이널 판타지14
+                </a>
             </h1>
             <nav>
                 <ul>
-                    <li>
+                    <li class="mainMenu">
                         <a href="">트레일러</a>
-                        <ul>
+                        <ul class="subMenu">
                             <li><a href="">신생 에오르제아</a></li>
                             <li><a href="">창천의 이슈가르드</a></li>
                             <li><a href="">홍련의 해방자</a></li>
                             <li><a href="">칠흑의 반역자</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="mainMenu">
                         <a href="">직업소개</a>
-                        <ul>
+                        <ul class="subMenu">
                             <li><a href="">방어</a></li>
                             <li><a href="">회복</a></li>
                             <li><a href="">근거리 공격</a></li>
@@ -44,9 +48,9 @@
                             <li><a href="">제작</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="mainMenu">
                         <a href="">즐길거리</a>
-                        <ul>
+                        <ul class="subMenu">
                             <li><a href="">외전 스토리</a></li>
                             <li><a href="">골드소서</a></li>
                             <li><a href="">자유부대</a></li>
@@ -54,36 +58,37 @@
                             <li><a href="">무료 체험</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="mainMenu">
                         <a href="">시작하기</a>
-                        <!-- <button type="button">시작하기</button> -->
+                        <!-- 클릭하면 다른 페이지로 넘어가는 거니까 A태그가 맞다 -->
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div>
+    <div class="mainSlider">
         <div class="slider">        
-                <div><img src="img\bg_slider (1).png" alt=""></div>
-                <div><img src="img\bg_slider (2).png" alt=""></div>
-                <div><img src="img\bg_slider (3).png" alt=""></div>
-                <div><img src="img\bg_slider (4).png" alt=""></div>
-                <div><img src="img\bg_slider (5).png" alt=""></div>
-                <div><img src="img\bg_slider (6).png" alt=""></div>
-                <div><img src="img\bg_slider (7).png" alt=""></div>
+                <div><img src="images/mainSlider01.png" alt=""></div>
+                <div><img src="images/mainSlider02.png" alt=""></div>
+                <div><img src="images/mainSlider03.png" alt=""></div>
+                <div><img src="images/mainSlider04.png" alt=""></div>
+                <div><img src="images/mainSlider05.png" alt=""></div>
+                <div><img src="images/mainSlider06.png" alt=""></div>
+                <div><img src="images/mainSlider07.png" alt=""></div>
         </div>
         <h2>
-            <!-- <img src="img/logo/logo_xiv03.png" alt="파이널 판타지14 로고"> -->
+            <!-- 내용을 꾸미는 이미지니까 background 가 맞음 -->
             당신을 기다리는<br>모험의 세계로!
         </h2>
     </div>
-    <section class="">
+    <!-- <section class="oficialSite"> 내용에 비해 section은 과한 느낌?-->
+    <div class="oricialSite">
         <h2>공식 홈페이지</h2>
         <a href="">공식 홈페이지<br>방문하기</a>
         <a href="">크리스탈 샵<br>방문하기</a>
-    </section>
+    </div>
     <footer>
-        <img src="img\logo\logo_actoz.png" alt="엑토즈 소프트">
+        <img src="" alt="엑토즈 소프트">
         <p>
             <address>
                 (주)액토즈소프트 | 서울시 강남구 테헤란로 44길 8 아이콘 역삼(ICON Yeoksam) 11F~15F | ㉾ 06210<br>
@@ -93,7 +98,7 @@
             © 2010 - 2021 SQUARE ENIX CO., LTD. All Rights Reserved.<br>
             Published in Korea by Actoz Soft CO., LTD.
         </p>
-        <img src="img\logo\logo_squar.png" alt="스퀘어 에닉스">
+        <img src="" alt="스퀘어 에닉스">
     </footer>
 </body>
 </html>
