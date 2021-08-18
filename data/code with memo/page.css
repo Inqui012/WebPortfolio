@@ -1,16 +1,13 @@
-
 /* Main page */
-div.mainSlider h2, div.officialSite a {color: #fff; font-weight: bold; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
-
 div.mainSlider {z-index: 1; position: relative;}
-div.mainSlider h2 {background: url("../images/simpleXivLogo.png") no-repeat left top; position: absolute; font-size: 55px; line-height: 65px; padding: 300px 0 90px 150px; top: calc(45% - 260px); left: 15%;}
-div.mainSlider div.slider div {width: 100%; height: 800px; background-repeat: no-repeat; background-position: center center;}
 .bx-wrapper {box-shadow: none; border: none;}
 .bx-wrapper .bx-pager {bottom: 30px; max-width: 1596px; width: 100%; margin: 0 auto; left: 0; right: 0;}
 .bx-wrapper .bx-pager::after {content: ''; display: block; visibility: hidden; clear: both;}
 .bx-pager-item {float: left; width: calc(100% / 7);}
 .bx-wrapper .bx-pager.bx-default-pager a {background: #fff; opacity: 0.7; width: 95%; margin: 0 auto;}
-
+div.mainSlider div.slider div {width: 100%; height: 800px; background-repeat: no-repeat; background-position: center center;}
+/* 프로그레스바를 정밀하게 하려면 JS가 많이 들어가기도 하니까 나중에 */
+/* height를 지정해줘야 이미지가 보이네? */
 div.mainSlider div.slider div.sliderImg01 {background-image: url("../images/mainSlider01.png");}
 div.mainSlider div.slider div.sliderImg02 {background-image: url("../images/mainSlider02.png");}
 div.mainSlider div.slider div.sliderImg03 {background-image: url("../images/mainSlider03.png");}
@@ -19,6 +16,8 @@ div.mainSlider div.slider div.sliderImg05 {background-image: url("../images/main
 div.mainSlider div.slider div.sliderImg06 {background-image: url("../images/mainSlider06.png");}
 div.mainSlider div.slider div.sliderImg07 {background-image: url("../images/mainSlider07.png");}
 
+div.mainSlider h2, div.officialSite a {color: #fff; font-weight: bold; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
+div.mainSlider h2 {background: url("../images/simpleXivLogo.png") no-repeat left top; position: absolute; font-size: 55px; line-height: 65px; padding: 300px 0 90px 150px; top: calc(45% - 260px); left: 15%;}
 div.officialSite {margin-top: 100px;}
 div.officialSite::after {content: ''; display: block; visibility: hidden; clear: both;}
 div.officialSite h2 {font-size: 0;}
@@ -28,7 +27,9 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/oficialSite0
 div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%;}
 div.officialSite a:nth-of-type(2n) {margin-left: 20px; padding-right: 23.45%;}
 
+
 /* Trailer Page */
+
 .trailerVideo {background: url();}
 
 

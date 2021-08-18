@@ -17,7 +17,10 @@
                 speed: 750,
                 controls: false,
                 mode: 'fade'
-            });         
+            });
+            // $('.ttest').hover(function(){
+            //     $('header').toggleClass("test");
+            // });            
         });
     </script>
 </head>
@@ -26,6 +29,7 @@
         <div class="width1596">
             <h1>
                 <a href="#">
+                    <!-- 로고를 background 로 넣는건 접근성 회피용? 여기는 이미지태그 -->
                     <img src="images/FF14MainLogo.png" alt="파이널판타지14 영문 로고">
                 </a>
             </h1>
@@ -64,13 +68,17 @@
                     </li>
                     <li>
                         <a href="">시작하기</a>
+                        <!-- 클릭하면 다른 페이지로 넘어가는 거니까 A태그가 맞다 -->
                     </li>
                 </ul>
             </nav>
         </div>
+        <!-- <span></span> -->
+        <!-- 줄넣으려고 일단 넣어본 span -->
     </header>
     <div class="mainSlider">
         <div class="slider">        
+            <!-- Js로 루프 만들면 실시간으로 코드가 바뀌니까 이미지는 백그라운드. div 클래스로 조정하기 -->
             <div class="sliderImg01"></div>
             <div class="sliderImg02"></div>
             <div class="sliderImg03"></div>
@@ -80,15 +88,22 @@
             <div class="sliderImg07"></div>
         </div>
         <h2>
+            <!-- 내용을 꾸미는 이미지니까 background 가 맞음 -->
             당신을 기다리는<br>모험의 세계로!
         </h2>
     </div>
+    <!-- <section class="oficialSite"> 내용에 비해 section은 과한 느낌?-->
     <div class="officialSite width1596">
         <h2>외부 홈페이지로 이동</h2>
         <a href="http://www.ff14.co.kr/main" target="_blank">공식 홈페이지<br>방문하기</a>
         <a href="https://www.ff14.co.kr/shop" target="_blank">크리스탈 샵<br>방문하기</a>
     </div>
     <footer>
+        <!--
+            배경색 깔고 안에는 1596넣으려고 div 추가 했는데 div 랑 p 태그랑 상성이 안좋다
+            div 문제가 아니라 html 자체 문법오류? p태그 안에 다른게 들어갈 수 없는듯?
+            address 랑 p 랑 나누긴했는데 그럼 배열할때 힘들것 같아서 span 까지... 이거 어떻게 하지?
+        -->
         <div class="width1596">
             <img src="images/footerActozLogo.png" alt="엑토즈 소프트">
             <address>
