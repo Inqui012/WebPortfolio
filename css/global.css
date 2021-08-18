@@ -19,7 +19,7 @@
     */
     
     /* header > span {position: absolute; top: 74px; left: 0; display: block; height: 1px; background-color: #000; opacity: 0.2; width: 100%;} */
-    header div h1 {float: left; line-height: 0;}
+    header div h1 {float: left; line-height: 0; width: 14.85%;}
     
     header div nav {text-align: center; float: right;}
     header div nav > ul::after {content: ''; display: block; visibility: hidden; clear: both;}
@@ -31,12 +31,16 @@
     header div nav > ul > li > a {font-weight: bold; line-height: 75px;}
     /* 내가 속성을 줬는데 적용이 안된다 > display 의심해보기 */
     /* ul li 안에 ul li 일때 상위 li만 선택할때. nav 직속 ul을 선택하고 거기서 직속 li 를 선택 */
-    header div nav > ul > li a span {display: inline-block; padding: 0 5px; line-height: 1; position: relative;}
     /* line-height 는 font-size 의 배수개념. size 20px 의 line-height 1 은 20px, 2 는 40px */
-    header div nav > ul > li a span::after {content: ''; position: absolute; left: 50%; bottom: -10px; width: 0; height: 1px; background-color: #647ab3; transition-duration: 0.5s; transition-property: width, left;}
     /* header div nav > ul > li:hover > a {color: #647ab3;} 배경이 하얀색이면 이런거 하기가 좀 애매하네?*/
-    header div nav > ul > li:hover > a span::after {left: 0; width: 100%;}
-   
+    /* header div nav > ul > li a span {display: inline-block; padding: 0 5px; line-height: 1; position: relative;}
+    header div nav > ul > li a span::after {content: ''; position: absolute; left: 50%; bottom: -10px; width: 0; height: 1px; background-color: #647ab3; transition-duration: 0.5s; transition-property: width, left;}
+    header div nav > ul > li:hover > a span::after {left: 0; width: 100%;} */
+    
+    ul > li a span {display: inline-block; padding: 0 5px; line-height: 1; position: relative;}
+    ul > li a span::after {content: ''; position: absolute; left: 50%; bottom: -10px; width: 0; height: 1px; background-color: #647ab3; transition-duration: 0.5s; transition-property: width, left;}
+    ul > li:hover > a span::after {left: 0; width: 100%;}
+
     header div nav > ul > li:hover > ul {opacity: 1; visibility: visible; transform: translateY(0%); border-top: 1px solid rgba(0, 0, 0, 0.2) ; }
     header div nav > ul > li > ul {position: absolute; background-color: #fff; opacity: 0; top: 75px; z-index: 5; left: 0; visibility: hidden; transform: translateY(-10px); transition: transform 0.3s, visibility 0.2s, opacity 0s;}
     /* 한꺼번에 나오게 하는건 클래스를 토글로 넣어주는 기능인것 같은데 배경색을 맞추는게 어렵다 */
@@ -49,15 +53,25 @@
     header div nav > ul > li > ul li:hover a {opacity: 1;}
     header div nav > ul > li > ul li:hover a span::after {left: 0; width: 100%;}
 
+    /* 푸터 */
     footer {background: #070a1a; margin-top: 100px;}
-    footer div::after {content: ''; display: block; visibility: hidden; clear: both;}
-    footer div {position: relative;}
-    footer div img:first-child {float: left; transform: translateY(50%);}
-    footer div span {color: #fff; float: left; font-size: 16px; line-height: 25px; display: block; margin-left: 110px; padding: 187.5px ​0;}
-    footer div img:last-child {float: right; margin-left: 110px; transform: translateY(50%);}
+    /* footer div::after {content: ''; display: block; visibility: hidden; clear: both;} */
+    footer div {display: flex; justify-content: space-between; align-items: center;}
+    footer div img {width: 21.95%;}
+    footer div address {width: 42.85%; color: #fff; font-size: 16px; line-height: 25px; display: block; margin: 187.5px 0; font-style: normal;}
+    /* footer div img:last-child {margin-left: 112.5px;} */
+    /* footer div img:last-child {float: right; margin-left: 110px; transform: translateY(50%);} */
 
     /* 포지션보다는 플루트가 나은가? 
     footer img {position: absolute; top: 0; bottom: 0; margin: auto 0;}
     footer img:first-child {left: 0;}
     footer img:last-child {right: 0;} */
     
+    /* SubMenu */
+    .subMenu {background: url("../images/subMenuBG.png") no-repeat center center; text-align: center;}
+    .subMenu h2 {font-size: 40px; font-weight: bold; line-height: 50px; color: #fff; padding: 130px 0 35px 0;}
+    /* .subMenu ul {display: flex; align-items: center; justify-content: space-evenly;} */
+    .subMenu ul {margin: 0 auto; width: fit-content;}
+    .subMenu ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .subMenu ul li {float: left; padding: 30px 22.5px;}
+    .subMenu ul li a {font-size: 16px; line-height: 50px; color: #fff; display: block;}
