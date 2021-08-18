@@ -33,7 +33,7 @@ div.officialSite a:nth-of-type(2n) {margin-left: 20px; padding-right: 23.45%;}
 .ingameVideo ul {width: 10%;}
 .ingameVideo ul li a {font-size: 16px; color: #fff; background: red;}
 
-
+.ingamePhoto div {display: grid;}
 
 
 
