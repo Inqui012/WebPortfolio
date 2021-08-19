@@ -1,5 +1,5 @@
     
-    /* Global Common Css */
+    /* Global Common */
     .width1596 {max-width: 1596px; width: 100%; margin: 0 auto;}
     
     ul > li a span {display: inline-block; padding: 0 5px; line-height: 1; position: relative;}
@@ -22,16 +22,15 @@
     header div nav > ul > li > ul li a {line-height: 30px; opacity: 0.7; letter-spacing: -1px; word-spacing: -1.5px;}
     header div nav > ul > li > ul li:first-child {padding-top: 20px;}
     header div nav > ul > li > ul li:hover a {opacity: 1;}
-    header div nav > ul > li > ul li:hover a span::after {left: 0; width: 100%;}
 
     /* Footer */
-    footer {background: #070a1a; margin-top: 100px;}
+    footer {background: #070a1a;}
     footer div {display: flex; justify-content: space-between; align-items: center;}
     footer div img {width: 21.95%;}
     footer div address {width: 42.85%; color: #fff; font-size: 16px; line-height: 25px; display: block; margin: 187.5px 0; font-style: normal;}
     
     /* SubMenu */
-    .subMenu {background: url("../images/subMenuBG.png") no-repeat center center; text-align: center;}
+    .subMenu {background: url("../images/subMenuBG.png") no-repeat center center; text-align: center; margin-bottom: 20px;}
     .subMenu h2 {font-size: 40px; font-weight: bold; line-height: 50px; color: #fff; padding: 130px 0 35px 0;}
     .subMenu ul {margin: 0 auto; width: fit-content;}
     .subMenu ul::after {content: ''; display: block; visibility: hidden; clear: both;}

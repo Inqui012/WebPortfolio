@@ -5,7 +5,7 @@ div.mainSlider h2, div.officialSite a {color: #fff; font-weight: bold; text-shad
 div.mainSlider {z-index: 1; position: relative;}
 div.mainSlider h2 {background: url("../images/simpleXivLogo.png") no-repeat left top; position: absolute; font-size: 55px; line-height: 65px; padding: 300px 0 90px 150px; top: calc(45% - 260px); left: 15%;}
 div.mainSlider div.slider div {width: 100%; height: 800px; background-repeat: no-repeat; background-position: center center;}
-.bx-wrapper {box-shadow: none; border: none;}
+.bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
 .bx-wrapper .bx-pager {bottom: 30px; max-width: 1596px; width: 100%; margin: 0 auto; left: 0; right: 0;}
 .bx-wrapper .bx-pager::after {content: ''; display: block; visibility: hidden; clear: both;}
 .bx-pager-item {float: left; width: calc(100% / 7);}
@@ -19,7 +19,7 @@ div.mainSlider div.slider div.sliderImg05 {background-image: url("../images/main
 div.mainSlider div.slider div.sliderImg06 {background-image: url("../images/mainSlider06.png");}
 div.mainSlider div.slider div.sliderImg07 {background-image: url("../images/mainSlider07.png");}
 
-div.officialSite {margin-top: 100px;}
+div.officialSite {padding: 100px 0;}
 div.officialSite::after {content: ''; display: block; visibility: hidden; clear: both;}
 div.officialSite h2 {font-size: 0;}
 div.officialSite a {font-size: 40px; line-height: 50px; text-align: center; box-sizing: border-box; display: block; float: left; width: calc((100% - 20px) / 2); background-repeat: no-repeat; background-position: center center; padding: 25px 0;}
@@ -29,9 +29,26 @@ div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%;}
 div.officialSite a:nth-of-type(2n) {margin-left: 20px; padding-right: 23.45%;}
 
 /* Trailer Page */
-.trailerVideo {background: url("") no-repeat center center;}
-.ingameVideo ul {width: 10%;}
-.ingameVideo ul li a {font-size: 16px; color: #fff; background: red;}
+section h3 {font-size: 24px; color: #fff; line-height: 35px; text-indent: 30px; text-shadow: 0 0 5px #4c66ba, 0 0 5px #000; position: relative; margin-bottom: 40px;}
+section:not(.trailerVideo) h3::after {content: ''; height: 1px; background-color: #4c66ba; width: 100%; position: absolute; left: 0; bottom: -20px;}
+.trailerVideo {background: url("../images/trailerLogoBg01test.png") no-repeat fixed center center; position: relative; margin-bottom: 100px;}
+.trailerVideo h3 {font-size: 0;}
+.trailerVideo img {padding: 45px 0; display: block; margin: 0 auto;}
+.trailerVideo iframe {visibility: hidden; position: absolute; width: 80%; height: 750px; top: 50%; left: 0; right: 0; margin: 0 auto; transform: translateY(-50%);}
+
+.ingameVideo {margin-bottom: 100px;}
+.ingameVideo::after {content: ''; display: block; visibility: hidden; clear: both;}
+.ingameVideo div {width: 79%; height: 715px; overflow: hidden; float: left;}
+.ingameVideo div iframe {display: block; width: 100%; height: 100%;}
+.ingameVideo ul {width: 19.75%; margin-left: 1.25%; float: right; vertical-align: middle;}
+.ingameVideo ul li {background-color: #000;}
+.ingameVideo ul li:not(:last-child) {margin-bottom: 20px;}
+.ingameVideo ul li a {font-size: 16px; color: #fff; line-height: 140px; text-align: center; display: block;}
+
+.ingameVideo ul li:nth-child(1) a {background: url("../images/gamePlayMenu01.png") no-repeat center center; opacity: 0.25;}
+.ingameVideo ul li:nth-child(2) a {background: url("../images/gamePlayMenu02.png") no-repeat center center; opacity: 0.25;}
+.ingameVideo ul li:nth-child(3) a {background: url("../images/gamePlayMenu03.png") no-repeat center center; opacity: 0.25;}
+.ingameVideo ul li:nth-child(4) a {background: url("../images/gamePlayMenu04.png") no-repeat center center; opacity: 0.25;}
 
 .ingamePhoto div {display: grid;}
 
