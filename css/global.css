@@ -1,10 +1,13 @@
     
     /* Global Common */
-    .width1596 {max-width: 1596px; width: 100%; margin: 0 auto;}
+    .width1596 {max-width: 1596px; width: 100%; margin-right: auto; margin-left: auto;}
+    section h3 {font-size: 24px; color: #fff; line-height: 35px; text-indent: 30px; text-shadow: 0 0 5px #4c66ba, 0 0 5px #000; position: relative; margin-bottom: 40px;}
+    section {margin-bottom: 100px;}
     
     ul > li a span {display: inline-block; padding: 0 5px; line-height: 1; position: relative;}
     ul > li a span::after {content: ''; position: absolute; left: 50%; bottom: -10px; width: 0; height: 1px; background-color: #647ab3; transition-duration: 0.5s; transition-property: width, left;}
     ul > li:hover > a span::after {left: 0; width: 100%;}
+    .subMenu ul li a span::after {background-color: #fff;}
     
     /* Header */
     header div::after {content: ''; display: block; visibility: hidden; clear: both;}

@@ -29,28 +29,37 @@ div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%;}
 div.officialSite a:nth-of-type(2n) {margin-left: 20px; padding-right: 23.45%;}
 
 /* Trailer Page */
-section h3 {font-size: 24px; color: #fff; line-height: 35px; text-indent: 30px; text-shadow: 0 0 5px #4c66ba, 0 0 5px #000; position: relative; margin-bottom: 40px;}
 section:not(.trailerVideo) h3::after {content: ''; height: 1px; background-color: #4c66ba; width: 100%; position: absolute; left: 0; bottom: -20px;}
-.trailerVideo {background: url("../images/trailerLogoBg01test.png") no-repeat fixed center center; position: relative; margin-bottom: 100px;}
+section:not(.trailerVideo) h3 {width: 100%; display: block;}
+.trailerVideo {background: url("../images/trailerLogoBg01test.png") no-repeat fixed center center; position: relative; text-align: center;}
 .trailerVideo h3 {font-size: 0;}
-.trailerVideo img {padding: 45px 0; display: block; margin: 0 auto;}
-.trailerVideo iframe {visibility: hidden; position: absolute; width: 80%; height: 750px; top: 50%; left: 0; right: 0; margin: 0 auto; transform: translateY(-50%);}
+.trailerVideo img {padding: 45px 0; width: 100%; max-width: 1100px; margin: 0 auto;}
+.trailerVideo div div iframe {visibility: hidden; position: absolute; width: 80%; height: 750px; top: 50%; left: 0; right: 0; margin: 0 auto; transform: translateY(-50%);}
 
-.ingameVideo {margin-bottom: 100px;}
+.ingameVideo {display: flex; flex-wrap: wrap;}
 .ingameVideo::after {content: ''; display: block; visibility: hidden; clear: both;}
-.ingameVideo div {width: 79%; height: 715px; overflow: hidden; float: left;}
-.ingameVideo div iframe {display: block; width: 100%; height: 100%;}
-.ingameVideo ul {width: 19.75%; margin-left: 1.25%; float: right; vertical-align: middle;}
-.ingameVideo ul li {background-color: #000;}
-.ingameVideo ul li:not(:last-child) {margin-bottom: 20px;}
-.ingameVideo ul li a {font-size: 16px; color: #fff; line-height: 140px; text-align: center; display: block;}
+.ingameVideo ul.tabContent {width: 79%; height: 715px; overflow: hidden; float: left; position: relative;}
+.ingameVideo ul.tabContent li {width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.ingameVideo ul.tabContent li {display: none;}
+.ingameVideo ul.tabContent li.active {display: block;}
+.ingameVideo ul.tabContent li iframe { width: 100%; height: 100%;}
 
-.ingameVideo ul li:nth-child(1) a {background: url("../images/gamePlayMenu01.png") no-repeat center center; opacity: 0.25;}
-.ingameVideo ul li:nth-child(2) a {background: url("../images/gamePlayMenu02.png") no-repeat center center; opacity: 0.25;}
-.ingameVideo ul li:nth-child(3) a {background: url("../images/gamePlayMenu03.png") no-repeat center center; opacity: 0.25;}
-.ingameVideo ul li:nth-child(4) a {background: url("../images/gamePlayMenu04.png") no-repeat center center; opacity: 0.25;}
+.ingameVideo ul.tabControl {width: 19.75%; margin-left: 1.25%; float: right; display: flex; flex-direction: column; justify-content: center;}
+.ingameVideo ul.tabControl li:not(:last-child) {margin-bottom: 20px;}
+.ingameVideo ul.tabControl li a {font-size: 16px; font-weight: 500; color: rgba(255, 255, 255, 0.8); line-height: 140px; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.65);}
+.ingameVideo ul.tabControl li:hover a {color: #fff; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000; background-color: rgba(0, 0, 0, 0.25);}
 
-.ingamePhoto div {display: grid;}
+.ingameVideo ul.tabControl li:nth-child(1) {background: url("../images/gamePlayMenu01.png") no-repeat center center;}
+.ingameVideo ul.tabControl li:nth-child(2) {background: url("../images/gamePlayMenu02.png") no-repeat center center;}
+.ingameVideo ul.tabControl li:nth-child(3) {background: url("../images/gamePlayMenu03.png") no-repeat center center;}
+.ingameVideo ul.tabControl li:nth-child(4) {background: url("../images/gamePlayMenu04.png") no-repeat center center;}
 
+.ingamePhoto div {display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between;}
+.ingamePhoto div div {background-color: royalblue;}
+.ingamePhoto div div:nth-child(1) {width: 60.75%; height: 455px;}
+.ingamePhoto div div:nth-child(2) {width: 38%; height: 755px;}
+.ingamePhoto div div:nth-child(3) {width: 60.75%; height: 280px;}
+.ingamePhoto div div:nth-child(4) {width: 100%; height: 355px;}
+.ingamePhoto div div:nth-child(5),.ingamePhoto div div:nth-child(6) {width: calc(98.75% / 2); height: 370px;}
 
 

@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>트레일러</title>
     <link rel="stylesheet" href="css/import.css">
-
+    <script>
+        $(document).ready(function() {
+            $(".tabControl li").click(function () {
+                $(".tabContent li").eq($(this).index()).addClass("active");
+            })
+        })
+    </script>
 </head>
 <body>
     <header>
@@ -68,20 +74,34 @@
     <section class="trailerVideo">
         <h3>공식 트레일러 영상</h3>
         <img src="images/trailerLogo01.png" alt="신생 에오르제아 로고">
-        <!-- <video src="https://www.youtube.com/watch?v=hH4caRmocEw" autoplay controls></video> -->
-        <iframe src="https://www.youtube.com/embed/hH4caRmocEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <div>
+                <span></span>
+                <iframe src="https://www.youtube.com/embed/hH4caRmocEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </section>
     <section class="ingameVideo width1596">
         <h3>인게임 플레이 영상</h3>
-        <div>
-            <iframe src="https://www.youtube.com/embed/JTcWs6XkHUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/3krcpSby6HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <ul>
-            <li><a href="">신규 레이드 추가</a></li>
-            <li><a href="">신규 토벌전 추가</a></li>
-            <li><a href="">신규 지역 추가</a></li>
-            <li><a href="">신규 직업 추가</a></li>
+        <ul class="tabContent">
+            <li class="active">
+                <iframe src="https://www.youtube.com/embed/3krcpSby6HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li>
+                <iframe src="https://www.youtube.com/embed/bfO_w6MlBUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li>
+                <iframe src="https://www.youtube.com/embed/U7ForHMX-xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li>
+                <iframe src="https://www.youtube.com/embed/rpz1Hz6KjcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+        </ul>
+        <ul class="tabControl">
+            <li class="active"><a href="#!">신규 레이드 추가</a></li>
+            <li><a href="#!">신규 토벌전 추가</a></li>
+            <li><a href="#!">신규 지역 추가</a></li>
+            <li><a href="#!">신규 직업 추가</a></li>
         </ul>
     </section>
     <section class="ingamePhoto width1596">
