@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>트레일러</title>
     <link rel="stylesheet" href="css/import.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
-            $(".tabControl li").click(function () {
+            $(".tabControl li").click(function (e) {
+                e.preventDefault();
+                $(".tabControl li").not(':eq($(this).index())').removeClass("active");
+                $(".tabControl li").eq($(this).index()).addClass("active");
+                $(".tabContent li").not(':eq($(this).index())').removeClass("active");
                 $(".tabContent li").eq($(this).index()).addClass("active");
-            })
+            });
         })
     </script>
 </head>
@@ -98,21 +103,27 @@
             </li>
         </ul>
         <ul class="tabControl">
-            <li class="active"><!-- <a href="#!"> -->신규 레이드 추가</a></li>
-            <li><!-- <a href="#!"> -->신규 토벌전 추가</a></li>
-            <li><!-- <a href="#!"> -->신규 지역 추가</a></li>
-            <li><!-- <a href="#!"> -->신규 직업 추가</a></li>
+            <li class="active"><a href="#!">신규 레이드 추가</a></li>
+            <li><a href="#!">신규 토벌전 추가</a></li>
+            <li><a href="#!">신규 지역 추가</a></li>
+            <li><a href="#!">신규 직업 추가</a></li>
         </ul>
     </section>
     <section class="ingamePhoto width1596">
         <h3>인게임 스크린샷</h3>
         <div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
+            <div class="flexBox02">
+                <div class="flexBox01">
+                    <img src="images/inGameSC01_01.png" alt="">
+                    <img src="images/inGameSC01_02.png" alt="">
+                </div>
+                <img src="images/inGameSC01_03.png" alt="">
+            </div>
+            <div><img src="images/inGameSC01_04.png" alt=""></div>
+            <div class="flexBox04">
+                <img src="images/inGameSC01_05.png" alt="">
+                <img src="images/inGameSC01_06.png" alt="">
+            </div>
         </div>
     </section>
     <footer>
