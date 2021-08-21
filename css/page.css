@@ -60,6 +60,6 @@ section:not(.trailerVideo) h3 {width: 100%; display: block;}
 .ingamePhoto div div:nth-child(2) {width: 38%; height: 755px;}
 .ingamePhoto div div:nth-child(3) {width: 60.75%; height: 280px;}
 .ingamePhoto div div:nth-child(4) {width: 100%; height: 355px;}
-.ingamePhoto div div:nth-child(5),.ingamePhoto div div:nth-child(6) {width: calc(98.75% / 2); height: 370px;}
+.ingamePhoto div div:nth-child(5), .ingamePhoto div div:nth-child(6) {width: calc(98.75% / 2); height: 370px;}
 
 
