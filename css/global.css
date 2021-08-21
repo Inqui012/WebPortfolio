@@ -6,9 +6,10 @@
     
     ul > li a span {display: inline-block; padding: 0 5px; line-height: 1; position: relative;}
     ul > li a span::after {content: ''; position: absolute; left: 50%; bottom: -10px; width: 0; height: 1px; background-color: #647ab3; transition-duration: 0.5s; transition-property: width, left;}
-    ul > li:hover > a span::after {left: 0; width: 100%;}
+    ul > li:hover > a span::after, .subMenu ul li a span.active::after {left: 0; width: 100%;}
     .subMenu ul li a span::after {background-color: #fff;}
     
+
     /* Header */
     header div::after {content: ''; display: block; visibility: hidden; clear: both;}
     header div h1 {float: left; line-height: 0; width: 14.85%;}

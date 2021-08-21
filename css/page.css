@@ -55,12 +55,12 @@ section:not(.trailerVideo) h3 {width: 100%; display: block;}
 .ingameVideo ul.tabControl li:nth-child(4) {background: url("../images/gamePlayMenu04.png") no-repeat center center;}
 
 .ingamePhoto div {display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between; overflow: hidden;}
-.ingamePhoto div div div.flexBox01 {width: 60.75%; flex-direction: column;}
-.ingamePhoto div div div.flexBox01 img:first-of-type {height: 455px;}
-.ingamePhoto div div div.flexBox01 img:last-of-type {height: 280px;}
-.ingamePhoto div div.flexBox02 {margin-bottom: 20px;}
-.ingamePhoto div div.flexBox02 > img {width: 38%; height: 755px;}
+.ingamePhoto div div div.flexInnerBox {width: 60.75%; flex-direction: column;}
+.ingamePhoto div div div.flexInnerBox img:first-of-type {height: 455px;}
+.ingamePhoto div div div.flexInnerBox img:last-of-type {height: 280px;}
+.ingamePhoto div div.flexBox01 {margin-bottom: 20px;}
+.ingamePhoto div div.flexBox01 > img {width: 38%; height: 755px;}
 .ingamePhoto div div:nth-child(2) {width: 100%; height: 355px; margin-bottom: 20px;}
-.ingamePhoto div div:nth-child(5) img {width: calc(98.75% / 2); height: 370px;}
+.ingamePhoto div div.flexBox02 img {width: calc(98.75% / 2); height: 370px;}
 
 

@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>트레일러</title>
+    <title>FF14 : 신생 에오르제아</title>
     <link rel="stylesheet" href="css/import.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
+            var urlAry = new Array();
+            for (var i = 0; i < $(".tabContent li").length; i++){
+                urlAry[i] = $(".tabContent li:eq(" + i + ") iframe").attr("src");
+            };
             $(".tabControl li").click(function (e) {
                 e.preventDefault();
                 $(".tabControl li").not(':eq($(this).index())').removeClass("active");
-                $(".tabControl li").eq($(this).index()).addClass("active");
+                $(".tabControl li").eq($(this).index()).addClass("active");                
                 $(".tabContent li").not(':eq($(this).index())').removeClass("active");
                 $(".tabContent li").eq($(this).index()).addClass("active");
+                var index = $(this).index();
+                $(".tabContent li iframe").attr("src","");
+                $(".tabContent li").eq($(this).index()).children("iframe").attr("src",urlAry[index]);
+            });
+            $(".subMenu ul li").click(function () {
+                $(".subMenu ul li a span").not(':eq($(this).index())').removeClass("active");
+                $(".subMenu ul li a span").eq($(this).index()).addClass("active");
             });
         })
     </script>
@@ -70,7 +81,7 @@
     <div class="subMenu">
         <h2>트레일러</h2>
         <ul class="width1596">
-            <li><a href=""><span>신생 에오르제아</span></a></li>
+            <li><a href=""><span class="active">신생 에오르제아</span></a></li>
             <li><a href=""><span>창천의 이슈가르드</span></a></li>
             <li><a href=""><span>홍련의 해방자</span></a></li>
             <li><a href=""><span>칠흑의 반역자</span></a></li>
@@ -112,17 +123,17 @@
     <section class="ingamePhoto width1596">
         <h3>인게임 스크린샷</h3>
         <div>
-            <div class="flexBox02">
-                <div class="flexBox01">
-                    <img src="images/inGameSC01_01.png" alt="">
-                    <img src="images/inGameSC01_02.png" alt="">
+            <div class="flexBox01">
+                <div class="flexInnerBox">
+                    <img src="images/inGameSC01_01.png" alt="인게임스크린샷 림사로민사광장">
+                    <img src="images/inGameSC01_02.png" alt="인게임스크린샷 어부">
                 </div>
-                <img src="images/inGameSC01_03.png" alt="">
+                <img src="images/inGameSC01_03.png" alt="인게임스크린샷 크리스탈타워">
             </div>
-            <div><img src="images/inGameSC01_04.png" alt=""></div>
-            <div class="flexBox04">
-                <img src="images/inGameSC01_05.png" alt="">
-                <img src="images/inGameSC01_06.png" alt="">
+            <div><img src="images/inGameSC01_04.png" alt="인게임스크린샷 타이탄"></div>
+            <div class="flexBox02">
+                <img src="images/inGameSC01_05.png" alt="인게임스크린샷 힐디브랜드">
+                <img src="images/inGameSC01_06.png" alt="인게임스크린샷 하우징">
             </div>
         </div>
     </section>
