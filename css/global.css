@@ -10,15 +10,16 @@
     ul > li:hover > a span::after, .subMenu ul li a span.active::after {left: 0; width: 100%;}
     .subMenu ul li a span::after {background-color: #fff;}
     
-
     /* Header */
     header div::after {content: ''; display: block; visibility: hidden; clear: both;}
     header div h1 {float: left; line-height: 0; width: 14.85%;}
     header div nav {text-align: center; float: right;}
     header div nav > ul::after {content: ''; display: block; visibility: hidden; clear: both;}
     header div nav > ul > li {float: left; position: relative;}
-    header div nav > ul > li:last-child {background: #8fafff; border: 1px solid #4c66ba; box-sizing: border-box;}
-    header div nav > ul > li:last-child > a {padding: 0 31.5px; line-height: 73px;}
+    header div nav > ul > li:last-child {background: #8fafff; border: 1px solid #4c66ba; box-sizing: border-box; position: relative; overflow: hidden;}
+    header div nav > ul > li:last-child > a {padding: 0 31.5px; line-height: 73px; z-index: 20;}
+    header div nav > ul > li:last-child > a::after {content: ''; background-color: #fff; opacity: 0.2; position: absolute; top: 0; left: 0; width: 0%; height: 100%; animation: Shine cubic-bezier(0.65, 0.05, 0.36, 1) 3s infinite;}
+    
     header div nav ul li a {width: 175px; display: block; color: #000; font-size: 20px;}
     header div nav > ul > li > a {font-weight: bold; line-height: 75px;}
     header div nav > ul > li:hover > ul {opacity: 1; visibility: visible; transform: translateY(0%); border-top: 1px solid rgba(0, 0, 0, 0.2) ; }
@@ -27,7 +28,7 @@
     header div nav > ul > li > ul li a {line-height: 30px; opacity: 0.7; letter-spacing: -1px; word-spacing: -1.5px;}
     header div nav > ul > li > ul li:first-child {padding-top: 20px;}
     header div nav > ul > li > ul li:hover a {opacity: 1;}
-
+    
     /* Footer */
     footer {background: #070a1a;}
     footer div {display: flex; justify-content: space-between; align-items: center;}
@@ -41,3 +42,19 @@
     .subMenu ul::after {content: ''; display: block; visibility: hidden; clear: both;}
     .subMenu ul li {float: left; padding: 30px 22.5px;}
     .subMenu ul li a {font-size: 16px; line-height: 50px; color: #fff; display: block;}
+    
+    /* Animation */
+    @keyframes Shine {
+        from {
+            width: 0%;
+            left: 0;
+        }
+        50% {
+            width: 100%;
+            left: 0;
+        }
+        to {
+            width: 0%;
+            left: 100%;
+        }
+    }
