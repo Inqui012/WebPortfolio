@@ -1,6 +1,7 @@
 
 /* Main page */
-div.mainSlider h2, div.officialSite a {color: #fff; font-weight: bold; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
+div.mainSlider h2,
+div.officialSite a {color: #fff; font-weight: bold; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
 
 div.mainSlider {z-index: 1; position: relative;}
 div.mainSlider h2 {background: url("../images/simpleXivLogo.png") no-repeat left top; position: absolute; font-size: 55px; line-height: 65px; padding: 300px 0 90px 150px; top: calc(45% - 260px); left: 15%;}
@@ -22,11 +23,11 @@ div.mainSlider div.slider div.sliderImg07 {background-image: url("../images/main
 div.officialSite {padding: 100px 0;}
 div.officialSite::after {content: ''; display: block; visibility: hidden; clear: both;}
 div.officialSite h2 {font-size: 0;}
-div.officialSite a {font-size: 40px; line-height: 50px; text-align: center; box-sizing: border-box; display: block; float: left; width: calc((100% - 20px) / 2); background-repeat: no-repeat; background-position: center center; padding: 25px 0;}
+div.officialSite a {font-size: 40px; line-height: 50px; text-align: center; box-sizing: border-box; display: block; width: calc((100% - 20px) / 2); background-repeat: no-repeat; background-position: center center; padding: 25px 0;}
+div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%; float: left;}
+div.officialSite a:nth-of-type(2n) {padding-right: 23.45%; float: right;}
 div.officialSite a:nth-of-type(1) {background-image: url("../images/oficialSite01.png");}
 div.officialSite a:nth-of-type(2) {background-image: url("../images/oficialSite02.png");}
-div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%;}
-div.officialSite a:nth-of-type(2n) {margin-left: 20px; padding-right: 23.45%;}
 
 /* Trailer Page */
 .trailerVideo {background: url("../images/trailerLogoBg01test.png") no-repeat fixed center center; text-align: center; position: relative;}
@@ -35,41 +36,52 @@ div.officialSite a:nth-of-type(2n) {margin-left: 20px; padding-right: 23.45%;}
 .trailerVideo img {padding: 45px 0; width: 100%; max-width: 1100px; margin: 0 auto; transform: scale(0.95); transition: transform 1s;}
 .trailerVideo img:hover {transform: scale(1); cursor: pointer;}
 
-.trailerVideo div.popup {visibility: hidden; background-color: rgba(0, 0, 0, 0.85); z-index: 20; position: fixed; top: 0; left: 0; width: 100%; height: 100%;}
-.trailerVideo div.popup div {position: relative; width: 80%; height: 80%; top: 50%; left: 0; right: 0; transform: translateY(-50%); margin: 0 auto;}
-.trailerVideo div.popup div span {position: absolute; top: -8%; right: 0; width: 50px; height: 50px; cursor: pointer;}
+.trailerVideo div.popup {visibility: hidden; background-color: rgba(0, 0, 0, 0.85); z-index: 20; position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+.trailerVideo div.popup div {position: relative; width: 80%; height: 80%;}
+.trailerVideo div.popup div span {position: absolute; top: -5%; right: 0; cursor: pointer; height: 10px; width: 40px;}
 .trailerVideo div.popup div span::before,
-.trailerVideo div.popup div span::after {content: ''; position: absolute; top: 10%; left: 40%; height: 40px; width: 10px; background-color: rgba(255, 255, 255, 1);}
+.trailerVideo div.popup div span::after {content: ''; position: absolute; top: 10%; left: 0; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 1);}
 .trailerVideo div.popup div span::before {transform: rotate(45deg);}
 .trailerVideo div.popup div span::after {transform: rotate(-45deg);}
-.trailerVideo div.popup div iframe {position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
+.trailerVideo div.popup div iframe {width: 100%; height: 100%;}
 
 .ingameVideo {display: flex; flex-wrap: wrap;}
-.ingameVideo::after {content: ''; display: block; visibility: hidden; clear: both;}
-.ingameVideo ul.tabContent {width: 79%; height: 715px; overflow: hidden; float: left; position: relative;}
-.ingameVideo ul.tabContent li {width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
-.ingameVideo ul.tabContent li {display: none;}
+.ingameVideo ul.tabContent {width: 79%; height: 715px;}
+.ingameVideo ul.tabContent li {height: 100%; display: none;}
 .ingameVideo ul.tabContent li.active {display: block;}
 .ingameVideo ul.tabContent li iframe {width: 100%; height: 100%;}
 
-.ingameVideo ul.tabControl {width: 19.75%; margin-left: 1.25%; float: right; display: flex; flex-direction: column; justify-content: center;}
+.ingameVideo ul.tabControl {width: 19.75%; margin-left: 1.25%; display: flex; flex-direction: column; justify-content: center;}
 .ingameVideo ul.tabControl li:not(:last-child) {margin-bottom: 20px;}
-.ingameVideo ul.tabControl li a {font-size: 16px; font-weight: 500; color: rgba(255, 255, 255, 0.8); line-height: 140px; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.65);}
+.ingameVideo ul.tabControl li {background-repeat: no-repeat; background-position: center center;}
+.ingameVideo ul.tabControl li a {font-size: 16px; font-weight: 500; color: rgba(255, 255, 255, 0.5); line-height: 140px; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.7);}
 .ingameVideo ul.tabControl li:hover a,
 .ingameVideo ul.tabControl li.active a {color: #fff; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000; background-color: rgba(0, 0, 0, 0.25);}
 
-.ingameVideo ul.tabControl li:nth-child(1) {background: url("../images/gamePlayMenu01.png") no-repeat center center;}
-.ingameVideo ul.tabControl li:nth-child(2) {background: url("../images/gamePlayMenu02.png") no-repeat center center;}
-.ingameVideo ul.tabControl li:nth-child(3) {background: url("../images/gamePlayMenu03.png") no-repeat center center;}
-.ingameVideo ul.tabControl li:nth-child(4) {background: url("../images/gamePlayMenu04.png") no-repeat center center;}
+.ingameVideo ul.tabControl li:nth-child(1) {background-image: url("../images/gamePlayMenu01.png");}
+.ingameVideo ul.tabControl li:nth-child(2) {background-image: url("../images/gamePlayMenu02.png");}
+.ingameVideo ul.tabControl li:nth-child(3) {background-image: url("../images/gamePlayMenu03.png");}
+.ingameVideo ul.tabControl li:nth-child(4) {background-image: url("../images/gamePlayMenu04.png");}
 
-.ingamePhoto div {display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between; overflow: hidden;}
+/* .ingamePhoto div {display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between; overflow: hidden;}
 .ingamePhoto div div div.flexInnerBox {width: 60.75%; flex-direction: column;}
 .ingamePhoto div div div.flexInnerBox img:first-of-type {height: 455px;}
 .ingamePhoto div div div.flexInnerBox img:last-of-type {height: 280px;}
 .ingamePhoto div div.flexBox01 {margin-bottom: 20px;}
 .ingamePhoto div div.flexBox01 > img {width: 38%; height: 755px;}
 .ingamePhoto div div:nth-child(2) {width: 100%; height: 355px; margin-bottom: 20px;}
-.ingamePhoto div div.flexBox02 img {width: calc(98.75% / 2); height: 370px;}
+.ingamePhoto div div.flexBox02 img {width: calc(98.75% / 2); height: 370px;} */
 
+.ingamePhoto ul {display: block; width: 100%;}
+.ingamePhoto ul::after {display: block; visibility: hidden; clear: both; content: '';}
+.ingamePhoto ul li {width: calc((100% - 20px) / 2); float: left; margin-bottom: 20px;}
+.ingamePhoto ul li:nth-child(1),
+.ingamePhoto ul li:nth-child(3) {width: 60.75%;}
+.ingamePhoto ul li:nth-child(5), 
+.ingamePhoto ul li:nth-child(6) {height: 370px; margin-bottom: 0;}
 
+.ingamePhoto ul li:nth-child(1) {height: 455px;}
+.ingamePhoto ul li:nth-child(2) {width: 38%; height: 755px; float: right;}
+.ingamePhoto ul li:nth-child(3) {height: 280px;}
+.ingamePhoto ul li:nth-child(4) {width: 100%; height: 355px;}
+.ingamePhoto ul li:nth-child(6) {float: right;}

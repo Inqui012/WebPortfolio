@@ -7,12 +7,13 @@
     
     ul > li a span {display: inline-block; padding: 0 5px; line-height: 1; position: relative;}
     ul > li a span::after {content: ''; position: absolute; left: 50%; bottom: -10px; width: 0; height: 1px; background-color: #647ab3; transition-duration: 0.5s; transition-property: width, left;}
-    ul > li:hover > a span::after, .subMenu ul li a span.active::after {left: 0; width: 100%;}
-    .subMenu ul li a span::after {background-color: #fff;}
+    ul > li:hover > a span::after,
+    .subMenu .underBar.active::after {left: 0; width: 100%;}
+    .subMenu .underBar::after {background-color: #fff;}
     
     /* Header */
     header div::after {content: ''; display: block; visibility: hidden; clear: both;}
-    header div h1 {float: left; line-height: 0; width: 14.85%;}
+    header div h1 {float: left; line-height: 0; width: 17.85%;}
     header div nav {text-align: center; float: right;}
     header div nav > ul::after {content: ''; display: block; visibility: hidden; clear: both;}
     header div nav > ul > li {float: left; position: relative;}

@@ -24,10 +24,6 @@
                 $(".tabContent li iframe").attr("src","");
                 $(".tabContent li").eq($(this).index()).children("iframe").attr("src",urlAry[index]);
             });
-            $(".subMenu ul li").click(function () {
-                $(".subMenu ul li a span").not(':eq($(this).index())').removeClass("active");
-                $(".subMenu ul li a span").eq($(this).index()).addClass("active");
-            });
             $(".trailerVideo img").click(function(){
                 $(".popup").css("visibility","visible");
                 $(".popup div iframe").attr("src",videoUrl);
@@ -90,10 +86,10 @@
     <div class="subMenu">
         <h2>트레일러</h2>
         <ul class="width1596">
-            <li><a href=""><span class="active">신생 에오르제아</span></a></li>
-            <li><a href=""><span>창천의 이슈가르드</span></a></li>
-            <li><a href=""><span>홍련의 해방자</span></a></li>
-            <li><a href=""><span>칠흑의 반역자</span></a></li>
+            <li><a href=""><span class="underBar active">신생 에오르제아</span></a></li>
+            <li><a href=""><span class="underBar">창천의 이슈가르드</span></a></li>
+            <li><a href=""><span class="underBar">홍련의 해방자</span></a></li>
+            <li><a href=""><span class="underBar">칠흑의 반역자</span></a></li>
         </ul>
     </div>
     <section class="trailerVideo">
@@ -123,15 +119,15 @@
             </li>
         </ul>
         <ul class="tabControl">
-            <li class="active"><a href="#!">신규 레이드 추가</a></li>
-            <li><a href="#!">신규 토벌전 추가</a></li>
-            <li><a href="#!">신규 지역 추가</a></li>
-            <li><a href="#!">신규 직업 추가</a></li>
+            <li class="active"><a href="">신규 레이드 추가</a></li>
+            <li><a href="">신규 토벌전 추가</a></li>
+            <li><a href="">신규 지역 추가</a></li>
+            <li><a href="">신규 직업 추가</a></li>
         </ul>
     </section>
     <section class="ingamePhoto width1596">
         <h3>인게임 스크린샷</h3>
-        <div>
+        <!-- <div>
             <div class="flexBox01">
                 <div class="flexInnerBox">
                     <img src="images/inGameSC01_01.png" alt="인게임스크린샷 림사로민사광장">
@@ -144,7 +140,15 @@
                 <img src="images/inGameSC01_05.png" alt="인게임스크린샷 힐디브랜드">
                 <img src="images/inGameSC01_06.png" alt="인게임스크린샷 하우징">
             </div>
-        </div>
+        </div> -->
+        <ul>
+            <li><img src="images/inGameSC01_01.png" alt=""></li>
+            <li><img src="images/inGameSC01_03.png" alt=""></li>
+            <li><img src="images/inGameSC01_02.png" alt=""></li>
+            <li><img src="images/inGameSC01_04.png" alt=""></li>
+            <li><img src="images/inGameSC01_05.png" alt=""></li>
+            <li><img src="images/inGameSC01_06.png" alt=""></li>
+        </ul>
     </section>
     <footer>
         <div class="width1596">
