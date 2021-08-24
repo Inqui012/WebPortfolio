@@ -30,7 +30,12 @@ div.officialSite a:nth-of-type(1) {background-image: url("../images/main/oficial
 div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficialSite02.png");}
 
 /* Trailer Page */
-.trailerVideo.RR {background: url("../images/trailer/trailerLogoBg01.png") no-repeat fixed center center; text-align: center; position: relative;}
+.trailerVideo {background-repeat: no-repeat; background-position: center center; background-attachment: fixed; text-align: center; position: relative;}
+.trailerVideo.RR {background-image: url("../images/trailer/trailerLogoBg01.png");}
+.trailerVideo.HW {background-image: url("../images/trailer/trailerLogoBg02.png");}
+.trailerVideo.ST {background-image: url("../images/trailer/trailerLogoBg03.png");}
+.trailerVideo.SB {background-image: url("../images/trailer/trailerLogoBg04.png");}
+
 .trailerVideo h3 {font-size: 0; line-height: 0; margin: 0;}
 .trailerVideo h3::after {width: 0;}
 .trailerVideo img {padding: 45px 0; width: 100%; max-width: 1100px; margin: 0 auto; transform: scale(0.95); transition: transform 1s;}
@@ -62,6 +67,21 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .ingameVideo.RR ul.tabControl li:nth-child(2) {background-image: url("../images/trailer/gamePlayMenu01_02.png");}
 .ingameVideo.RR ul.tabControl li:nth-child(3) {background-image: url("../images/trailer/gamePlayMenu01_03.png");}
 .ingameVideo.RR ul.tabControl li:nth-child(4) {background-image: url("../images/trailer/gamePlayMenu01_04.png");}
+
+.ingameVideo.HW ul.tabControl li:nth-child(1) {background-image: url("../images/trailer/gamePlayMenu02_01.png");}
+.ingameVideo.HW ul.tabControl li:nth-child(2) {background-image: url("../images/trailer/gamePlayMenu02_02.png");}
+.ingameVideo.HW ul.tabControl li:nth-child(3) {background-image: url("../images/trailer/gamePlayMenu02_03.png");}
+.ingameVideo.HW ul.tabControl li:nth-child(4) {background-image: url("../images/trailer/gamePlayMenu02_04.png");}
+
+.ingameVideo.ST ul.tabControl li:nth-child(1) {background-image: url("../images/trailer/gamePlayMenu03_01.png");}
+.ingameVideo.ST ul.tabControl li:nth-child(2) {background-image: url("../images/trailer/gamePlayMenu03_02.png");}
+.ingameVideo.ST ul.tabControl li:nth-child(3) {background-image: url("../images/trailer/gamePlayMenu03_03.png");}
+.ingameVideo.ST ul.tabControl li:nth-child(4) {background-image: url("../images/trailer/gamePlayMenu03_04.png");}
+
+.ingameVideo.SB ul.tabControl li:nth-child(1) {background-image: url("../images/trailer/gamePlayMenu04_01.png");}
+.ingameVideo.SB ul.tabControl li:nth-child(2) {background-image: url("../images/trailer/gamePlayMenu04_02.png");}
+.ingameVideo.SB ul.tabControl li:nth-child(3) {background-image: url("../images/trailer/gamePlayMenu04_03.png");}
+.ingameVideo.SB ul.tabControl li:nth-child(4) {background-image: url("../images/trailer/gamePlayMenu04_04.png");}
 
 .ingamePhoto ul {display: block; width: 100%;}
 .ingamePhoto ul::after {display: block; visibility: hidden; clear: both; content: '';}
