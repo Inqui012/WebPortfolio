@@ -12,13 +12,13 @@ div.mainSlider div.slider div {width: 100%; height: 800px; background-repeat: no
 .bx-pager-item {float: left; width: calc(100% / 7);}
 .bx-wrapper .bx-pager.bx-default-pager a {background: #fff; opacity: 0.7; width: 95%; margin: 0 auto;}
 
-div.mainSlider div.slider div.sliderImg01 {background-image: url("../images/mainSlider01.png");}
-div.mainSlider div.slider div.sliderImg02 {background-image: url("../images/mainSlider02.png");}
-div.mainSlider div.slider div.sliderImg03 {background-image: url("../images/mainSlider03.png");}
-div.mainSlider div.slider div.sliderImg04 {background-image: url("../images/mainSlider04.png");}
-div.mainSlider div.slider div.sliderImg05 {background-image: url("../images/mainSlider05.png");}
-div.mainSlider div.slider div.sliderImg06 {background-image: url("../images/mainSlider06.png");}
-div.mainSlider div.slider div.sliderImg07 {background-image: url("../images/mainSlider07.png");}
+div.mainSlider div.slider div.sliderImg01 {background-image: url("../images/main/mainSlider01.png");}
+div.mainSlider div.slider div.sliderImg02 {background-image: url("../images/main/mainSlider02.png");}
+div.mainSlider div.slider div.sliderImg03 {background-image: url("../images/main/mainSlider03.png");}
+div.mainSlider div.slider div.sliderImg04 {background-image: url("../images/main/mainSlider04.png");}
+div.mainSlider div.slider div.sliderImg05 {background-image: url("../images/main/mainSlider05.png");}
+div.mainSlider div.slider div.sliderImg06 {background-image: url("../images/main/mainSlider06.png");}
+div.mainSlider div.slider div.sliderImg07 {background-image: url("../images/main/mainSlider07.png");}
 
 div.officialSite {padding: 100px 0;}
 div.officialSite::after {content: ''; display: block; visibility: hidden; clear: both;}
@@ -26,11 +26,11 @@ div.officialSite h2 {font-size: 0;}
 div.officialSite a {font-size: 40px; line-height: 50px; text-align: center; box-sizing: border-box; display: block; width: calc((100% - 20px) / 2); background-repeat: no-repeat; background-position: center center; padding: 25px 0;}
 div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%; float: left;}
 div.officialSite a:nth-of-type(2n) {padding-right: 23.45%; float: right;}
-div.officialSite a:nth-of-type(1) {background-image: url("../images/oficialSite01.png");}
-div.officialSite a:nth-of-type(2) {background-image: url("../images/oficialSite02.png");}
+div.officialSite a:nth-of-type(1) {background-image: url("../images/main/oficialSite01.png");}
+div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficialSite02.png");}
 
 /* Trailer Page */
-.trailerVideo {background: url("../images/trailerLogoBg01test.png") no-repeat fixed center center; text-align: center; position: relative;}
+.trailerVideo {background: url("../images/trailer/trailerLogoBg01.png") no-repeat fixed center center; text-align: center; position: relative;}
 .trailerVideo h3 {font-size: 0; line-height: 0; margin: 0;}
 .trailerVideo h3::after {width: 0;}
 .trailerVideo img {padding: 45px 0; width: 100%; max-width: 1100px; margin: 0 auto; transform: scale(0.95); transition: transform 1s;}
@@ -58,19 +58,10 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/oficialSite0
 .ingameVideo ul.tabControl li:hover a,
 .ingameVideo ul.tabControl li.active a {color: #fff; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000; background-color: rgba(0, 0, 0, 0.25);}
 
-.ingameVideo ul.tabControl li:nth-child(1) {background-image: url("../images/gamePlayMenu01.png");}
-.ingameVideo ul.tabControl li:nth-child(2) {background-image: url("../images/gamePlayMenu02.png");}
-.ingameVideo ul.tabControl li:nth-child(3) {background-image: url("../images/gamePlayMenu03.png");}
-.ingameVideo ul.tabControl li:nth-child(4) {background-image: url("../images/gamePlayMenu04.png");}
-
-/* .ingamePhoto div {display: flex; flex-wrap: wrap; width: 100%; justify-content: space-between; overflow: hidden;}
-.ingamePhoto div div div.flexInnerBox {width: 60.75%; flex-direction: column;}
-.ingamePhoto div div div.flexInnerBox img:first-of-type {height: 455px;}
-.ingamePhoto div div div.flexInnerBox img:last-of-type {height: 280px;}
-.ingamePhoto div div.flexBox01 {margin-bottom: 20px;}
-.ingamePhoto div div.flexBox01 > img {width: 38%; height: 755px;}
-.ingamePhoto div div:nth-child(2) {width: 100%; height: 355px; margin-bottom: 20px;}
-.ingamePhoto div div.flexBox02 img {width: calc(98.75% / 2); height: 370px;} */
+.ingameVideo ul.tabControl li:nth-child(1) {background-image: url("../images/trailer/gamePlayMenu01_01.png");}
+.ingameVideo ul.tabControl li:nth-child(2) {background-image: url("../images/trailer/gamePlayMenu01_02.png");}
+.ingameVideo ul.tabControl li:nth-child(3) {background-image: url("../images/trailer/gamePlayMenu01_03.png");}
+.ingameVideo ul.tabControl li:nth-child(4) {background-image: url("../images/trailer/gamePlayMenu01_04.png");}
 
 .ingamePhoto ul {display: block; width: 100%;}
 .ingamePhoto ul::after {display: block; visibility: hidden; clear: both; content: '';}

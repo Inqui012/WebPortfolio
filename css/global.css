@@ -37,7 +37,7 @@
     footer div address {width: 42.85%; color: #fff; font-size: 16px; line-height: 25px; display: block; margin: 187.5px 0; font-style: normal;}
     
     /* SubMenu */
-    .subMenu {background: url("../images/subMenuBG.png") no-repeat center center; text-align: center; margin-bottom: 20px;}
+    .subMenu {background: url("../images/trailer/subMenuBG.png") no-repeat center center; text-align: center; margin-bottom: 20px;}
     .subMenu h2 {font-size: 40px; font-weight: bold; line-height: 50px; color: #fff; padding: 130px 0 35px 0;}
     .subMenu ul {margin: 0 auto; width: fit-content;}
     .subMenu ul::after {content: ''; display: block; visibility: hidden; clear: both;}
