@@ -1,7 +1,7 @@
 
 /* Main page */
 div.mainSlider h2,
-div.officialSite a {color: #fff; font-weight: bold; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
+div.officialSite a {text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
 
 div.mainSlider {z-index: 1; position: relative;}
 div.mainSlider h2 {background: url("../images/simpleXivLogo.png") no-repeat left top; position: absolute; font-size: 55px; line-height: 65px; padding: 300px 0 90px 150px; top: calc(45% - 260px); left: 15%;}
@@ -23,7 +23,7 @@ div.mainSlider div.slider div.sliderImg07 {background-image: url("../images/main
 div.officialSite {padding: 100px 0;}
 div.officialSite::after {content: ''; display: block; visibility: hidden; clear: both;}
 div.officialSite h2 {font-size: 0;}
-div.officialSite a {font-size: 40px; line-height: 50px; text-align: center; box-sizing: border-box; display: block; width: calc((100% - 20px) / 2); background-repeat: no-repeat; background-position: center center; padding: 25px 0;}
+div.officialSite a {color: #fff; font-weight: bold; font-size: 40px; line-height: 50px; text-align: center; box-sizing: border-box; display: block; width: calc((100% - 20px) / 2); background-repeat: no-repeat; background-position: center center; padding: 25px 0;}
 div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%; float: left;}
 div.officialSite a:nth-of-type(2n) {padding-right: 23.45%; float: right;}
 div.officialSite a:nth-of-type(1) {background-image: url("../images/main/oficialSite01.png");}
@@ -37,7 +37,8 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .trailerVideo.SB {background-image: url("../images/trailer/trailerLogoBg04.png");}
 
 .trailerVideo h3 {font-size: 0; line-height: 0; margin: 0;}
-.trailerVideo h3::after {width: 0;}
+.trailerVideo h3::after,
+.jobInfo h3::after {width: 0;}
 .trailerVideo img {padding: 45px 0; width: 100%; max-width: 1100px; margin: 0 auto; transform: scale(0.95); transition: transform 1s;}
 .trailerVideo img:hover {transform: scale(1); cursor: pointer;}
 
@@ -50,18 +51,9 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .trailerVideo div.popup div span::after {transform: rotate(-45deg);}
 .trailerVideo div.popup div iframe {width: 100%; height: 100%;}
 
-.ingameVideo {display: flex; flex-wrap: wrap;}
-.ingameVideo ul.tabContent {width: 79%; height: 715px;}
-.ingameVideo ul.tabContent li {height: 100%; display: none;}
-.ingameVideo ul.tabContent li.active {display: block;}
+.ingameVideo,
+.jobIntro {display: flex; flex-wrap: wrap;}
 .ingameVideo ul.tabContent li iframe {width: 100%; height: 100%;}
-
-.ingameVideo ul.tabControl {width: 19.75%; margin-left: 1.25%; display: flex; flex-direction: column; justify-content: center;}
-.ingameVideo ul.tabControl li:not(:last-child) {margin-bottom: 20px;}
-.ingameVideo ul.tabControl li {background-repeat: no-repeat; background-position: center center;}
-.ingameVideo ul.tabControl li a {font-size: 16px; font-weight: 500; color: rgba(255, 255, 255, 0.5); line-height: 140px; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.7);}
-.ingameVideo ul.tabControl li:hover a,
-.ingameVideo ul.tabControl li.active a {color: #fff; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000; background-color: rgba(0, 0, 0, 0.25);}
 
 .ingameVideo.RR ul.tabControl li:nth-child(1) {background-image: url("../images/trailer/gamePlayMenu01_01.png");}
 .ingameVideo.RR ul.tabControl li:nth-child(2) {background-image: url("../images/trailer/gamePlayMenu01_02.png");}
@@ -96,3 +88,20 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .ingamePhoto ul li:nth-child(3) {height: 280px;}
 .ingamePhoto ul li:nth-child(4) {width: 100%; height: 355px;}
 .ingamePhoto ul li:nth-child(6) {float: right;}
+
+/* Job Page */
+strong {color: #fff; font-size: 40px; line-height: 50px;}
+small {font-size: 16px; color: #fff;}
+
+.jobInfo  {background-repeat: no-repeat; background-position: center center; text-align: center;}
+.jobInfo.def {background-image: url("../images/job/jobBanner_01.png");}
+.jobInfo div {padding: 205px 0; background-color: rgba(0, 0, 0, 0.7); color: #fff;}
+.jobInfo div h2 {font-weight: 500;}
+.jobInfo div p {padding-top: 30px; opacity: 0.9;}
+
+ul.tabContent.job {background-image: url("../images/job/jobIntroBg.png");} 
+ul.tabContent.job li {background-color: rgba(0, 0, 0, 0.85); padding: 100px 30px; box-sizing: border-box;}
+ul.tabContent.job li p {letter-spacing: -1px;}
+
+ul.tabContent.job figure {height: 430px; width: 100%;}
+ul.tabContent.job figure dl {color: #fff; font-size: 16px; display: inline-block;}
