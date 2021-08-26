@@ -5,7 +5,7 @@ div.officialSite a {text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
 
 div.mainSlider {z-index: 1; position: relative;}
 div.mainSlider h2 {background: url("../images/simpleXivLogo.png") no-repeat left top; position: absolute; font-size: 55px; line-height: 65px; padding: 300px 0 90px 150px; top: calc(45% - 260px); left: 15%;}
-div.mainSlider div.slider div {width: 100%; height: 800px; background-repeat: no-repeat; background-position: center center;}
+div.mainSlider div.slider div {width: 100%; height: 800px;}
 .bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
 .bx-wrapper .bx-pager {bottom: 30px; max-width: 1596px; width: 100%; margin: 0 auto; left: 0; right: 0;}
 .bx-wrapper .bx-pager::after {content: ''; display: block; visibility: hidden; clear: both;}
@@ -23,14 +23,14 @@ div.mainSlider div.slider div.sliderImg07 {background-image: url("../images/main
 div.officialSite {padding: 100px 0;}
 div.officialSite::after {content: ''; display: block; visibility: hidden; clear: both;}
 div.officialSite h2 {font-size: 0;}
-div.officialSite a {color: #fff; font-weight: bold; font-size: 40px; line-height: 50px; text-align: center; box-sizing: border-box; display: block; width: calc((100% - 20px) / 2); background-repeat: no-repeat; background-position: center center; padding: 25px 0;}
+div.officialSite a {color: #fff; font-weight: bold; font-size: 40px; line-height: 50px; text-align: center; box-sizing: border-box; display: block; width: calc((100% - 20px) / 2); padding: 25px 0;}
 div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%; float: left;}
 div.officialSite a:nth-of-type(2n) {padding-right: 23.45%; float: right;}
 div.officialSite a:nth-of-type(1) {background-image: url("../images/main/oficialSite01.png");}
 div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficialSite02.png");}
 
 /* Trailer Page */
-.trailerVideo {background-repeat: no-repeat; background-position: center center; background-attachment: fixed; text-align: center; position: relative;}
+.trailerVideo {background-attachment: fixed; text-align: center; position: relative;}
 .trailerVideo.RR {background-image: url("../images/trailer/trailerLogoBg01.png");}
 .trailerVideo.HW {background-image: url("../images/trailer/trailerLogoBg02.png");}
 .trailerVideo.ST {background-image: url("../images/trailer/trailerLogoBg03.png");}
@@ -77,31 +77,65 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 
 .ingamePhoto ul {display: block; width: 100%;}
 .ingamePhoto ul::after {display: block; visibility: hidden; clear: both; content: '';}
-.ingamePhoto ul li {width: calc((100% - 20px) / 2); float: left; margin-bottom: 20px;}
-.ingamePhoto ul li:nth-child(1),
-.ingamePhoto ul li:nth-child(3) {width: 60.75%;}
-.ingamePhoto ul li:nth-child(5), 
-.ingamePhoto ul li:nth-child(6) {height: 370px; margin-bottom: 0;}
+.ingamePhoto ul li {width: calc((100% - 20px) / 2); float: left; margin-bottom: 20px; overflow: hidden; background-size: cover; text-indent: -9999px;}
 
-.ingamePhoto ul li:nth-child(1) {height: 455px;}
+.ingamePhoto ul li:nth-child(1) {width: 60.75%; height: 455px;}
 .ingamePhoto ul li:nth-child(2) {width: 38%; height: 755px; float: right;}
-.ingamePhoto ul li:nth-child(3) {height: 280px;}
+.ingamePhoto ul li:nth-child(3) {width: 60.75%; height: 280px;}
 .ingamePhoto ul li:nth-child(4) {width: 100%; height: 355px;}
-.ingamePhoto ul li:nth-child(6) {float: right;}
+.ingamePhoto ul li:nth-child(5) {height: 370px; margin-bottom: 0;}
+.ingamePhoto ul li:nth-child(6) {height: 370px; margin-bottom: 0; float: right;}
+
+.ingamePhoto.RR ul li:nth-child(1) {background-image: url("../images/trailer/inGameSC01_01.png");}
+.ingamePhoto.RR ul li:nth-child(2) {background-image: url("../images/trailer/inGameSC01_02.png");}
+.ingamePhoto.RR ul li:nth-child(3) {background-image: url("../images/trailer/inGameSC01_03.png");}
+.ingamePhoto.RR ul li:nth-child(4) {background-image: url("../images/trailer/inGameSC01_04.png");}
+.ingamePhoto.RR ul li:nth-child(5) {background-image: url("../images/trailer/inGameSC01_05.png");}
+.ingamePhoto.RR ul li:nth-child(6) {background-image: url("../images/trailer/inGameSC01_06.png");}
+
+.ingamePhoto.HW ul li:nth-child(1) {background-image: url("../images/trailer/inGameSC02_01.png");}
+.ingamePhoto.HW ul li:nth-child(2) {background-image: url("../images/trailer/inGameSC02_02.png");}
+.ingamePhoto.HW ul li:nth-child(3) {background-image: url("../images/trailer/inGameSC02_03.png");}
+.ingamePhoto.HW ul li:nth-child(4) {background-image: url("../images/trailer/inGameSC02_04.png");}
+.ingamePhoto.HW ul li:nth-child(5) {background-image: url("../images/trailer/inGameSC02_05.png");}
+.ingamePhoto.HW ul li:nth-child(6) {background-image: url("../images/trailer/inGameSC02_06.png");}
+
+.ingamePhoto.ST ul li:nth-child(1) {background-image: url("../images/trailer/inGameSC03_01.png");}
+.ingamePhoto.ST ul li:nth-child(2) {background-image: url("../images/trailer/inGameSC03_02.png");}
+.ingamePhoto.ST ul li:nth-child(3) {background-image: url("../images/trailer/inGameSC03_03.png");}
+.ingamePhoto.ST ul li:nth-child(4) {background-image: url("../images/trailer/inGameSC03_04.png");}
+.ingamePhoto.ST ul li:nth-child(5) {background-image: url("../images/trailer/inGameSC03_05.png");}
+.ingamePhoto.ST ul li:nth-child(6) {background-image: url("../images/trailer/inGameSC03_06.png");}
+
+.ingamePhoto.SB ul li:nth-child(1) {background-image: url("../images/trailer/inGameSC04_01.png");}
+.ingamePhoto.SB ul li:nth-child(2) {background-image: url("../images/trailer/inGameSC04_02.png");}
+.ingamePhoto.SB ul li:nth-child(3) {background-image: url("../images/trailer/inGameSC04_03.png");}
+.ingamePhoto.SB ul li:nth-child(4) {background-image: url("../images/trailer/inGameSC04_04.png");}
+.ingamePhoto.SB ul li:nth-child(5) {background-image: url("../images/trailer/inGameSC04_05.png");}
+.ingamePhoto.SB ul li:nth-child(6) {background-image: url("../images/trailer/inGameSC04_06.png");}
 
 /* Job Page */
-strong {color: #fff; font-size: 40px; line-height: 50px;}
-small {font-size: 16px; color: #fff;}
 
-.jobInfo  {background-repeat: no-repeat; background-position: center center; text-align: center;}
+.jobInfo  {text-align: center;}
 .jobInfo.def {background-image: url("../images/job/jobBanner_01.png");}
 .jobInfo div {padding: 205px 0; background-color: rgba(0, 0, 0, 0.7); color: #fff;}
 .jobInfo div h2 {font-weight: 500;}
 .jobInfo div p {padding-top: 30px; opacity: 0.9;}
 
-ul.tabContent.job {background-image: url("../images/job/jobIntroBg.png");} 
-ul.tabContent.job li {background-color: rgba(0, 0, 0, 0.85); padding: 100px 30px; box-sizing: border-box;}
-ul.tabContent.job li p {letter-spacing: -1px;}
+.jobIntro strong {color: #fff; font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
+.jobIntro small {font-size: 16px; color: #fff; margin-left: 20px;}
+.jobIntro ul.tabContent {background-image: url("../images/job/jobIntroBg.png");} 
+.jobIntro ul.tabContent li {padding: 100px 30px; box-sizing: border-box;}
+.jobIntro ul.tabContent li p {letter-spacing: -1px;}
+.jobIntro ul.tabContent li > p {line-height: 1; margin-bottom: 10px;}
 
-ul.tabContent.job figure {height: 430px; width: 100%;}
-ul.tabContent.job figure dl {color: #fff; font-size: 16px; display: inline-block;}
+.jobIntro.def ul.tabContent li:nth-child(1) {background-image: url("../images/job/jobChar01_01.png");}
+.jobIntro.def ul.tabContent li:nth-child(2) {background-image: url("../images/job/jobChar01_02.png");}
+.jobIntro.def ul.tabContent li:nth-child(3) {background-image: url("../images/job/jobChar01_03.png");}
+.jobIntro.def ul.tabContent li:nth-child(4) {background-image: url("../images/job/jobChar01_04.png");}
+
+.jobIntro ul.tabContent li figure {height: 430px; width: 100%;}
+.jobIntro ul.tabContent li figure dl {color: #fff; font-size: 16px; line-height: 25px; display: block;}
+.jobIntro ul.tabContent li figure dl::after {display: block; visibility: hidden; clear: both; content: '';}
+.jobIntro ul.tabContent li figure figcaption dl dt {float: left;}
+.jobIntro ul.tabContent li figure figcaption dl dd {margin-left: 20px; margin-bottom: 10px; display: block;}
