@@ -127,7 +127,7 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro ul.tabContent {background-image: url("../images/job/jobIntroBg.png");} 
 .jobIntro ul.tabContent li {padding: 100px 30px; box-sizing: border-box;}
 .jobIntro ul.tabContent li p {letter-spacing: -1px;}
-.jobIntro ul.tabContent li > p {line-height: 1; margin-bottom: 10px;}
+.jobIntro ul.tabContent li > p {line-height: 1; margin-bottom: 20px;}
 
 .jobIntro.def ul.tabContent li:nth-child(1) {background-image: url("../images/job/jobChar01_01.png");}
 .jobIntro.def ul.tabContent li:nth-child(2) {background-image: url("../images/job/jobChar01_02.png");}
@@ -138,6 +138,8 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro ul.tabContent li figure img {width: 9.15%; height: 110px;}
 
 .jobIntro ul.tabContent li figure figcaption {display: flex; flex-wrap: wrap; align-content: space-between; height: 100%;}
-.jobIntro ul.tabContent li figure figcaption dl {color: #fff; font-size: 16px; width: 50%; padding: 20px 30px;}
-.jobIntro ul.tabContent li figure figcaption dl dd {margin-left: 20px; margin-bottom: 10px; display: block;}
-.jobIntro ul.tabContent li figure figcaption p {margin-left: calc((30px + 9.15%) * -1);}
+.jobIntro ul.tabContent li figure figcaption dl {color: #fff; font-size: 16px; width: 100%; line-height: 25px; margin-left: 30px; display: flex; flex-wrap: wrap;}
+.jobIntro ul.tabContent li figure figcaption dl dt {width: fit-content;}
+.jobIntro ul.tabContent li figure figcaption dl dd {width: 90%; margin-left: 20px;}
+.jobIntro ul.tabContent li figure figcaption dl dd:not(:last-child) {margin-bottom: 10px;}
+.jobIntro ul.tabContent li figure figcaption p {margin-left: -9.15%;}
