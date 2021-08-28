@@ -149,10 +149,27 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro.att ul.tabContent li:nth-child(3) {background-image: url("../images/job/jobChar03_03.png");}
 .jobIntro.att ul.tabContent li:nth-child(4) {background-image: url("../images/job/jobChar03_04.png");}
 
+.jobIntro.attf ul.tabContent li:nth-child(1) {background-image: url("../images/job/jobChar04_01.png");}
+.jobIntro.attf ul.tabContent li:nth-child(2) {background-image: url("../images/job/jobChar04_02.png");}
+.jobIntro.attf ul.tabContent li:nth-child(3) {background-image: url("../images/job/jobChar04_03.png");}
+
+.jobIntro.attm ul.tabContent li:nth-child(1) {background-image: url("../images/job/jobChar05_01.png");}
+.jobIntro.attm ul.tabContent li:nth-child(2) {background-image: url("../images/job/jobChar05_02.png");}
+.jobIntro.attm ul.tabContent li:nth-child(3) {background-image: url("../images/job/jobChar05_03.png");}
+.jobIntro.attm ul.tabContent li:nth-child(4) {background-image: url("../images/job/jobChar05_04.png");}
+
+.jobIntro.cra ul.tabContent li:nth-child(1) {background-image: url("../images/job/jobChar06_01.png");}
+.jobIntro.cra ul.tabContent li:nth-child(2) {background-image: url("../images/job/jobChar06_02.png");}
+.jobIntro.cra ul.tabContent li:nth-child(3) {background-image: url("../images/job/jobChar06_03.png");}
+.jobIntro.cra ul.tabContent li:nth-child(4) {background-image: url("../images/job/jobChar06_04.png");}
+.jobIntro.cra ul.tabContent li:nth-child(1) {background-image: url("../images/job/jobChar06_01.png");}
+.jobIntro.cra ul.tabContent li:nth-child(2) {background-image: url("../images/job/jobChar06_02.png");}
+.jobIntro.cra ul.tabContent li:nth-child(3) {background-image: url("../images/job/jobChar06_03.png");}
+.jobIntro.cra ul.tabContent li:nth-child(4) {background-image: url("../images/job/jobChar06_04.png");}
+
 .jobIntro.gat ul.tabContent li:nth-child(1) {background-image: url("../images/job/jobChar07_01.png");}
 .jobIntro.gat ul.tabContent li:nth-child(2) {background-image: url("../images/job/jobChar07_02.png");}
 .jobIntro.gat ul.tabContent li:nth-child(3) {background-image: url("../images/job/jobChar07_03.png");}
-
 
 .jobIntro ul.tabContent li figure {height: 430px; width: 100%; display: flex;}
 .jobIntro ul.tabContent li figure img {width: 9.15%; height: 110px;}
@@ -177,6 +194,29 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro.att ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu03_03.png");}
 .jobIntro.att ul.tabControl li:nth-child(4) {background-image: url("../images/job/jobMenu03_04.png");}
 
+.jobIntro.attf ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu04_01.png");}
+.jobIntro.attf ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu04_02.png");}
+.jobIntro.attf ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu04_03.png");}
+
+.jobIntro.attm ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu05_01.png");}
+.jobIntro.attm ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu05_02.png");}
+.jobIntro.attm ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu05_03.png");}
+.jobIntro.attm ul.tabControl li:nth-child(4) {background-image: url("../images/job/jobMenu05_04.png");}
+
+.jobIntro.cra ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu06_01.png");}
+.jobIntro.cra ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu06_02.png");}
+.jobIntro.cra ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu06_03.png");}
+.jobIntro.cra ul.tabControl li:nth-child(4) {background-image: url("../images/job/jobMenu06_04.png");}
+.jobIntro.cra ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu06_01.png");}
+.jobIntro.cra ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu06_02.png");}
+.jobIntro.cra ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu06_03.png");}
+.jobIntro.cra ul.tabControl li:nth-child(4) {background-image: url("../images/job/jobMenu06_04.png");}
+
 .jobIntro.gat ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu07_01.png");}
 .jobIntro.gat ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu07_02.png");}
 .jobIntro.gat ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu07_03.png");}
+
+/* Other Page */
+.banner {background-color: aquamarine; text-align: center;}
+section.other p {color: #000; text-align: center; line-height: 25px;}
+section.other {display: flex;}
