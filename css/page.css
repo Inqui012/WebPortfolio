@@ -6,11 +6,10 @@ div.officialSite a {text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
 div.mainSlider {z-index: 1; position: relative;}
 div.mainSlider h2 {background: url("../images/simpleXivLogo.png") no-repeat left top; position: absolute; font-size: 55px; line-height: 65px; padding: 300px 0 90px 150px; top: calc(45% - 260px); left: 15%;}
 div.mainSlider div.slider div {width: 100%; height: 800px;}
-.bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
-.bx-wrapper .bx-pager {bottom: 30px; max-width: 1596px; width: 100%; margin: 0 auto; left: 0; right: 0;}
-.bx-wrapper .bx-pager::after {content: ''; display: block; visibility: hidden; clear: both;}
-.bx-pager-item {float: left; width: calc(100% / 7);}
-.bx-wrapper .bx-pager.bx-default-pager a {background: #fff; opacity: 0.7; width: 95%; margin: 0 auto;}
+div.mainSlider .bx-wrapper .bx-pager {bottom: 30px; max-width: 1596px; width: 100%; margin: 0 auto; left: 0; right: 0;}
+div.mainSlider .bx-wrapper .bx-pager::after {content: ''; display: block; visibility: hidden; clear: both;}
+div.mainSlider .bx-pager-item {float: left; width: calc(100% / 7);}
+div.mainSlider .bx-wrapper .bx-pager.bx-default-pager a {background: #fff; opacity: 0.7; width: 95%; margin: 0 auto;}
 
 div.mainSlider div.slider div.sliderImg01 {background-image: url("../images/main/mainSlider01.png");}
 div.mainSlider div.slider div.sliderImg02 {background-image: url("../images/main/mainSlider02.png");}
@@ -125,12 +124,12 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobInfo.gat, .jobInfo.cra {background-image: url("../images/job/jobBanner_06.png");}
 
 .jobInfo div {padding: 205px 0; background-color: rgba(0, 0, 0, 0.7); color: #fff;}
-.jobInfo div h2 {font-weight: 500;}
-.jobInfo div p {padding-top: 30px; opacity: 0.9;}
+.jobInfo div h2 {font-weight: 500; margin-bottom: 30px;}
+.jobInfo div p {opacity: 0.9;}
 
-.jobIntro strong {color: #fff; font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
-.jobIntro small {font-size: 16px; color: #fff; margin-left: 20px;}
 .jobIntro ul.tabContent {background-image: url("../images/job/jobIntroBg.png");} 
+.jobIntro ul.tabContent strong {color: #fff; font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
+.jobIntro ul.tabContent small {font-size: 16px; color: #fff; margin-left: 20px;}
 .jobIntro ul.tabContent li {padding: 100px 30px; box-sizing: border-box;}
 .jobIntro ul.tabContent li p {letter-spacing: -1px;}
 .jobIntro ul.tabContent li > p {line-height: 1; margin-bottom: 20px;}
@@ -171,14 +170,16 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro.gat ul.tabContent li:nth-child(2) {background-image: url("../images/job/jobChar07_02.png");}
 .jobIntro.gat ul.tabContent li:nth-child(3) {background-image: url("../images/job/jobChar07_03.png");}
 
-.jobIntro ul.tabContent li figure {height: 430px; width: 100%; display: flex;}
-.jobIntro ul.tabContent li figure img {width: 9.15%; height: 110px;}
-.jobIntro ul.tabContent li figure figcaption {display: flex; flex-wrap: wrap; align-content: space-between; height: 100%;}
-.jobIntro ul.tabContent li figure figcaption dl {color: #fff; font-size: 16px; width: 100%; line-height: 25px; margin-left: 30px; display: flex; flex-wrap: wrap;}
+.jobIntro ul.tabContent li {display: flex; flex-direction: column;}
+.jobIntro ul.tabContent li figure img {float: left;}
+.jobIntro ul.tabContent li figure figcaption dl {color: #fff; font-size: 16px; line-height: 25px; margin-left: 140px; display: flex; flex-wrap: wrap;}
 .jobIntro ul.tabContent li figure figcaption dl dt {width: fit-content;}
 .jobIntro ul.tabContent li figure figcaption dl dd {width: 90%; margin-left: 20px;}
 .jobIntro ul.tabContent li figure figcaption dl dd:not(:last-child) {margin-bottom: 10px;}
-.jobIntro ul.tabContent li figure figcaption p {margin-left: -9.15%;}
+.jobIntro ul.tabContent li figure p {margin-top: auto;}
+
+.jobIntro.cra div.bx-wrapper {display: flex; flex-direction: column; justify-content: flex-start; margin: 47.5px 0; width: 19.75%; margin-left: 1.25%; overflow: hidden;}
+.jobIntro.cra div.bx-wrapper .bx-viewport {overflow: visible !important;}
 
 .jobIntro.def ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu01_01.png");}
 .jobIntro.def ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu01_02.png");}
@@ -207,16 +208,21 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro.cra ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu06_02.png");}
 .jobIntro.cra ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu06_03.png");}
 .jobIntro.cra ul.tabControl li:nth-child(4) {background-image: url("../images/job/jobMenu06_04.png");}
-.jobIntro.cra ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu06_01.png");}
-.jobIntro.cra ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu06_02.png");}
-.jobIntro.cra ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu06_03.png");}
-.jobIntro.cra ul.tabControl li:nth-child(4) {background-image: url("../images/job/jobMenu06_04.png");}
+.jobIntro.cra ul.tabControl li:nth-child(5) {background-image: url("../images/job/jobMenu06_05.png");}
+.jobIntro.cra ul.tabControl li:nth-child(6) {background-image: url("../images/job/jobMenu06_06.png");}
+.jobIntro.cra ul.tabControl li:nth-child(7) {background-image: url("../images/job/jobMenu06_07.png");}
+.jobIntro.cra ul.tabControl li:nth-child(8) {background-image: url("../images/job/jobMenu06_08.png");}
 
 .jobIntro.gat ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu07_01.png");}
 .jobIntro.gat ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu07_02.png");}
 .jobIntro.gat ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu07_03.png");}
 
+.jobIntro > span {width: 19.75%; height: 47.5px; background-color: tomato;}
+
 /* Other Page */
 .banner {background-color: aquamarine; text-align: center;}
+section.other h3 {width: calc((100% - 20px) / 2);}
 section.other p {color: #000; text-align: center; line-height: 25px;}
-section.other {display: flex;}
+/* section:not(:first-child) {display: flex; flex-wrap: wrap;} */
+section.other ul {width: calc((100% - 20px) / 2);}
+section.other ul li {background-color: brown; width: calc((100% - 20px) / 2);}
