@@ -178,7 +178,7 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro ul.tabContent li figure figcaption dl dd:not(:last-child) {margin-bottom: 10px;}
 .jobIntro ul.tabContent li figure p {margin-top: auto;}
 
-.jobIntro.cra div.bx-wrapper {display: flex; flex-direction: column; justify-content: flex-start; margin: 47.5px 0; width: 19.75%; margin-left: 1.25%; overflow: hidden;}
+.jobIntro.cra div.bx-wrapper {display: flex; flex-direction: column; justify-content: flex-start; overflow: hidden;}
 .jobIntro.cra div.bx-wrapper .bx-viewport {overflow: visible !important;}
 
 .jobIntro.def ul.tabControl li:nth-child(1) {background-image: url("../images/job/jobMenu01_01.png");}
@@ -217,7 +217,9 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro.gat ul.tabControl li:nth-child(2) {background-image: url("../images/job/jobMenu07_02.png");}
 .jobIntro.gat ul.tabControl li:nth-child(3) {background-image: url("../images/job/jobMenu07_03.png");}
 
-.jobIntro > span {width: 19.75%; height: 47.5px; background-color: tomato;}
+.jobIntro div span {width: 100%; height: 47.5px; background-color: tomato;}
+.jobIntro div {width: 19.75%; margin-left: 1.25%;}
+
 
 /* Other Page */
 .banner {background-color: aquamarine; text-align: center;}
