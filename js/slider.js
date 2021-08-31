@@ -6,10 +6,10 @@ $(document).ready(function() {
         controls: false,
         mode: 'fade'
     });
-    $('.jobIntro.cra .slider').bxSlider({
+    $('.tabControl .slider').bxSlider({
         mode: 'vertical',
-        maxSlides: 4,
         minSlides: 4,
+        slideMargin: 20,
         moveSlides: 2,
         hideControlOnEnd: true,
         infiniteLoop: false,
@@ -17,5 +17,18 @@ $(document).ready(function() {
         controls: true,
         nextSelector: '.sliderNext',
         prevSelector: '.sliderPrev',
+        pager: false
+/*         nextText: 'test',
+        prevText: '' */
     });
+    // $('.sliderPrev').click(function(){
+    //     slider = $('.bxslider').bxSlider();
+    //     slider.onSlidePrev();
+    //     return false;
+    // });
+    // $('.sliderNext').click(function(){
+    //     slider = $('.bxslider').bxSlider();
+    //     slider.goToNextSlide();
+    //     return false;
+    // });
 })

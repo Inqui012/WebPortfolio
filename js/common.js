@@ -4,9 +4,12 @@ $(document).ready(function() {
         urlAry[i] = $(".tabContent li:eq(" + i + ") iframe").attr("src");
     };
     var videoUrl = $(".popup div iframe").attr("src");
-    $(".tabControl li").click(function (e) {
+    if($(".tabControl ul li").length < 5){
+        $(".tabControl span").addClass("hide");
+    };
+    $(".tabControl ul li").click(function (e) {
         e.preventDefault();
-        $(".tabControl li").removeClass("active");
+        $(".tabControl ul li").removeClass("active");
         $(this).addClass("active");                
         $(".tabContent li").removeClass("active");
         $(".tabContent li").eq($(this).index()).addClass("active");

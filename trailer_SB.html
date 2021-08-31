@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FF14 : 칠흑의 반역자</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/import.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+    <script src="js/slider.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -20,28 +23,28 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="https://seidn.github.io/Portfolio_01/trailer_RR.html"><span>트레일러</span></a>
+                        <a href="trailer_RR.html"><span>트레일러</span></a>
                         <ul>
-                            <li><a href="https://seidn.github.io/Portfolio_01/trailer_RR.html"><span>신생 에오르제아</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/trailer_HW.html"><span>창천의 이슈가르드</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/trailer_ST.html"><span>홍련의 해방자</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/trailer_SB.html"><span>칠흑의 반역자</span></a></li>
+                            <li><a href="trailer_RR.html"><span>신생 에오르제아</span></a></li>
+                            <li><a href="trailer_HW.html"><span>창천의 이슈가르드</span></a></li>
+                            <li><a href="trailer_ST.html"><span>홍련의 해방자</span></a></li>
+                            <li><a href="trailer_SB.html"><span>칠흑의 반역자</span></a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="https://seidn.github.io/Portfolio_01/job_Defence.html"><span>직업소개</span></a>
+                        <a href="job_Defence.html"><span>직업소개</span></a>
                         <ul>
-                            <li><a href="https://seidn.github.io/Portfolio_01/job_Defence.html"><span>방어</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/job_Heal.html"><span>회복</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/job_Attack.html"><span>근거리 공격</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/job_AttackForce.html"><span>원거리 물리 공격</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/job_AttackMagic.html"><span>원거리 마법 공격</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/job_Gather.html"><span>채집</span></a></li>
-                            <li><a href="https://seidn.github.io/Portfolio_01/job_Craft.html"><span>제작</span></a></li>
+                            <li><a href="job_Defence.html"><span>방어</span></a></li>
+                            <li><a href="job_Heal.html"><span>회복</span></a></li>
+                            <li><a href="job_Attack.html"><span>근거리 공격</span></a></li>
+                            <li><a href="job_AttackForce.html"><span>원거리 물리 공격</span></a></li>
+                            <li><a href="job_AttackMagic.html"><span>원거리 마법 공격</span></a></li>
+                            <li><a href="job_Gather.html"><span>채집</span></a></li>
+                            <li><a href="job_Craft.html"><span>제작</span></a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href=""><span>즐길거리</span></a>
+                        <a href="other.html"><span>즐길거리</span></a>
                         <ul>
                             <li><a href=""><span>외전 스토리</span></a></li>
                             <li><a href=""><span>골드소서</span></a></li>
@@ -60,10 +63,10 @@
     <div class="subMenu trailer">
         <h2>트레일러</h2>
         <ul class="width1596">
-            <li><a href=""><span class="underBar">신생 에오르제아</span></a></li>
-            <li><a href=""><span class="underBar">창천의 이슈가르드</span></a></li>
-            <li><a href=""><span class="underBar">홍련의 해방자</span></a></li>
-            <li><a href=""><span class="underBar active">칠흑의 반역자</span></a></li>
+            <li><a href="trailer_RR.html"><span class="underBar">신생 에오르제아</span></a></li>
+            <li><a href="trailer_HW.html"><span class="underBar">창천의 이슈가르드</span></a></li>
+            <li><a href="trailer_ST.html"><span class="underBar">홍련의 해방자</span></a></li>
+            <li><a href="trailer_SB.html"><span class="underBar active">칠흑의 반역자</span></a></li>
         </ul>
     </div>
     <section class="trailerVideo SB">
@@ -92,12 +95,22 @@
                 <iframe src="https://www.youtube.com/embed/vGdYGHTS8jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </li>
         </ul>
-        <ul class="tabControl">
+        <!-- <ul class="tabControl">
             <li class="active"><a href="">신규 레이드 추가</a></li>
             <li><a href="">신규 토벌전 추가</a></li>
             <li><a href="">신규 지역 추가</a></li>
             <li><a href="">신규 직업 추가</a></li>
-        </ul>
+        </ul> -->
+        <div class="tabControl">
+            <span class="sliderPrev"></span>
+            <ul class="slider">
+                <li class="active"><a href="">신규 레이드 추가</a></li>
+                <li><a href="">신규 토벌전 추가</a></li>
+                <li><a href="">신규 지역 추가</a></li>
+                <li><a href="">신규 직업 추가</a></li>
+            </ul>
+            <span class="sliderNext"></span>
+        </div>
     </section>
     <section class="ingamePhoto SB width1596">
         <h3>인게임 스크린샷</h3>
