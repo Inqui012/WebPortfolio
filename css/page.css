@@ -118,17 +118,12 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 
 /* Job Page */
 
-.jobInfo {text-align: center;}
-.jobInfo.def {background-image: url("../images/job/jobBanner_01.png");}
-.jobInfo.heal {background-image: url("../images/job/jobBanner_02.png");}
-.jobInfo.att {background-image: url("../images/job/jobBanner_03.png");}
-.jobInfo.attf {background-image: url("../images/job/jobBanner_04.png");}
-.jobInfo.attm {background-image: url("../images/job/jobBanner_05.png");}
-.jobInfo.gat, .jobInfo.cra {background-image: url("../images/job/jobBanner_06.png");}
-
-.jobInfo div {padding: 205px 0; background-color: rgba(0, 0, 0, 0.7); color: #fff;}
-.jobInfo div h2 {font-weight: 500; margin-bottom: 30px;}
-.jobInfo div p {opacity: 0.9;}
+.banner.def {background-image: url("../images/job/jobBanner_01.png");}
+.banner.heal {background-image: url("../images/job/jobBanner_02.png");}
+.banner.att {background-image: url("../images/job/jobBanner_03.png");}
+.banner.attf {background-image: url("../images/job/jobBanner_04.png");}
+.banner.attm {background-image: url("../images/job/jobBanner_05.png");}
+.banner.gat, .banner.cra {background-image: url("../images/job/jobBanner_06.png");}
 
 .jobIntro ul.tabContent {background-image: url("../images/job/jobIntroBg.png");} 
 .jobIntro ul.tabContent strong {color: #fff; font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
@@ -182,8 +177,8 @@ div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficial
 .jobIntro ul.tabContent li figure figcaption dl dd:not(:last-child) {margin-bottom: 10px;}
 .jobIntro ul.tabContent li figure p {margin-top: auto;}
 
-.jobIntro.cra div.bx-wrapper {width: 100%; margin: 0;}
-.jobIntro.cra div.bx-wrapper .bx-viewport {margin: 0;}
+.jobIntro div.bx-wrapper {width: 100%; margin: 0;}
+.jobIntro div.bx-wrapper .bx-viewport {margin: 0;}
 div.tabControl span {height: 25px; width: 25px; border-top: 5px solid #000; border-right: 5px solid #000; margin: 0 auto;}
 div.tabControl span.sliderPrev {transform: rotate(-45deg);}
 div.tabControl span.sliderNext {transform: rotate(135deg);}
@@ -224,12 +219,5 @@ div.tabControl span.sliderNext {transform: rotate(135deg);}
 .jobIntro.gat div.tabControl ul li:nth-child(2) {background-image: url("../images/job/jobMenu07_02.png");}
 .jobIntro.gat div.tabControl ul li:nth-child(3) {background-image: url("../images/job/jobMenu07_03.png");}
 
-
-
 /* Other Page */
-.banner {background-color: aquamarine; text-align: center;}
-section.other h3 {width: calc((100% - 20px) / 2);}
-section.other p {color: #000; text-align: center; line-height: 25px;}
-/* section:not(:first-child) {display: flex; flex-wrap: wrap;} */
-section.other ul {width: calc((100% - 20px) / 2);}
-section.other ul li {background-color: brown; width: calc((100% - 20px) / 2);}
+.banner {background-image: url("../images/other/otherBanner.png");}
