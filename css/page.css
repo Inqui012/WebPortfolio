@@ -221,3 +221,32 @@ div.tabControl span.sliderNext {transform: rotate(135deg);}
 
 /* Other Page */
 .banner {background-image: url("../images/other/otherBanner.png");}
+
+.otherContent {display: flex; justify-content: space-between;}
+.otherContent div {width: calc((100% - 20px) / 2)}
+.otherContent div div {width: 100%; height: calc(100% - 75px); display: flex; flex-direction: column; justify-content: center;}
+.otherContent div div p {color: #000; text-align: center;}
+.otherContent div div p:nth-of-type(1) {margin-bottom: 25px;}
+.otherContent ul {display: flex; justify-content: space-between; align-content: space-between; flex-wrap: wrap; width: calc((100% - 1.25%) / 2); height: 390px;}
+.otherContent:nth-of-type(odd) {flex-direction: row-reverse;}
+.otherContent ul li {background-size: cover; width: calc((100% - 20px) / 2); height: calc((100% - 20px) / 2); border-radius: 5px; text-indent: -9999px;}
+
+.otherContent.sideQ ul li:nth-child(1) {background-image: url("../images/other/otherSC01_01.png");}
+.otherContent.sideQ ul li:nth-child(2) {background-image: url("../images/other/otherSC01_02.png");}
+.otherContent.sideQ ul li:nth-child(3) {background-image: url("../images/other/otherSC01_03.png");}
+.otherContent.sideQ ul li:nth-child(4) {background-image: url("../images/other/otherSC01_04.png");}
+
+.otherContent.mendervile ul {flex-direction: column;}
+.otherContent.mendervile ul li:nth-child(1) {background-image: url("../images/other/otherSC02_01.png"); height: 100%;}
+.otherContent.mendervile ul li:nth-child(2) {background-image: url("../images/other/otherSC02_02.png");}
+.otherContent.mendervile ul li:nth-child(3) {background-image: url("../images/other/otherSC02_03.png");}
+
+.otherContent.housing ul li:nth-child(1) {background-image: url("../images/other/otherSC03_01.png"); width: 100%;}
+.otherContent.housing ul li:nth-child(2) {background-image: url("../images/other/otherSC03_02.png");}
+.otherContent.housing ul li:nth-child(3) {background-image: url("../images/other/otherSC03_03.png");}
+
+.otherContent.freeComp ul li {height: 100%;}
+.otherContent.freeComp ul li:nth-child(1) {background-image: url("../images/other/otherSC04_01.png");}
+.otherContent.freeComp ul li:nth-child(2) {background-image: url("../images/other/otherSC04_02.png");}
+
+.otherContent.free60 ul li {background-image: url("../images/other/otherSC05_01.png"); width: 100%; height: 100%;}
