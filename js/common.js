@@ -24,4 +24,8 @@ $(document).ready(function() {
         $(".popup").css("visibility","hidden");
         $(".popup div iframe").attr("src","");
     });
+    $(".subMenu.other ul li").click(function(e){
+        e.preventDefault();
+        scrollTo($(".otherContent").eq($(this).index()));
+    });
 })
