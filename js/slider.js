@@ -17,18 +17,8 @@ $(document).ready(function() {
         controls: true,
         nextSelector: '.sliderNext',
         prevSelector: '.sliderPrev',
-        pager: false
-/*         nextText: 'test',
-        prevText: '' */
+        pager: false,
+        prevText: '<span class="material-icons">keyboard_arrow_up</span>',
+        nextText: '<span class="material-icons">keyboard_arrow_down</span>'
     });
-    // $('.sliderPrev').click(function(){
-    //     slider = $('.bxslider').bxSlider();
-    //     slider.onSlidePrev();
-    //     return false;
-    // });
-    // $('.sliderNext').click(function(){
-    //     slider = $('.bxslider').bxSlider();
-    //     slider.goToNextSlide();
-    //     return false;
-    // });
 })

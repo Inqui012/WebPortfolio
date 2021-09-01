@@ -4,6 +4,7 @@ $(document).ready(function() {
         urlAry[i] = $(".tabContent li:eq(" + i + ") iframe").attr("src");
     };
     var videoUrl = $(".popup div iframe").attr("src");
+    var scr = $(this).scrollTop();
     if($(".tabControl ul li").length < 5){
         $(".tabControl span").addClass("hide");
     };
@@ -24,8 +25,16 @@ $(document).ready(function() {
         $(".popup").css("visibility","hidden");
         $(".popup div iframe").attr("src","");
     });
-    $(".subMenu.other ul li").click(function(e){
+    $(".subMenu.other ul li a").click(function(e){
+        var target = $((this).getAttribute("href"));
         e.preventDefault();
-        scrollTo($(".otherContent").eq($(this).index()));
+        $("html, body").animate({
+            scrollTop: $(target).offset().top - 200
+            }, 750); 
+    });
+    $(".scrTop").click(function(){
+        $("html, body").animate({
+            scrollTop: $("html, body").offset().top
+            }, 500);
     });
 })
