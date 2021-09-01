@@ -4,7 +4,14 @@ $(document).ready(function() {
         urlAry[i] = $(".tabContent li:eq(" + i + ") iframe").attr("src");
     };
     var videoUrl = $(".popup div iframe").attr("src");
-    var scr = $(this).scrollTop();
+    $(window).scroll(function () {
+        var scr = $(document).scrollTop();
+        if (scr >= 500){
+            $(".material-icons.scrTop").removeClass("hide");
+        }else{
+            $(".material-icons.scrTop").addClass("hide");
+        };   
+    });
     if($(".tabControl ul li").length < 5){
         $(".tabControl span").addClass("hide");
     };
