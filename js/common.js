@@ -52,6 +52,7 @@ $(document).ready(function() {
         });
         $("header div nav > ul > li > a").click(function(e){
             e.preventDefault();
+            $("header div nav > ul > li").removeClass("active");
             $(this).parent().toggleClass("active");
         });
     }
