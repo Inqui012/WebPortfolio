@@ -32,7 +32,7 @@
     div.officialSite a:nth-of-type(2) {background-image: url("../images/main/oficialSite02.png");}
 
     /* Trailer Page */
-    .trailerVideo {background-attachment: fixed; text-align: center; position: relative;}
+    .trailerVideo {text-align: center; background-size: cover; position: relative;}
     .trailerVideo.RR {background-image: url("../images/trailer/trailerLogoBg01.png");}
     .trailerVideo.HW {background-image: url("../images/trailer/trailerLogoBg02.png");}
     .trailerVideo.ST {background-image: url("../images/trailer/trailerLogoBg03.png");}
@@ -42,9 +42,9 @@
     .trailerVideo h3::after,
     .jobInfo h3::after {width: 0;}
     .trailerVideo img {padding: 45px 0; width: 100%; max-width: 1100px; margin: 0 auto; transform: scale(0.95); transition: transform 1s;}
-    .trailerVideo img:hover {transform: scale(1); cursor: pointer;}
+    .trailerVideo img:hover {transform: scale(1);}
 
-    .trailerVideo div.popup {visibility: hidden; background-color: rgba(0, 0, 0, 0.85); z-index: 20; position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+    .trailerVideo div.popup {visibility: hidden; background-color: rgba(0, 0, 0, 0.85); z-index: 20; position: fixed; top: 0; left: 0; width: 640px; height: 100vh; display: flex; justify-content: center; align-items: center;}
     .trailerVideo div.popup div {position: relative; width: 80%; height: 80%;}
     .trailerVideo div.popup div span {position: absolute; top: -5%; right: 0; cursor: pointer; height: 10px; width: 40px;}
     .trailerVideo div.popup div span::before,
@@ -54,7 +54,7 @@
     .trailerVideo div.popup div iframe {width: 100%; height: 100%;}
 
     .ingameVideo,
-    .jobIntro {display: flex; flex-wrap: wrap;}
+    .jobIntro {display: flex; flex-wrap: wrap; flex-direction: column;}
     .ingameVideo ul.tabContent li iframe {width: 100%; height: 100%;}
 
     .ingameVideo.RR div.tabControl ul li:nth-child(1) {background-image: url("../images/trailer/gamePlayMenu01_01.png");}
@@ -79,14 +79,8 @@
 
     .ingamePhoto ul {display: block; width: 100%;}
     .ingamePhoto ul::after {display: block; visibility: hidden; clear: both; content: '';}
-    .ingamePhoto ul li {width: calc((100% - 20px) / 2); float: left; margin-bottom: 20px; overflow: hidden; background-size: cover; text-indent: -9999px;}
-
-    .ingamePhoto ul li:nth-child(1) {width: 60.75%; height: 455px;}
-    .ingamePhoto ul li:nth-child(2) {width: 38%; height: 755px; float: right;}
-    .ingamePhoto ul li:nth-child(3) {width: 60.75%; height: 280px;}
-    .ingamePhoto ul li:nth-child(4) {width: 100%; height: 355px;}
-    .ingamePhoto ul li:nth-child(5) {height: 370px; margin-bottom: 0;}
-    .ingamePhoto ul li:nth-child(6) {height: 370px; margin-bottom: 0; float: right;}
+    .ingamePhoto ul li {width: calc((100% - 20px) / 2); height: 170px; float: left; margin-bottom: 20px; overflow: hidden; background-size: cover; text-indent: -9999px;}
+    .ingamePhoto ul li:nth-child(even) {float: right;}
 
     .ingamePhoto.RR ul li:nth-child(1) {background-image: url("../images/trailer/inGameSC01_01.png");}
     .ingamePhoto.RR ul li:nth-child(2) {background-image: url("../images/trailer/inGameSC01_02.png");}

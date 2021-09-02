@@ -4,9 +4,9 @@
         * {background-repeat: no-repeat; background-position: center center;}
         .bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
 
-        section {margin-bottom: 100px;}
+        section {margin-bottom: 50px;}
         h2 {font-size: 40px; font-weight: bold; line-height: 50px; color: #fff;}
-        h3 {width: 100%; display: block; font-size: 24px; color: #fff; line-height: 35px; text-indent: 30px; text-shadow: 0 0 5px #4c66ba, 0 0 5px #000; position: relative; margin-bottom: 40px;}
+        h3 {width: 100%; display: block; font-size: 24px; color: #fff; line-height: 35px; text-indent: 30px; text-shadow: 0 0 5px #4c66ba, 0 0 5px #000; position: relative; margin-bottom: 40px; order: -1;}
         h3::after {content: ''; height: 1px; background-color: #4c66ba; width: 100%; position: absolute; left: 0; bottom: -20px;}
         p {font-size: 16px; line-height: 25px;}
 
@@ -16,11 +16,12 @@
         .subMenu .underBar::after {background-color: #fff;}
         
         /* Tab Structure */
-        ul.tabContent {width: 79%; height: 715px; background-color: rgba(0, 0, 0, 0.7); position: relative;}
+        ul.tabContent {width: 100%; height: 295px; background-color: rgba(0, 0, 0, 0.7); position: relative; order: 2;}
         ul.tabContent li {position: absolute; top: 0; left: 0; width: 100%; height: 100%; visibility: hidden; opacity: 0; transition: opacity ease 1s;}
         ul.tabContent li.active {visibility: visible; opacity: 1;}    
-        div.tabControl {width: 19.75%; margin-left: 1.25%; display: flex; flex-direction: column; justify-content: space-between;}
-        div.tabControl ul li a {font-size: 16px; font-weight: 500; color: rgba(255, 255, 255, 0.5); line-height: 140px; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.7);}
+        div.tabControl {width: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+        div.tabControl ul li {width: 48.35%;}
+        div.tabControl ul li a {font-size: 16px; font-weight: 500; color: rgba(255, 255, 255, 0.5); line-height: 65px; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.7);}
         div.tabControl ul li:hover a,
         div.tabControl ul li.active a {color: #fff; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000; background-color: rgba(0, 0, 0, 0.25);}
         div.tabControl span {margin: 0 auto;}
@@ -83,11 +84,12 @@
         .subMenu.job {background-image: url("../images/job/subMenuBG.png");}
         .subMenu.other {background-image: url("../images/other/subMenuBG.png");}
 
-        .subMenu h2 {padding: 130px 0 35px 0;}
+        .subMenu h2 {padding-top: 55px;}
         .subMenu ul {margin: 0 auto; width: fit-content;}
         .subMenu ul::after {content: ''; display: block; visibility: hidden; clear: both;}
-        .subMenu ul li {float: left; padding: 30px 22.5px;}
-        .subMenu ul li a {font-size: 16px; line-height: 50px; color: #fff; display: block;}
+        .subMenu ul li {float: left;}
+        .subMenu ul li:not(:first-child) {margin-left: 6.65%;}
+        .subMenu ul li a {font-size: 16px; line-height: 60px; color: #fff; display: block;}
         
         /* Animation */
         @keyframes Shine {
