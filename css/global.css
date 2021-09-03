@@ -3,10 +3,11 @@
         .width1596 {max-width: 640px; width: calc(100% - 40px); margin-right: auto; margin-left: auto;}
         * {background-repeat: no-repeat; background-position: center center;}
         .bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
+        .bx-wrapper .bx-viewport {padding: 0 calc(100% /4); width: 50%;}
 
         section {margin-bottom: 50px;}
         h2 {font-size: 40px; font-weight: bold; line-height: 50px; color: #fff;}
-        h3 {width: 100%; display: block; font-size: 24px; color: #fff; line-height: 35px; text-indent: 30px; text-shadow: 0 0 5px #4c66ba, 0 0 5px #000; position: relative; margin-bottom: 40px; order: -1;}
+        h3 {width: 100%; display: block; text-align: center; font-size: 24px; color: #fff; line-height: 35px; text-shadow: 0 0 5px #4c66ba, 0 0 5px #000; position: relative; margin-bottom: 40px; order: -1;}
         h3::after {content: ''; height: 1px; background-color: #4c66ba; width: 100%; position: absolute; left: 0; bottom: -20px;}
         p {font-size: 16px; line-height: 25px;}
 
@@ -19,8 +20,8 @@
         ul.tabContent {width: 100%; height: 295px; background-color: rgba(0, 0, 0, 0.7); position: relative; order: 2;}
         ul.tabContent li {position: absolute; top: 0; left: 0; width: 100%; height: 100%; visibility: hidden; opacity: 0; transition: opacity ease 1s;}
         ul.tabContent li.active {visibility: visible; opacity: 1;}    
-        div.tabControl {width: 100%; display: flex; flex-direction: column; justify-content: space-between;}
-        div.tabControl ul li {width: 48.35%;}
+        div.tabControl {width: 100%; margin-bottom: 20px; display: flex; justify-content: space-between;}
+        div.tabControl ul li {width: 300px;}
         div.tabControl ul li a {font-size: 16px; font-weight: 500; color: rgba(255, 255, 255, 0.5); line-height: 65px; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.7);}
         div.tabControl ul li:hover a,
         div.tabControl ul li.active a {color: #fff; text-shadow: 1px 2px 5px #000, -2px -1px 5px #000; background-color: rgba(0, 0, 0, 0.25);}
@@ -39,20 +40,20 @@
         .banner div p {opacity: 0.9;}
 
         /* Header */
-        header div {position: relative;}
-        header div h1 {line-height: 0; text-align: center; height: 60px;}
+        header div.width1596 {position: fixed; width: 100%; z-index: 5;}
+        header div h1 {line-height: 0; text-align: center; height: 60px; width: 100%; background-color: #fff;}
         header div h1 a img {height: 100%;}
-        header div div.burger {width: 8.25%; height: 60px; position: absolute; top: 0; right: 0; display: flex; flex-direction: column; justify-content: space-evenly; z-index: 10;}
-        header div div.burger span {width: 100%; height: 7.5px; display: block; background-color: #000; opacity: 1; transition: opacity ease 1s, transform ease 1s;}
+        header div div.burger {width: 6.25%; height: 60px; position: absolute; top: 0; right: 3.125%; display: flex; flex-direction: column; justify-content: space-evenly; z-index: 10;}
+        header div div.burger span {width: 100%; height: 2px; display: block; background-color: #000; opacity: 1; transition: transform ease 1s;}
 
-        header div div.burger.on span:nth-child(1) {transform: translateY(18px) rotate(45deg);}
+        header div div.burger.on span:nth-child(1) {transform: translateY(17px) rotate(45deg);}
         header div div.burger.on span:nth-child(2) {opacity: 0;}
-        header div div.burger.on span:nth-child(3) {transform: translateY(-16px) rotate(-45deg);}
+        header div div.burger.on span:nth-child(3) {transform: translateY(-15px) rotate(-45deg);}
 
-        header div nav {text-align: center; position: absolute; top: 0; right: -9999px; display: flex; justify-content: flex-end; background-color: rgba(0, 0, 0, 0.8); height: 100vh; width: 100vw; z-index: 5;}
-        header div nav.on {right: -20px;}
-        header div nav > ul {background-color: #fff; width: 0%; height: 100%; transition: width ease 0.4s;}
-        header div nav.on > ul {width: 60%;}
+        header div nav {text-align: center; visibility: hidden; opacity: 0; position: fixed; overflow: hidden; display: flex; justify-content: flex-end; background-color: rgba(0, 0, 0, 0.8); height: 100%; width: 100%; z-index: 5;}
+        header div nav.on {opacity: 1; visibility: visible;}
+        header div nav > ul {background-color: #fff; width: 70%; height: 100%; transform: translateX(100%); transition: transform ease 0.2s;}
+        header div nav.on > ul {transform: translateX(0);}
         header div nav > ul > li {width: calc(100% - 40px); margin: 0 auto;}
         header div nav > ul > li > a {border: 1px solid #8b9ed6; box-sizing: border-box;}
         header div nav > ul > li:first-child {margin-top: 110px;}
@@ -73,10 +74,11 @@
         
         /* Footer */
         footer {background: #070a1a;}
-        footer div {display: flex; padding: 20px 0; justify-content: space-between; flex-direction: column; align-items: center;}
-        footer div img {order: -1;}
+        footer div {display: flex; padding: 20px 0; justify-content: center; flex-direction: row; flex-wrap: wrap; align-items: center;}
+        footer div img {order: -1; width: 30%; margin-bottom: 10px;}
         footer div * {font-size: 0; line-height: 0;}
         footer div address p span {color: #fff; font-size: 16px; line-height: 25px; font-style: normal; order: 3;}
+
 
         /* SubMenu */
         .subMenu {text-align: center; margin-bottom: 20px;}
@@ -85,11 +87,12 @@
         .subMenu.other {background-image: url("../images/other/subMenuBG.png");}
 
         .subMenu h2 {padding-top: 55px;}
-        .subMenu ul {margin: 0 auto; width: fit-content;}
-        .subMenu ul::after {content: ''; display: block; visibility: hidden; clear: both;}
-        .subMenu ul li {float: left;}
-        .subMenu ul li:not(:first-child) {margin-left: 6.65%;}
-        .subMenu ul li a {font-size: 16px; line-height: 60px; color: #fff; display: block;}
+        .subMenu div {width: 80%; margin: 0 auto; overflow: scroll;}
+        .subMenu div ul {width: 500%;}
+        .subMenu div ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+        .subMenu div ul li {float: left;}
+        .subMenu div ul li:not(:first-child) {margin-left: 6.65%;}
+        .subMenu div ul li a {font-size: 16px; line-height: 60px; color: #fff; display: block;}
         
         /* Animation */
         @keyframes Shine {
@@ -106,10 +109,7 @@
                 left: 100%;
             }
         }
-    }  
-
-
-
+    }
     @media screen and (min-width: 1280px) {
         /* Global Common */
         .width1596 {max-width: 1596px; width: 100%; margin-right: auto; margin-left: auto;}

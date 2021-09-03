@@ -119,10 +119,10 @@
     .banner.attm {background-image: url("../images/job/jobBanner_05.png");}
     .banner.gat, .banner.cra {background-image: url("../images/job/jobBanner_06.png");}
 
-    .jobIntro ul.tabContent {background-image: url("../images/job/jobIntroBg.png"); color: #fff;} 
+    .jobIntro ul.tabContent {height: 700px; background-image: url("../images/job/jobIntroBg.png"); color: #fff;} 
     .jobIntro ul.tabContent strong {font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
     .jobIntro ul.tabContent small {font-size: 16px; margin-left: 20px;}
-    .jobIntro ul.tabContent li {padding: 100px 30px; box-sizing: border-box;}
+    .jobIntro ul.tabContent li {padding: 50px 20px; box-sizing: border-box; background-position: 80%;}
     .jobIntro ul.tabContent li p {letter-spacing: -0.5px;}
     .jobIntro ul.tabContent li p:nth-of-type(1) {line-height: 1; margin-bottom: 20px;}
     .jobIntro ul.tabContent li p:nth-of-type(2) {margin-top: auto;}
@@ -167,12 +167,14 @@
     .jobIntro ul.tabContent li figure img {float: left;}
     .jobIntro ul.tabContent li figure figcaption dl {color: #fff; font-size: 16px; line-height: 25px; margin-left: 140px; display: flex; flex-wrap: wrap;}
     .jobIntro ul.tabContent li figure figcaption dl dt {width: fit-content;}
-    .jobIntro ul.tabContent li figure figcaption dl dd {width: 90%; margin-left: 20px;}
+    .jobIntro ul.tabContent li figure figcaption dl dd {width: 80%; margin-left: 20px;}
     .jobIntro ul.tabContent li figure figcaption dl dd:not(:last-child) {margin-bottom: 10px;}
     .jobIntro ul.tabContent li figure p {margin-top: auto;}
 
     .jobIntro div.bx-wrapper {width: 100%; margin: 0;}
     .jobIntro div.bx-wrapper .bx-viewport {margin: 0;}
+
+    .jobIntro div.tabControl ul li {background-position: center 25%;}
 
     .jobIntro.def div.tabControl ul li:nth-child(1) {background-image: url("../images/job/jobMenu01_01.png");}
     .jobIntro.def div.tabControl ul li:nth-child(2) {background-image: url("../images/job/jobMenu01_02.png");}
