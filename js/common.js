@@ -1,9 +1,19 @@
 $(document).ready(function() {
+    var funcPc;
+    var funcMobile;
+
+    var videoUrl = $(".popup div iframe").attr("src");
     var urlAry = new Array();
     for (var i = 0; i < $(".tabContent li").length; i++){
         urlAry[i] = $(".tabContent li:eq(" + i + ") iframe").attr("src");
     };
-    var videoUrl = $(".popup div iframe").attr("src");
+    
+    $(window).resize(function(){
+
+    });
+    
+    funcPc = 0;
+    
     if (window.matchMedia('(min-width: 1280px)').matches){
         $(window).scroll(function () {
             var scr = $(document).scrollTop();
