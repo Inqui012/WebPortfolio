@@ -8,7 +8,7 @@ $(document).ready(function() {
         if (windowWidth >= 1280){
             console.log('px');
 /*             reloadSlider(sliderPc); */
-        }else if (windowWidth > 640, windowWidth < 1280){
+        }else if (windowWidth > 640){
             console.log('tablet');
 
         }else{
