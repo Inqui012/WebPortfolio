@@ -1,10 +1,11 @@
 $(document).ready(function() {
-    var sliderPc;
-    var sliderMobile;
+    var sliderMain;
+    var sliderTabPc;
+    var sliderTabMobile;
     var sliderTab;
     var windowWidth = $(window).width();
     
-    sliderPc = {
+    sliderTabPc = {
         mode: 'vertical',
         minSlides: 4,
         slideMargin: 20,
@@ -19,7 +20,7 @@ $(document).ready(function() {
         prevText: '<span class="material-icons">keyboard_arrow_up</span>',
         nextText: '<span class="material-icons">keyboard_arrow_down</span>'
     };
-    sliderMobile = {
+    sliderTabMobile = {
         minSlides: 1,
         slideMargin: 20,
         moveSlides: 1,
@@ -42,31 +43,34 @@ $(document).ready(function() {
     sliderLoad();
     $(window).resize(function(){
         windowWidth = $(window).width();
-        sliderReload();
+        sliderLoad();
     });
+
+    // index.html 에서는 리로드를 해도 해당 슬라이더가 없으니까 에러발생
+    // 메인에서는 기능을 실행하지 않게 해야하나?
 
     function sliderLoad(){
         if (windowWidth >= 1280){
             // Pc
-            sliderTab = $(".tabControl .slider").bxSlider(sliderPc);
+            sliderTab = $(".tabControl .slider").bxSlider(sliderTabPc);
         }else if (windowWidth < 1280 && windowWidth > 640){
             // Tablet
 
         }else{
             // Mobile
-            sliderTab = $(".tabControl .slider").bxSlider(sliderMobile);
+            sliderTab = $(".tabControl .slider").bxSlider(sliderTabMobile);
         };
     };
     function sliderReload(){
         if (windowWidth >= 1280){
             // Pc
-            sliderTab.reloadSlider(sliderPc);
+            sliderTab.reloadSlider(sliderTabPc);
         }else if (windowWidth < 1280 && windowWidth > 640){
             // Tablet
 
         }else{
             // Mobile
-            sliderTab.reloadSlider(sliderMobile);
+            sliderTab.reloadSlider(sliderTabMobile);
         };
     };
 })

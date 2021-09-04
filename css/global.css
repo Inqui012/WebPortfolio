@@ -3,7 +3,7 @@
         .width1596 {max-width: 640px; width: calc(100% - 40px); margin-right: auto; margin-left: auto;}
         * {background-repeat: no-repeat; background-position: center center;}
         .bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
-        .bx-wrapper .bx-viewport {padding: 0 calc(100% /4); width: 50%;}
+        div.tabControl .bx-wrapper .bx-viewport {padding: 0 calc(100% /4); width: 50%;}
 
         section {margin-bottom: 50px;}
         h2 {font-size: 40px; font-weight: bold; line-height: 50px; color: #fff;}
