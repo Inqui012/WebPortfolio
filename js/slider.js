@@ -1,30 +1,9 @@
 $(document).ready(function() {
-    var sliderMain;
     var sliderPc;
     var sliderMobile;
+    var sliderTab;
+    var windowWidth = $(window).width();
     
-    $(window).resize(function(){
-        var windowWidth = $(window).width();
-        if (windowWidth >= 1280){
-            console.log('px');
-/*             reloadSlider(sliderPc); */
-        }else if (windowWidth > 640){
-            console.log('tablet');
-
-        }else{
-            console.log('mobile');
-        }
-    });
-
-
-
-    sliderMain = {
-        auto: true,
-        autoHover: true,
-        speed: 750,
-        controls: false,
-        mode: 'fade'
-    }
     sliderPc = {
         mode: 'vertical',
         minSlides: 4,
@@ -39,7 +18,7 @@ $(document).ready(function() {
         pager: false,
         prevText: '<span class="material-icons">keyboard_arrow_up</span>',
         nextText: '<span class="material-icons">keyboard_arrow_down</span>'
-    }
+    };
     sliderMobile = {
         minSlides: 1,
         slideMargin: 20,
@@ -50,6 +29,45 @@ $(document).ready(function() {
         controls: false,
         pager: false,
         slideWidth: 300
-    }
+    };
+
+    $(".mainSlider .slider").bxSlider({
+        auto: true,
+        autoHover: true,
+        speed: 750,
+        controls: false,
+        mode: 'fade'
+    });
+
+    sliderLoad();
+    $(window).resize(function(){
+        windowWidth = $(window).width();
+        sliderReload();
+    });
+
+    function sliderLoad(){
+        if (windowWidth >= 1280){
+            // Pc
+            sliderTab = $(".tabControl .slider").bxSlider(sliderPc);
+        }else if (windowWidth < 1280 && windowWidth > 640){
+            // Tablet
+
+        }else{
+            // Mobile
+            sliderTab = $(".tabControl .slider").bxSlider(sliderMobile);
+        };
+    };
+    function sliderReload(){
+        if (windowWidth >= 1280){
+            // Pc
+            sliderTab.reloadSlider(sliderPc);
+        }else if (windowWidth < 1280 && windowWidth > 640){
+            // Tablet
+
+        }else{
+            // Mobile
+            sliderTab.reloadSlider(sliderMobile);
+        };
+    };
 })
 
