@@ -1,12 +1,11 @@
+var funcPc;
+var funcMobile;
+var videoUrl = $(".popup div iframe").attr("src");
+var urlAry = new Array();
+for (var i = 0; i < $(".tabContent li").length; i++){
+    urlAry[i] = $(".tabContent li:eq(" + i + ") iframe").attr("src");
+};
 $(document).ready(function() {
-    var funcPc;
-    var funcMobile;
-
-    var videoUrl = $(".popup div iframe").attr("src");
-    var urlAry = new Array();
-    for (var i = 0; i < $(".tabContent li").length; i++){
-        urlAry[i] = $(".tabContent li:eq(" + i + ") iframe").attr("src");
-    };
     
     $(window).resize(function(){
 
