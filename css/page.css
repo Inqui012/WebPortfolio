@@ -46,7 +46,7 @@
 
     .trailerVideo div.popup {visibility: hidden; background-color: rgba(0, 0, 0, 0.85); z-index: 20; position: fixed; top: 0; left: 0; width: 640px; height: 100vh; display: flex; justify-content: center; align-items: center;}
     .trailerVideo div.popup div {position: relative; width: 80%; height: 40%;}
-    .trailerVideo div.popup div span {position: absolute; top: -5%; right: 0; cursor: pointer; height: 10px; width: 40px;}
+    .trailerVideo div.popup div span {position: absolute; top: -10%; right: 0; cursor: pointer; height: 10px; width: 40px;}
     .trailerVideo div.popup div span::before,
     .trailerVideo div.popup div span::after {content: ''; position: absolute; top: 10%; left: 0; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 1);}
     .trailerVideo div.popup div span::before {transform: rotate(45deg);}
@@ -119,7 +119,7 @@
     .banner.attm {background-image: url("../images/job/jobBanner_05.png");}
     .banner.gat, .banner.cra {background-image: url("../images/job/jobBanner_06.png");}
 
-    .jobIntro ul.tabContent {height: 700px; background-image: url("../images/job/jobIntroBg.png"); color: #fff;} 
+    .jobIntro ul.tabContent {height: 600px; background-image: url("../images/job/jobIntroBg.png"); color: #fff;} 
     .jobIntro ul.tabContent strong {font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
     .jobIntro ul.tabContent small {font-size: 16px; margin-left: 20px;}
     .jobIntro ul.tabContent li {padding: 50px 20px; box-sizing: border-box; background-position: 80%;}
@@ -163,7 +163,7 @@
     .jobIntro.cra ul.tabContent li:nth-child(7) {background-image: url("../images/job/jobChar07_07.png");}
     .jobIntro.cra ul.tabContent li:nth-child(8) {background-image: url("../images/job/jobChar07_08.png");}
 
-    .jobIntro ul.tabContent li {display: flex; flex-direction: column;}
+    .jobIntro ul.tabContent li {display: flex; flex-direction: column; text-shadow: 1px 1px 2px black, 1px 1px 2px black, 1px 1px 2px black;}
     .jobIntro ul.tabContent li figure img {float: left;}
     .jobIntro ul.tabContent li figure figcaption dl {color: #fff; font-size: 16px; line-height: 25px; margin-left: 140px; display: flex; flex-wrap: wrap;}
     .jobIntro ul.tabContent li figure figcaption dl dt {width: fit-content;}
