@@ -1,4 +1,3 @@
-var sliderMain;
 var sliderTabPc;
 var sliderTabMobile;
 var sliderTab;
@@ -33,22 +32,16 @@ $(document).ready(function() {
         slideWidth: 300
     };
 
-    $(".mainSlider .slider").bxSlider({
-        auto: true,
-        autoHover: true,
-        speed: 750,
-        controls: false,
-        mode: 'fade'
-    });
-
     sliderLoad();
     $(window).resize(function(){
         windowWidth = $(window).width();
-        sliderLoad();
+        sliderReload();
     });
 
     // index.html 에서는 리로드를 해도 해당 슬라이더가 없으니까 에러발생
     // 메인에서는 기능을 실행하지 않게 해야하나?
+    // js 파일을 나누면 해결되려나? 나누면 문제가 없네
+    // 역시 메인에서는 없는 슬라이더를 리로드해서 문제인건가?
 });
 
 function sliderLoad(){

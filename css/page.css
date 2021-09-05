@@ -45,7 +45,7 @@
     .trailerVideo img:hover {transform: scale(1);}
 
     .trailerVideo div.popup {visibility: hidden; background-color: rgba(0, 0, 0, 0.85); z-index: 20; position: fixed; top: 0; left: 0; width: 640px; height: 100vh; display: flex; justify-content: center; align-items: center;}
-    .trailerVideo div.popup div {position: relative; width: 80%; height: 80%;}
+    .trailerVideo div.popup div {position: relative; width: 80%; height: 40%;}
     .trailerVideo div.popup div span {position: absolute; top: -5%; right: 0; cursor: pointer; height: 10px; width: 40px;}
     .trailerVideo div.popup div span::before,
     .trailerVideo div.popup div span::after {content: ''; position: absolute; top: 10%; left: 0; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 1);}
