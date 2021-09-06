@@ -170,7 +170,7 @@
     .otherContent div {width: 100%}
     .otherContent > div:not(:last-child) {margin-bottom: 20px;}
     .otherContent > div:last-child {height: 400px; overflow: scroll;}
-    .otherContent div div {width: 90%; margin: 0 auto; text-align: center;}
+    .otherContent div div {width: 90%; margin: 0 auto; text-align: center; word-break: keep-all;}
     .otherContent div div p:not(:last-child) {margin-bottom: 20px;}
     .otherContent ul {width: calc((480px * 4) + (20px * 3)); height: 100%;}
     .otherContent ul::after {display: block; content: ''; visibility: hidden; clear: both;}
