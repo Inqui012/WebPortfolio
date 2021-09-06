@@ -168,13 +168,14 @@
     /* Other Page */
 
     .otherContent div {width: 100%}
+    .otherContent > div:not(:last-child) {margin-bottom: 20px;}
     .otherContent > div:last-child {height: 400px; overflow: scroll;}
     .otherContent div div {width: 90%; margin: 0 auto; text-align: center;}
-    .otherContent div div p:not(:last-child) {margin-bottom: 25px;}
-    .otherContent ul {width: calc((480px * 4) + (25px * 3)); height: 100%;}
+    .otherContent div div p:not(:last-child) {margin-bottom: 20px;}
+    .otherContent ul {width: calc((480px * 4) + (20px * 3)); height: 100%;}
     .otherContent ul::after {display: block; content: ''; visibility: hidden; clear: both;}
-    .otherContent ul li {width: 480px; height: 100%; float: left; background-size: cover; border-radius: 5px; text-indent: -9999px;}
-    .otherContent ul li:not(:first-child) {margin-left: 25px;}
+    .otherContent ul li {width: 480px; height: 100%; float: left; background-size: cover; border-radius: 30px; text-indent: -9999px;}
+    .otherContent ul li:not(:first-child) {margin-left: 20px;}
 
 
 }
