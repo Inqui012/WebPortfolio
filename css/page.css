@@ -58,24 +58,23 @@
     .jobIntro ul.tabContent {color: #fff;} 
     .jobIntro ul.tabContent strong {font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
     .jobIntro ul.tabContent small {font-size: 16px; margin-left: 20px;}
-    .jobIntro ul.tabContent li {padding: 100px 30px; box-sizing: border-box;}
-    .jobIntro ul.tabContent li p {letter-spacing: -0.5px;}
-    .jobIntro ul.tabContent li p:nth-of-type(1) {line-height: 1; margin-bottom: 20px;}
-    .jobIntro ul.tabContent li p:nth-of-type(2) {margin-top: auto;}
-
-    .jobIntro ul.tabContent li {display: flex; flex-direction: column;}
-    .jobIntro ul.tabContent li figure img {float: left;}
-    .jobIntro ul.tabContent li figure figcaption dl {color: #fff; font-size: 16px; line-height: 25px; margin-left: 140px; display: flex; flex-wrap: wrap;}
-    .jobIntro ul.tabContent li figure figcaption dl dt {width: fit-content;}
-    .jobIntro ul.tabContent li figure figcaption dl dd {width: 90%; margin-left: 20px;}
-    .jobIntro ul.tabContent li figure figcaption dl dd:not(:last-child) {margin-bottom: 10px;}
-    .jobIntro ul.tabContent li figure p {margin-top: auto;}
+    .jobIntro ul.tabContent li {padding: 100px 30px; box-sizing: border-box; background-position: 200px 0;}
+    .jobIntro ul.tabContent li div {width: 60%; height: 100%; display: flex; flex-direction: column; text-shadow: 1px 1px 2px black, 1px 1px 2px black, 1px 1px 2px black;}
+    .jobIntro ul.tabContent li div p {letter-spacing: -0.5px;}
+    .jobIntro ul.tabContent li div p:nth-of-type(1) {line-height: 1; margin-bottom: 20px;}
+    .jobIntro ul.tabContent li div p:nth-of-type(2) {margin-top: auto;}
+    .jobIntro ul.tabContent li div figure img {float: left; width: 15.25%;}
+    .jobIntro ul.tabContent li div figure figcaption {color: #fff; font-size: 16px; line-height: 25px; margin-left: calc(15.25% + 30px);}
+    .jobIntro ul.tabContent li div figure figcaption dl {display: flex;}
+    .jobIntro ul.tabContent li div figure figcaption dl dd {margin-left: 20px;}
+    .jobIntro ul.tabContent li div figure figcaption dl dd:not(:last-child) {margin-bottom: 10px;}
+    .jobIntro ul.tabContent li div figure p {margin-top: auto;}
 
     .jobIntro div.bx-wrapper {width: 100%; margin: 0;}
     .jobIntro div.bx-wrapper .bx-viewport {margin: 0;}
 
     /* Other Page */
-     .otherContent {display: flex; justify-content: space-between;}
+    .otherContent {display: flex; justify-content: space-between;}
     .otherContent div {width: calc((100% - 20px) / 2)}
     .otherContent div div {width: 100%; height: calc(100% - 75px); display: flex; flex-direction: column; justify-content: center;}
     .otherContent div div p {text-align: center;}
@@ -148,12 +147,11 @@
     .jobIntro ul.tabContent strong {font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
     .jobIntro ul.tabContent small {font-size: 16px; margin-left: 20px;}
     .jobIntro ul.tabContent li {padding: 50px 20px; box-sizing: border-box; background-position: 80%;}
-    .jobIntro ul.tabContent li img {width: 15.25%;}
+    .jobIntro ul.tabContent li div {width: 60%; height: 100%; display: flex; flex-direction: column; text-shadow: 1px 1px 2px black, 1px 1px 2px black, 1px 1px 2px black;}
     .jobIntro ul.tabContent li p {letter-spacing: -0.5px;}
     .jobIntro ul.tabContent li p:nth-of-type(1) {line-height: 1; margin-bottom: 20px;}
     .jobIntro ul.tabContent li p:nth-of-type(2) {margin-top: auto;}
-    .jobIntro ul.tabContent li div {width: 60%; height: 100%; display: flex; flex-direction: column; text-shadow: 1px 1px 2px black, 1px 1px 2px black, 1px 1px 2px black;}
-    .jobIntro ul.tabContent li figure img {float: left;}
+    .jobIntro ul.tabContent li figure img {float: left; width: 15.25%;}
     .jobIntro ul.tabContent li figure figcaption {color: #fff; font-size: 16px; line-height: 25px; margin-left: calc(15.25% + 20px);}
     .jobIntro ul.tabContent li figure figcaption dl {display: flex;}
     .jobIntro ul.tabContent li figure figcaption dl dd {margin-left: 20px;}
