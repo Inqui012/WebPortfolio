@@ -75,7 +75,7 @@
 }
 @media screen and (min-width: 641px) and (max-width: 1279px) {
     /* Global Common */
-    .width1596 {max-width: 1279px; width: calc(100% - 40px); margin-right: auto; margin-left: auto;}
+    .width1596 {max-width: 1279; width: calc(100% - 40px); margin-right: auto; margin-left: auto;}
     .bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
     div.tabControl .bx-wrapper .bx-viewport {padding: 0 calc(100% /4); width: 50%;}
     section {margin-bottom: 50px;}
@@ -164,6 +164,7 @@
     h3 {width: 100%; display: block; text-align: center; font-size: 24px; color: #fff; line-height: 35px; text-shadow: 0 0 5px #4c66ba, 0 0 5px #000; position: relative; margin-bottom: 40px; order: -1;}
     h3::after {content: ''; height: 1px; background-color: #4c66ba; width: 100%; position: absolute; left: 0; bottom: -20px;}
     p {font-size: 16px; line-height: 25px;}
+    
     /* Under Bar */
     ul > li:hover > a span::after,
     .subMenu .underBar.active::after {left: 0; width: 100%;}

@@ -207,6 +207,7 @@
     .trailerVideo img {padding: 45px 0; width: 100%; max-width: 1100px; margin: 0 auto; transform: scale(0.95); transition: transform 1s;}
     .trailerVideo img:hover {transform: scale(1);}
 
+    .trailerVideo {background-size: cover;}
     .trailerVideo div.popup {visibility: hidden; background-color: rgba(0, 0, 0, 0.85); z-index: 20; position: fixed; top: 0; left: 0; width: 640px; height: 100vh; display: flex; justify-content: center; align-items: center;}
     .trailerVideo div.popup div {position: relative; width: 80%; height: 40%;}
     .trailerVideo div.popup div span {position: absolute; top: -10%; right: 0; cursor: pointer; height: 10px; width: 40px;}
@@ -226,7 +227,7 @@
     .ingamePhoto ul li:nth-child(even) {float: right;}
 
     /* Job Page */
-
+    .jobIntro.def ul.tabContent li:nth-child(2) {background-position: 90%;}
     .jobIntro ul.tabContent {height: 600px; color: #fff;} 
     .jobIntro ul.tabContent strong {font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
     .jobIntro ul.tabContent small {font-size: 16px; margin-left: 20px;}
@@ -238,7 +239,7 @@
     .jobIntro ul.tabContent li figure img {float: left; width: 15.25%;}
     .jobIntro ul.tabContent li figure figcaption {color: #fff; font-size: 16px; line-height: 25px; margin-left: calc(15.25% + 20px);}
     .jobIntro ul.tabContent li figure figcaption dl {display: flex;}
-    .jobIntro ul.tabContent li figure figcaption dl dd {margin-left: 20px;}
+    .jobIntro ul.tabContent li figure figcaption dl dd {margin-left: 20px; letter-spacing: -1px;}
     .jobIntro ul.tabContent li figure figcaption dl:not(:last-child) {margin-bottom: 10px;}
     .jobIntro ul.tabContent li figure p {width: 85%; margin-top: auto;}
 
