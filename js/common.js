@@ -26,8 +26,61 @@ $(document).ready(function() {
         $(".tabContent li iframe").attr("src","");
         $(".tabContent li").eq($(this).index()).children("iframe").attr("src",urlAry[$(this).index()]);
     });
+    $(window).scroll(function () {
+        var scr = $(document).scrollTop();
+        if (scr >= 500){
+            $(".material-icons.scrTop").removeClass("hide");
+        }else{
+            $(".material-icons.scrTop").addClass("hide");
+        };   
+    });
+    $(".scrTop").click(function(){
+        $("html, body").animate({
+            scrollTop: $("html, body").offset().top
+            }, 500);
+    });
 
+    windowWidth = $(window).width();
+    if (windowWidth >= 1280){
+        // Pc
+        if($(".tabControl ul li").length < 5){
+            $(".tabControl span").addClass("hide");
+        };
+        $(".subMenu.other ul li a").click(function(e){
+            var target = $((this).getAttribute("href"));
+            e.preventDefault();
+            $("html, body").animate({
+                scrollTop: $(target).offset().top - 200
+                }, 750); 
+        });
+    }else if (windowWidth < 1280 && windowWidth > 640){
+        // Tablet
+    }else{
+        // Mobile
+        $(".burger").click(function(){
+            $(this).toggleClass("on");
+            $("header div nav").toggleClass("on");
+        });
+        $("header div nav > ul > li > a").click(function(e){
+            e.preventDefault();
+            $("header div nav > ul > li").removeClass("active");
+            $(this).parent().addClass("active");
+        });
+        $(".trailerVideo img").click(function(){
+            $(".popup").css("visibility","visible");
+            $(".popup div iframe").attr("src",videoUrl);
+        });
+        $(".popup div span").click(function(){
+            $(".popup").css("visibility","hidden");
+            $(".popup div iframe").attr("src","");
+        });
+        $(".subMenu.other div ul li").click(function(){
+            $(".otherContent section").removeClass("active");
+            $(".otherContent section").eq($(this).index()).addClass("active");
+        });
+    };
 
+    // 리사이즈 했을때 변경하기 위한 함수
     $(window).resize(function(){
         windowWidth = $(window).width();
         if (windowWidth >= 1280){
@@ -83,16 +136,12 @@ $(document).ready(function() {
             // 이걸로 선택된 요소를 화면 중앙으로 오게할 수 있다는거 같은데 잘 이해를 못하겠다.
             // (컨테이너 넓이 / 2) - (요소넓이 / 2) 만큼 왼쪽으로부터 공간을 가지면 중앙으로 가겠지만...
             // middle 변수는 왜 있는거지?? 뭐 구하는 변수인거지...
+            $(".subMenu.other div ul li").click(function(){
+                $(".otherContent section").removeClass("active");
+                $(".otherContent section").eq($(this).index()).addClass("active");
+            });
         };
     });
-    
-    $(window).scroll(function () {
-        var scr = $(document).scrollTop();
-        if (scr >= 500){
-            $(".material-icons.scrTop").removeClass("hide");
-        }else{
-            $(".material-icons.scrTop").addClass("hide");
-        };   
-    });
+
 
 })

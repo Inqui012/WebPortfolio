@@ -82,11 +82,11 @@
     .otherContent section:nth-of-type(even) {flex-direction: row-reverse;}
     .otherContent section ul li {background-size: cover; width: calc((100% - 20px) / 2); height: calc((100% - 20px) / 2); border-radius: 5px; text-indent: -9999px;}
 
-    .otherContent section.mendervile ul {flex-direction: column;}
-    .otherContent section.mendervile ul li:nth-child(1) {height: 100%;}
-    .otherContent section.housing ul li:nth-child(1) {width: 100%;}
-    .otherContent section.freeComp ul li {height: 100%;}
-    .otherContent section.free60 ul li {width: 100%; height: 100%;}
+    .otherContent section#mendervile ul {flex-direction: column;}
+    .otherContent section#mendervile ul li:nth-child(1) {height: 100%;}
+    .otherContent section#housing ul li:nth-child(1) {width: 100%;}
+    .otherContent section#freeComp ul li {height: 100%;}
+    .otherContent section#free60 ul li {width: 100%; height: 100%;}
 
 }
 @media screen and (min-width: 641px) and (max-width: 1279px) {
@@ -163,16 +163,23 @@
     .jobIntro div.tabControl ul li {background-position: center 25%;}
 
     /* Other Page */
-
-    .otherContent div {width: 100%}
-    .otherContent > div:not(:last-child) {margin-bottom: 20px;}
-    .otherContent > div:last-child {height: 400px; overflow: scroll;}
-    .otherContent div div {width: 90%; margin: 0 auto; text-align: center; }
-    .otherContent div div p:not(:last-child) {margin-bottom: 20px;}
-    .otherContent ul {width: calc((480px * 4) + (20px * 3)); height: 100%;}
-    .otherContent ul::after {display: block; content: ''; visibility: hidden; clear: both;}
-    .otherContent ul li {width: 480px; height: 100%; float: left; background-size: cover; border-radius: 30px; text-indent: -9999px;}
-    .otherContent ul li:not(:first-child) {margin-left: 20px;}
+    .otherContent div {width: 100%;}
+    .otherContent section {display: none;}
+    .otherContent section.active {display: block;}
+    .otherContent section > div:not(:last-child) {margin-bottom: 20px;}
+    .otherContent section > div:last-child {height: 400px; width: 80%; padding: 0 10%; overflow: scroll;}
+    .otherContent section div div {width: 90%; margin: 0 auto; text-align: center; }
+    .otherContent section div div p:not(:last-child) {margin-bottom: 20px;}
+    .otherContent section:nth-child(1) div ul {width: calc((480px * 4) + (20px * 3));}
+    .otherContent section:nth-child(2) div ul {width: calc((480px * 3) + (20px * 2));}
+    .otherContent section:nth-child(3) div ul {width: calc((480px * 3) + (20px * 2));}
+    .otherContent section:nth-child(4) div ul {width: calc((480px * 2) + 20px);}
+    .otherContent section:nth-child(5) div ul {width: 100%;}
+    
+    .otherContent section ul {height: 100%;}
+    .otherContent section ul::after {display: block; content: ''; visibility: hidden; clear: both;}
+    .otherContent section ul li {width: 480px; height: 100%; float: left; background-size: cover; border-radius: 30px; text-indent: -9999px;}
+    .otherContent section ul li:not(:first-child) {margin-left: 20px;}
 
 
 }
@@ -333,16 +340,16 @@
     /* Other Page */
     .banner.other {background-image: url("../images/other/otherBanner.png");}
 
-    .otherContent section.sideQ ul li:nth-child(1) {background-image: url("../images/other/otherSC01_01.png");}
-    .otherContent section.sideQ ul li:nth-child(2) {background-image: url("../images/other/otherSC01_02.png");}
-    .otherContent section.sideQ ul li:nth-child(3) {background-image: url("../images/other/otherSC01_03.png");}
-    .otherContent section.sideQ ul li:nth-child(4) {background-image: url("../images/other/otherSC01_04.png");}
-    .otherContent section.mendervile ul li:nth-child(1) {background-image: url("../images/other/otherSC02_01.png");}
-    .otherContent section.mendervile ul li:nth-child(2) {background-image: url("../images/other/otherSC02_02.png");}
-    .otherContent section.mendervile ul li:nth-child(3) {background-image: url("../images/other/otherSC02_03.png");}
-    .otherContent section.housing ul li:nth-child(1) {background-image: url("../images/other/otherSC03_01.png");}
-    .otherContent section.housing ul li:nth-child(2) {background-image: url("../images/other/otherSC03_02.png");}
-    .otherContent section.housing ul li:nth-child(3) {background-image: url("../images/other/otherSC03_03.png");}
-    .otherContent section.freeComp ul li:nth-child(1) {background-image: url("../images/other/otherSC04_01.png");}
-    .otherContent section.freeComp ul li:nth-child(2) {background-image: url("../images/other/otherSC04_02.png");}
-    .otherContent section.free60 ul li {background-image: url("../images/other/otherSC05_01.png");}
+    .otherContent section#sideQ ul li:nth-child(1) {background-image: url("../images/other/otherSC01_01.png");}
+    .otherContent section#sideQ ul li:nth-child(2) {background-image: url("../images/other/otherSC01_02.png");}
+    .otherContent section#sideQ ul li:nth-child(3) {background-image: url("../images/other/otherSC01_03.png");}
+    .otherContent section#sideQ ul li:nth-child(4) {background-image: url("../images/other/otherSC01_04.png");}
+    .otherContent section#mendervile ul li:nth-child(1) {background-image: url("../images/other/otherSC02_01.png");}
+    .otherContent section#mendervile ul li:nth-child(2) {background-image: url("../images/other/otherSC02_02.png");}
+    .otherContent section#mendervile ul li:nth-child(3) {background-image: url("../images/other/otherSC02_03.png");}
+    .otherContent section#housing ul li:nth-child(1) {background-image: url("../images/other/otherSC03_01.png");}
+    .otherContent section#housing ul li:nth-child(2) {background-image: url("../images/other/otherSC03_02.png");}
+    .otherContent section#housing ul li:nth-child(3) {background-image: url("../images/other/otherSC03_03.png");}
+    .otherContent section#freeComp ul li:nth-child(1) {background-image: url("../images/other/otherSC04_01.png");}
+    .otherContent section#freeComp ul li:nth-child(2) {background-image: url("../images/other/otherSC04_02.png");}
+    .otherContent section#free60 ul li {background-image: url("../images/other/otherSC05_01.png");}
