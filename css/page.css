@@ -90,7 +90,92 @@
 
 }
 @media screen and (min-width: 641px) and (max-width: 1279px) {
+    div.mainSlider h2,
+    div.officialSite a {text-shadow: 1px 2px 5px #000, -2px -1px 5px #000;}
 
+    div.mainSlider {z-index: 1; position: relative;}
+    div.mainSlider h2 {background-position: left top; background-size: 65% 90%; position: absolute; font-size: 60px; line-height: 70px; padding: 20% 0 0 5%; top: 25%; left: 5%;}
+    div.mainSlider div.slider div {width: 100%; height: 610px; background-position-x: 65%; background-size: cover;}
+    div.mainSlider .bx-wrapper .bx-pager {bottom: 30px;}
+    div.mainSlider .bx-pager-item {width: 5%;}
+    div.mainSlider .bx-pager-item:not(:first-child) {margin-left: 5%;}
+    div.mainSlider .bx-wrapper .bx-pager.bx-default-pager a {background: rgb(160, 160, 160); opacity: 0.7; width: 100%; margin: 0 auto;}
+    div.mainSlider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+    div.mainSlider .bx-wrapper .bx-pager.bx-default-pager a.active,
+    div.mainSlider .bx-wrapper .bx-pager.bx-default-pager a:focus {background-color: rgb(255, 255, 255); opacity: 1;}
+
+    div.officialSite {padding: 50px 0;}
+    div.officialSite::after {content: ''; display: block; visibility: hidden; clear: both;}
+    div.officialSite h2 {line-height: 0; font-size: 0;}
+    div.officialSite a {color: #fff; font-weight: bold; font-size: 20px; line-height: 30px; text-align: center; box-sizing: border-box; display: block; width: calc((100% - 20px) / 2); padding: 15px 0; border-radius: 0.5em; background-size: cover;}
+    div.officialSite a:nth-of-type(2n-1) {padding-left: 23.45%; float: left;}
+    div.officialSite a:nth-of-type(2n) {padding-right: 23.45%; float: right;}
+
+    /* Trailer Page */
+    .trailerVideo h3 {font-size: 0; line-height: 0; margin: 0;}
+    .trailerVideo h3::after,
+    .jobInfo h3::after {width: 0;}
+    .trailerVideo img {padding: 45px 0; width: 100%; max-width: 1100px; margin: 0 auto; transform: scale(0.95); transition: transform 1s;}
+    .trailerVideo img:hover {transform: scale(1);}
+
+    .trailerVideo div.popup {visibility: hidden; background-color: rgba(0, 0, 0, 0.85); z-index: 20; position: fixed; top: 0; left: 0; width: 640px; height: 100vh; display: flex; justify-content: center; align-items: center;}
+    .trailerVideo div.popup div {position: relative; width: 80%; height: 40%;}
+    .trailerVideo div.popup div span {position: absolute; top: -10%; right: 0; cursor: pointer; height: 10px; width: 40px;}
+    .trailerVideo div.popup div span::before,
+    .trailerVideo div.popup div span::after {content: ''; position: absolute; top: 10%; left: 0; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 1);}
+    .trailerVideo div.popup div span::before {transform: rotate(45deg);}
+    .trailerVideo div.popup div span::after {transform: rotate(-45deg);}
+    .trailerVideo div.popup div iframe {width: 100%; height: 100%;}
+
+    .ingameVideo,
+    .jobIntro {display: flex; flex-wrap: wrap; flex-direction: column;}
+    .ingameVideo ul.tabContent li iframe {width: 100%; height: 100%;}
+
+    .ingamePhoto ul {display: block; width: 100%;}
+    .ingamePhoto ul::after {display: block; visibility: hidden; clear: both; content: '';}
+    .ingamePhoto ul li {width: calc((100% - 20px) / 2); height: 170px; float: left; margin-bottom: 20px; overflow: hidden; background-size: cover; text-indent: -9999px;}
+    .ingamePhoto ul li:nth-child(even) {float: right;}
+
+    /* Job Page */
+
+    .jobIntro ul.tabContent {height: 600px; color: #fff;} 
+    .jobIntro ul.tabContent strong {font-size: 40px; margin-bottom: 10px; display: flex; align-items: flex-end;}
+    .jobIntro ul.tabContent small {font-size: 16px; margin-left: 20px;}
+    .jobIntro ul.tabContent li {padding: 50px 20px; box-sizing: border-box; background-position: 80%;}
+    .jobIntro ul.tabContent li div {width: 60%; height: 100%; display: flex; flex-direction: column; text-shadow: 1px 1px 2px black, 1px 1px 2px black, 1px 1px 2px black;}
+    .jobIntro ul.tabContent li p {letter-spacing: -0.5px;}
+    .jobIntro ul.tabContent li p:nth-of-type(1) {line-height: 1; margin-bottom: 20px;}
+    .jobIntro ul.tabContent li p:nth-of-type(2) {margin-top: auto;}
+    .jobIntro ul.tabContent li figure img {float: left; width: 15.25%;}
+    .jobIntro ul.tabContent li figure figcaption {color: #fff; font-size: 16px; line-height: 25px; margin-left: calc(15.25% + 20px);}
+    .jobIntro ul.tabContent li figure figcaption dl {display: flex;}
+    .jobIntro ul.tabContent li figure figcaption dl dd {margin-left: 20px;}
+    .jobIntro ul.tabContent li figure figcaption dl:not(:last-child) {margin-bottom: 10px;}
+    .jobIntro ul.tabContent li figure p {width: 85%; margin-top: auto;}
+
+    .jobIntro div.bx-wrapper {width: 100%; margin: 0;}
+    .jobIntro div.bx-wrapper .bx-viewport {margin: 0;}
+
+    .jobIntro div.tabControl ul li {background-position: center 25%;}
+
+    /* Other Page */
+    .otherContent div {width: 100%;}
+    .otherContent section {display: none;}
+    .otherContent section.active {display: block;}
+    .otherContent section > div:not(:last-child) {margin-bottom: 20px;}
+    .otherContent section > div:last-child {height: 400px; width: 80%; padding: 0 10%; overflow: scroll;}
+    .otherContent section div div {width: 90%; margin: 0 auto; text-align: center; }
+    .otherContent section div div p:not(:last-child) {margin-bottom: 20px;}
+    .otherContent section:nth-child(1) div ul {width: calc((480px * 4) + (20px * 3));}
+    .otherContent section:nth-child(2) div ul {width: calc((480px * 3) + (20px * 2));}
+    .otherContent section:nth-child(3) div ul {width: calc((480px * 3) + (20px * 2));}
+    .otherContent section:nth-child(4) div ul {width: calc((480px * 2) + 20px);}
+    .otherContent section:nth-child(5) div ul {width: 100%;}
+    
+    .otherContent section ul {height: 100%;}
+    .otherContent section ul::after {display: block; content: ''; visibility: hidden; clear: both;}
+    .otherContent section ul li {width: 480px; height: 100%; float: left; background-size: cover; border-radius: 30px; text-indent: -9999px;}
+    .otherContent section ul li:not(:first-child) {margin-left: 20px;}
 }
 @media screen and (max-width: 640px) {
     /* Main page */
@@ -180,16 +265,11 @@
     .otherContent section ul::after {display: block; content: ''; visibility: hidden; clear: both;}
     .otherContent section ul li {width: 480px; height: 100%; float: left; background-size: cover; border-radius: 30px; text-indent: -9999px;}
     .otherContent section ul li:not(:first-child) {margin-left: 20px;}
-
-
 }
-    
-    
-    
     
     /* 이하 공통 백그라운드 이미지들 */
     /* Main page */
-    div.mainSlider h2 {background: url("../images/simpleXivLogo.png") no-repeat left top;}
+    div.mainSlider h2 {background-image: url("../images/simpleXivLogo.png"); background-position: left top;}
 
     div.mainSlider div.slider div.sliderImg01 {background-image: url("../images/main/mainSlider01.png");}
     div.mainSlider div.slider div.sliderImg02 {background-image: url("../images/main/mainSlider02.png");}
