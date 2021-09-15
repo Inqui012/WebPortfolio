@@ -121,21 +121,6 @@ $(document).ready(function() {
                 $(".popup").css("visibility","hidden");
                 $(".popup div iframe").attr("src","");
             });
-            // window.addEventListener("load", function(e) {
-            // 윈도우에 지정된 이벤트가 발생했을때 기능실행. "load"는 윈도우 로드되면
-            //     var container = document.querySelector(".scroll_container");
-            // 가로 스크롤 컨테이너 지정. 이거는 $(""); 랑 같은 의미인듯
-            //     var middle = container.children[Math.floor((container.children.length - 1) / 2)];
-            // 가운데를 구하는것 같은데 (컨데이너 안에있는 내용물 -1) /2 의 소숫점 버림 정수인데... 왜 이걸 이렇게 구하는지를 모르겠네 
-            //     container.scrollLeft = middle.offsetLeft +
-            // scrollleft는 해당 요소가 기존위치에서 얼만큼 왼쪽으로 스크롤 됬는지 수치값 반환하는 기능.
-            // offsetleft는 해당 요소의 왼쪽위 꼭짓점 기준 위치
-            //       middle.offsetWidth / 2 - container.offsetWidth / 2;
-            // offsetwidth는 해당 요소의 넓이 가져오는 기능
-            //   });
-            // 이걸로 선택된 요소를 화면 중앙으로 오게할 수 있다는거 같은데 잘 이해를 못하겠다.
-            // (컨테이너 넓이 / 2) - (요소넓이 / 2) 만큼 왼쪽으로부터 공간을 가지면 중앙으로 가겠지만...
-            // middle 변수는 왜 있는거지?? 뭐 구하는 변수인거지...
             $(".subMenu.other div ul li").click(function(){
                 $(".otherContent section").removeClass("active");
                 $(".otherContent section").eq($(this).index()).addClass("active");
