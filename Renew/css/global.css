@@ -1,6 +1,8 @@
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) { */
     /* Global Common */
-    .width1596 {max-width: 1280px; width: 100%; margin: auto;}
+    .MaxContainer {max-width: 1200px; width: 100%; margin: auto;}
+
+
     .bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
 
     section {margin-bottom: 100px;}
@@ -72,13 +74,13 @@
     .subMenu ul li {float: left; padding: 30px 22.5px;}
     .subMenu ul li a {font-size: 16px; line-height: 50px; color: #fff; display: block;}
     
-}
-@media screen and (min-width: 641px) and (max-width: 1279px) {
+/* } */
+/* @media screen and (min-width: 641px) and (max-width: 1279px) {
 
 }
 @media screen and (max-width: 640px) {
     
-}
+} */
 /* 공통 배경이미지 */
     /* SubMenu */
 .subMenu.trailer {background-image: url("../images/trailer/subMenuBG.png");}
