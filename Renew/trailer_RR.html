@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>파이널 판타지 소개</title>
+    <title>FF14 : 신생 에오르제아</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/import.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
-    <script src="js/mainslider.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -65,25 +66,74 @@
             </nav>
         </div>
     </header>
-    <div class="mainSlider">
-        <div class="slider">        
-            <div class="sliderImg01"></div>
-            <div class="sliderImg02"></div>
-            <div class="sliderImg03"></div>
-            <div class="sliderImg04"></div>
-            <div class="sliderImg05"></div>
-            <div class="sliderImg06"></div>
-            <div class="sliderImg07"></div>
+    <div class="subMenu trailer">
+        <h2>트레일러</h2>
+        <div>
+            <ul class="width1596">
+                <li><a href="trailer_RR.html"><span class="underBar active">신생 에오르제아</span></a></li>
+                <li><a href="trailer_HW.html"><span class="underBar">창천의 이슈가르드</span></a></li>
+                <li><a href="trailer_ST.html"><span class="underBar">홍련의 해방자</span></a></li>
+                <li><a href="trailer_SB.html"><span class="underBar">칠흑의 반역자</span></a></li>
+            </ul>
         </div>
-        <h2>
-            당신을 기다리는<br/>모험의 세계로!
-        </h2>
     </div>
-    <div class="officialSite width1596">
-        <h2>외부 홈페이지로 이동</h2>
-        <a href="http://www.ff14.co.kr/main" target="_blank">공식 홈페이지<br/>방문하기</a>
-        <a href="https://www.ff14.co.kr/shop" target="_blank">크리스탈 샵<br/>방문하기</a>
-    </div>
+    <section class="trailerVideo RR">
+        <h3>공식 트레일러 영상</h3>
+        <img src="images/trailer/trailerLogo01.png" alt="신생 에오르제아 로고">
+        <div class="popup">
+            <div>
+                <span></span>
+                <iframe src="https://www.youtube.com/embed/hH4caRmocEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="ingameVideo RR width1596">
+        <h3>인게임 플레이 영상</h3>
+        <ul class="tabContent">
+            <li class="active">
+                <iframe src="https://www.youtube.com/embed/3krcpSby6HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li>
+                <iframe src="https://www.youtube.com/embed/bfO_w6MlBUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li>
+                <iframe src="https://www.youtube.com/embed/U7ForHMX-xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li>
+                <iframe src="https://www.youtube.com/embed/rpz1Hz6KjcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+        </ul>
+        <!-- <ul class="tabControl">
+            <li class="active"><a href="">신규 레이드 추가</a></li>
+            <li><a href="">신규 토벌전 추가</a></li>
+            <li><a href="">신규 지역 추가</a></li>
+            <li><a href="">신규 직업 추가</a></li>
+        </ul> -->
+        <div class="tabControl">
+            <span class="sliderPrev"></span>
+            <ul class="slider">
+                <li class="active"><a href="">신규 레이드 추가</a></li>
+                <li><a href="">신규 토벌전 추가</a></li>
+                <li><a href="">신규 지역 추가</a></li>
+                <li><a href="">신규 직업 추가</a></li>
+            </ul>
+            <span class="sliderNext"></span>
+        </div>
+    </section>
+    <section class="ingamePhoto RR width1596">
+        <h3>인게임 스크린샷</h3>
+        <ul>
+            <li>스크린샷 림사로민사</li>
+            <li>스크린샷 크리스탈 타워</li>
+            <li>스크린샷 어부</li>
+            <li>스크린샷 타이탄</li>
+            <li>스크린샷 힐디브랜드</li>
+            <li>스크린샷 하우징</li>
+        </ul>
+    </section>
+    <span class="material-icons scrTop hide">
+        arrow_upward
+    </span>
     <footer>
         <div class="width1596">
             <img src="images/footerActozLogo.png" alt="엑토즈 소프트">
