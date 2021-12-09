@@ -1,6 +1,6 @@
 /* @media screen and (min-width: 1280px) { */
     /* Global Common */
-    .MaxContainer {max-width: 1200px; width: 100%; margin: auto;}
+    .Container {max-width: 1200px; width: 100%; margin: auto;}
 
 
     .bx-wrapper {box-shadow: none; border: none; margin-bottom: 0;}
